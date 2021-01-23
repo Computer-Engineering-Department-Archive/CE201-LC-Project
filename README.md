@@ -1,5 +1,8 @@
 # LCF99 (Logical Circuit Fall 99)
 
+## Overview
+LC Lab final project fall 99
+
 ## Todo
 - [ ] **Project Phase 1**
     - [ ] Temperature sensor
@@ -21,3 +24,7 @@
 - [ ] **Project Phase 2**
     - [ ] Memory unit
     - [ ] Configuration unit and password
+
+## contributors
+[Bardia Ardakanian](https://github.com/bardia-ardakanian)
+[Mohammad Choupan](https://github.com/mohamadch91)
