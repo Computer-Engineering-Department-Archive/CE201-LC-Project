@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "E:/Courses/AUT/semester 3/Logic Circuit/project/codes/phase 1/part 1/8 bit multiplier/muliplier/FA.xst" -ofn "E:/Courses/AUT/semester 3/Logic Circuit/project/codes/phase 1/part 1/8 bit multiplier/muliplier/FA.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa7a100t-csg324-2I "FA.ngc" FA.ngd  
+map -intstyle ise -p xa7a100t-csg324-2I -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o FA_map.ncd FA.ngd FA.pcf 
+par -w -intstyle ise -ol high -mt off FA_map.ncd FA.ncd FA.pcf 
+trce -intstyle ise -v 3 -s 2I -n 3 -fastpaths -xml FA.twx FA.ncd -o FA.twr FA.pcf 
+xst -intstyle ise -ifn "E:/Courses/AUT/semester 3/Logic Circuit/project/codes/phase 1/part 1/8 bit multiplier/muliplier/FA.xst" -ofn "E:/Courses/AUT/semester 3/Logic Circuit/project/codes/phase 1/part 1/8 bit multiplier/muliplier/FA.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa7a100t-csg324-2I "FA.ngc" FA.ngd  
+map -intstyle ise -p xa7a100t-csg324-2I -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o FA_map.ncd FA.ngd FA.pcf 
+par -w -intstyle ise -ol high -mt off FA_map.ncd FA.ncd FA.pcf 
