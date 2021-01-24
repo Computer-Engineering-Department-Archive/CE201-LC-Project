@@ -8,7 +8,7 @@ LC Lab final project fall 99
     - [ ] Temperature sensor
         - [x] 8 bit multiplier
         - [ ] 16 bit multiplier
-        - [ ] 32 bit Adder/Subtractor
+        - [x] 32 bit Adder/Subtractor
     - [ ] Gas and smoke sensor
         - [ ] Independent detector
         - [ ] Overlap detector
