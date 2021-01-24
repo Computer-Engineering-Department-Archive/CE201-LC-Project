@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Sun Jan 24 09:25:49 2021">
+  <application stringID="Xst" timeStamp="Sun Jan 24 10:19:16 2021">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -102,13 +102,13 @@
       <item DEFAULT="0" label="-slice_utilization_ratio_maxmargin" stringID="XST_SLICEUTILIZATIONRATIOMAXMARGIN" value="5"/>
     </section>
     <section stringID="XST_HDL_SYNTHESIS_REPORT">
-      <item dataType="int" stringID="XST_XORS" value="64">
-        <item dataType="int" stringID="XST_1BIT_XOR2" value="64"/>
+      <item dataType="int" stringID="XST_XORS" value="96">
+        <item dataType="int" stringID="XST_1BIT_XOR2" value="96"/>
       </item>
     </section>
     <section stringID="XST_ADVANCED_HDL_SYNTHESIS_REPORT">
-      <item dataType="int" stringID="XST_XORS" value="64">
-        <item dataType="int" stringID="XST_1BIT_XOR2" value="64"/>
+      <item dataType="int" stringID="XST_XORS" value="96">
+        <item dataType="int" stringID="XST_1BIT_XOR2" value="96"/>
       </item>
     </section>
     <section stringID="XST_FINAL_REGISTER_REPORTFOUND_NO_MACRO"/>
@@ -124,13 +124,12 @@
       <section stringID="XST_PRIMITIVE_AND_BLACK_BOX_USAGE">
         <item dataType="int" stringID="XST_BELS" value="48">
           <item dataType="int" stringID="XST_LUT2" value="1"/>
-          <item dataType="int" stringID="XST_LUT3" value="15"/>
-          <item dataType="int" stringID="XST_LUT4" value="1"/>
-          <item dataType="int" stringID="XST_LUT5" value="29"/>
-          <item dataType="int" stringID="XST_LUT6" value="2"/>
+          <item dataType="int" stringID="XST_LUT4" value="15"/>
+          <item dataType="int" stringID="XST_LUT5" value="2"/>
+          <item dataType="int" stringID="XST_LUT6" value="30"/>
         </item>
-        <item dataType="int" stringID="XST_IO_BUFFERS" value="97">
-          <item dataType="int" stringID="XST_IBUF" value="64"/>
+        <item dataType="int" stringID="XST_IO_BUFFERS" value="98">
+          <item dataType="int" stringID="XST_IBUF" value="65"/>
           <item dataType="int" stringID="XST_OBUF" value="33"/>
         </item>
       </section>
@@ -144,8 +143,8 @@
       <item AVAILABLE="48" dataType="int" label="Number with an unused LUT" stringID="XST_NUMBER_WITH_AN_UNUSED_LUT" value="0"/>
       <item AVAILABLE="48" dataType="int" label="Number of fully used LUT-FF pairs" stringID="XST_NUMBER_OF_FULLY_USED_LUTFF_PAIRS" value="0"/>
       <item dataType="int" label="Number of unique control sets" stringID="XST_NUMBER_OF_UNIQUE_CONTROL_SETS" value="0"/>
-      <item dataType="int" label="Number of IOs" stringID="XST_NUMBER_OF_IOS" value="97"/>
-      <item AVAILABLE="100" dataType="int" label="Number of bonded IOBs" stringID="XST_NUMBER_OF_BONDED_IOBS" value="97"/>
+      <item dataType="int" label="Number of IOs" stringID="XST_NUMBER_OF_IOS" value="98"/>
+      <item AVAILABLE="100" dataType="int" label="Number of bonded IOBs" stringID="XST_NUMBER_OF_BONDED_IOBS" value="98"/>
     </section>
     <section stringID="XST_PARTITION_RESOURCE_SUMMARY">
       <section stringID="XST_NO_PARTITIONS_WERE_FOUND_IN_THIS_DESIGN"/>

@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-DESKTOP-682MTB3::  Sun Jan 24 09:26:29 2021
+DESKTOP-682MTB3::  Sun Jan 24 10:19:58 2021
 
 par -w -intstyle ise -ol high -mt off adderSubtractor_map.ncd
 adderSubtractor.ncd adderSubtractor.pcf 
@@ -26,17 +26,17 @@ Device speed data version:  "PRELIMINARY 1.08 2013-10-13".
 
 Device Utilization Summary:
 
-   Number of External IOBs                  97 out of 100    97%
-      Number of LOCed IOBs                   0 out of 97      0%
+   Number of External IOBs                  98 out of 100    98%
+      Number of LOCed IOBs                   0 out of 98      0%
 
-   Number of Slices                         17 out of 4400    1%
+   Number of Slices                         26 out of 4400    1%
    Number of Slice Registers                 0 out of 35200   0%
       Number used as Flip Flops              0
       Number used as Latches                 0
       Number used as LatchThrus              0
 
-   Number of Slice LUTS                     32 out of 17600   1%
-   Number of Slice LUT-Flip Flop pairs      32 out of 17600   1%
+   Number of Slice LUTS                     47 out of 17600   1%
+   Number of Slice LUT-Flip Flop pairs      47 out of 17600   1%
 
 
 Overall effort level (-ol):   High 
@@ -48,13 +48,13 @@ Finished initial Timing Analysis.  REAL time: 9 secs
 Starting Router
 
 
-Phase  1  : 182 unrouted;      REAL time: 9 secs 
+Phase  1  : 281 unrouted;      REAL time: 9 secs 
 
-Phase  2  : 166 unrouted;      REAL time: 9 secs 
+Phase  2  : 281 unrouted;      REAL time: 9 secs 
 
-Phase  3  : 52 unrouted;      REAL time: 9 secs 
+Phase  3  : 107 unrouted;      REAL time: 9 secs 
 
-Phase  4  : 52 unrouted; (Par is working to improve performance)     REAL time: 10 secs 
+Phase  4  : 107 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
 
 Updating file: adderSubtractor.ncd with current fully routed design.
 
@@ -90,7 +90,7 @@ All signals are completely routed.
 Total REAL time to PAR completion: 11 secs 
 Total CPU time to PAR completion: 11 secs 
 
-Peak Memory Usage:  4795 MB
+Peak Memory Usage:  4796 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

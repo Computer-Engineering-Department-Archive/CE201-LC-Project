@@ -5,7 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="248" delta="old" >"E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part 1\32 bit add-subtract\adder-subtractor-32bit\adderSubtractor.v" Line 31: Block identifier is required on this block
+<msg type="warning" file="HDLCompiler" num="248" delta="old" >"E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part 1\32 bit add-subtract\adder-subtractor-32bit\adderSubtractor.v" Line 32: Block identifier is required on this block
 </msg>
 
 </messages>

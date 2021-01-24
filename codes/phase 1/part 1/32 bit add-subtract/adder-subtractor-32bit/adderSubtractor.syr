@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: adderSubtractor.prj
 
@@ -111,7 +111,7 @@ Analyzing Verilog file "E:\Courses\AUT\semester 3\Logic Circuit\project\codes\ph
 Parsing module <FA>.
 Analyzing Verilog file "E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part 1\32 bit add-subtract\adder-subtractor-32bit\adderSubtractor.v" into library work
 Parsing module <adderSubtractor>.
-WARNING:HDLCompiler:248 - "E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part 1\32 bit add-subtract\adder-subtractor-32bit\adderSubtractor.v" Line 31: Block identifier is required on this block
+WARNING:HDLCompiler:248 - "E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part 1\32 bit add-subtract\adder-subtractor-32bit\adderSubtractor.v" Line 32: Block identifier is required on this block
 
 =========================================================================
 *                            HDL Elaboration                            *
@@ -130,7 +130,6 @@ Elaborating module <HA>.
 Synthesizing Unit <adderSubtractor>.
     Related source file is "E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part 1\32 bit add-subtract\adder-subtractor-32bit\adderSubtractor.v".
     Summary:
-	no macro.
 Unit <adderSubtractor> synthesized.
 
 Synthesizing Unit <FA>.
@@ -148,8 +147,8 @@ Unit <HA> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Xors                                                 : 64
- 1-bit xor2                                            : 64
+# Xors                                                 : 96
+ 1-bit xor2                                            : 96
 
 =========================================================================
 
@@ -162,8 +161,8 @@ Macro Statistics
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Xors                                                 : 64
- 1-bit xor2                                            : 64
+# Xors                                                 : 96
+ 1-bit xor2                                            : 96
 
 =========================================================================
 
@@ -206,12 +205,11 @@ Primitive and Black Box Usage:
 ------------------------------
 # BELS                             : 48
 #      LUT2                        : 1
-#      LUT3                        : 15
-#      LUT4                        : 1
-#      LUT5                        : 29
-#      LUT6                        : 2
-# IO Buffers                       : 97
-#      IBUF                        : 64
+#      LUT4                        : 15
+#      LUT5                        : 2
+#      LUT6                        : 30
+# IO Buffers                       : 98
+#      IBUF                        : 65
 #      OBUF                        : 33
 
 Device utilization summary:
@@ -232,8 +230,8 @@ Slice Logic Distribution:
    Number of unique control sets:         0
 
 IO Utilization: 
- Number of IOs:                          97
- Number of bonded IOBs:                  97  out of    100    97%  
+ Number of IOs:                          98
+ Number of bonded IOBs:                  98  out of    100    98%  
 
 Specific Feature Utilization:
 
@@ -268,7 +266,7 @@ Speed Grade: -3
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 6.813ns
+   Maximum combinational path delay: 6.915ns
 
 Timing Details:
 ---------------
@@ -276,37 +274,37 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 1120 / 33
+  Total number of paths / destination ports: 1407 / 33
 -------------------------------------------------------------------------
-Delay:               6.813ns (Levels of Logic = 18)
-  Source:            A<2> (PAD)
+Delay:               6.915ns (Levels of Logic = 18)
+  Source:            sel (PAD)
   Destination:       S<31> (PAD)
 
-  Data Path: A<2> to S<31>
+  Data Path: sel to S<31>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             2   0.000   0.555  A_2_IBUF (A_2_IBUF)
-     LUT6:I0->O            3   0.043   0.353  [2].fa/co1 (cin<3>)
-     LUT5:I3->O            3   0.043   0.353  [4].fa/co1 (cin<5>)
-     LUT5:I3->O            3   0.043   0.353  [6].fa/co1 (cin<7>)
-     LUT5:I3->O            3   0.043   0.353  [8].fa/co1 (cin<9>)
-     LUT3:I1->O            2   0.043   0.347  [9].fa/co1 (cin<10>)
-     LUT5:I3->O            3   0.043   0.353  [11].fa/co1 (cin<12>)
-     LUT5:I3->O            3   0.043   0.353  [13].fa/co1 (cin<14>)
-     LUT5:I3->O            3   0.043   0.353  [15].fa/co1 (cin<16>)
-     LUT5:I3->O            3   0.043   0.353  [17].fa/co1 (cin<18>)
-     LUT5:I3->O            3   0.043   0.353  [19].fa/co1 (cin<20>)
-     LUT5:I3->O            3   0.043   0.353  [21].fa/co1 (cin<22>)
-     LUT5:I3->O            3   0.043   0.353  [23].fa/co1 (cin<24>)
-     LUT5:I3->O            3   0.043   0.353  [25].fa/co1 (cin<26>)
-     LUT5:I3->O            3   0.043   0.353  [27].fa/co1 (cin<28>)
-     LUT5:I3->O            3   0.043   0.353  [29].fa/co1 (cin<30>)
-     LUT5:I3->O            1   0.043   0.279  [31].fa/co1 (co_OBUF)
-     OBUF:I->O                 0.000          co_OBUF (co)
+     IBUF:I->O            47   0.000   0.651  sel_IBUF (sel_IBUF)
+     LUT5:I0->O            3   0.043   0.353  [1].fa/co1 (cin<2>)
+     LUT6:I4->O            3   0.043   0.353  [3].fa/co1 (cin<4>)
+     LUT6:I4->O            3   0.043   0.353  [5].fa/co1 (cin<6>)
+     LUT6:I4->O            3   0.043   0.353  [7].fa/co1 (cin<8>)
+     LUT6:I4->O            3   0.043   0.353  [9].fa/co1 (cin<10>)
+     LUT6:I4->O            3   0.043   0.353  [11].fa/co1 (cin<12>)
+     LUT6:I4->O            3   0.043   0.353  [13].fa/co1 (cin<14>)
+     LUT6:I4->O            3   0.043   0.353  [15].fa/co1 (cin<16>)
+     LUT6:I4->O            3   0.043   0.353  [17].fa/co1 (cin<18>)
+     LUT6:I4->O            3   0.043   0.353  [19].fa/co1 (cin<20>)
+     LUT6:I4->O            3   0.043   0.353  [21].fa/co1 (cin<22>)
+     LUT6:I4->O            3   0.043   0.353  [23].fa/co1 (cin<24>)
+     LUT6:I4->O            3   0.043   0.353  [25].fa/co1 (cin<26>)
+     LUT6:I4->O            3   0.043   0.353  [27].fa/co1 (cin<28>)
+     LUT6:I4->O            3   0.043   0.353  [29].fa/co1 (cin<30>)
+     LUT4:I2->O            1   0.043   0.279  [30].fa/ha2/Mxor_sum_xo<0>1 (S_30_OBUF)
+     OBUF:I->O                 0.000          S_30_OBUF (S<30>)
     ----------------------------------------
-    Total                      6.813ns (0.688ns logic, 6.125ns route)
-                                       (10.1% logic, 89.9% route)
+    Total                      6.915ns (0.688ns logic, 6.227ns route)
+                                       (9.9% logic, 90.1% route)
 
 =========================================================================
 
@@ -317,11 +315,11 @@ Cross Clock Domains Report:
 
 
 Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.46 secs
  
 --> 
 
-Total memory usage is 4626584 kilobytes
+Total memory usage is 4625528 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)
