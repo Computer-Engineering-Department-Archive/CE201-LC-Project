@@ -6,7 +6,7 @@ LC Lab final project fall 99
 ## Todo
 - [ ] **Project Phase 1**
     - [ ] Temperature sensor
-        - [ ] 8 bit multiplier
+        - [x] 8 bit multiplier
         - [ ] 16 bit multiplier
         - [ ] 32 bit add-subtract
     - [ ] Gas and smoke sensor
