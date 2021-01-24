@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Sun Jan 24 09:11:01 2021
+Sun Jan 24 09:26:41 2021
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -297,7 +297,7 @@ Pinout by Pin Number:
 |P15       |           |IOB33M   |IO_L24P_T3_34          |UNUSED   |           |34            |          |         |           |         |         |          |           |                |
 |P16       |           |IOB33S   |IO_L24N_T3_34          |UNUSED   |           |34            |          |         |           |         |         |          |           |                |
 |P17       |           |         |GND                    |         |           |              |          |         |           |         |         |          |           |                |
-|P18       |cout       |IOB      |IO_L23N_T3_34          |OUTPUT   |LVCMOS18*  |34            |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
+|P18       |co         |IOB      |IO_L23N_T3_34          |OUTPUT   |LVCMOS18*  |34            |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
 |P19       |S<12>      |IOB      |IO_L13N_T2_MRCC_34     |OUTPUT   |LVCMOS18*  |34            |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
 |P20       |S<14>      |IOB      |IO_L14N_T2_SRCC_34     |OUTPUT   |LVCMOS18*  |34            |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
 |R1        |           |IOPAD    |PS_DDR_DQ19_502        |UNUSED   |           |              |          |         |           |         |         |          |           |                |

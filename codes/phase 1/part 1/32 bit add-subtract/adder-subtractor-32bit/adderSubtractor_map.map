@@ -10,7 +10,7 @@ Target Device  : xc7z010
 Target Package : clg400
 Target Speed   : -3
 Mapper Version : zynq -- $Revision: 1.55 $
-Mapped Date    : Sun Jan 24 09:10:12 2021
+Mapped Date    : Sun Jan 24 09:26:06 2021
 
 WARNING:LIT:701 - PAD symbol "A<31>" has an undefined IOSTANDARD.
 WARNING:LIT:702 - PAD symbol "A<31>" is not constrained (LOC) to a specific
@@ -22,59 +22,64 @@ Updating timing models...
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 21 secs 
-Total CPU  time at the beginning of Placer: 20 secs 
+Total REAL time at the beginning of Placer: 14 secs 
+Total CPU  time at the beginning of Placer: 14 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:3255) REAL time: 22 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:3255) REAL time: 15 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:3255) REAL time: 22 secs 
+Phase 2.7  Design Feasibility Check (Checksum:3255) REAL time: 15 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:3255) REAL time: 22 secs 
+Phase 3.31  Local Placement Optimization (Checksum:3255) REAL time: 15 secs 
 
 Phase 4.2  Initial Placement for Architecture Specific Features
 ...
 ....
-Phase 4.2  Initial Placement for Architecture Specific Features (Checksum:3255) REAL time: 23 secs 
+Phase 4.2  Initial Placement for Architecture Specific Features (Checksum:3255) REAL time: 16 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:3255) REAL time: 23 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:3255) REAL time: 16 secs 
 
 Phase 6.3  Local Placement Optimization
 ...
 ....
-Phase 6.3  Local Placement Optimization (Checksum:ac56d240) REAL time: 25 secs 
+Phase 6.3  Local Placement Optimization (Checksum:c69accde) REAL time: 17 secs 
 
 Phase 7.5  Local Placement Optimization
-Phase 7.5  Local Placement Optimization (Checksum:ac56d240) REAL time: 25 secs 
+Phase 7.5  Local Placement Optimization (Checksum:c69accde) REAL time: 17 secs 
 
 Phase 8.8  Global Placement
 ............
 ................
 ................
-Phase 8.8  Global Placement (Checksum:380666b0) REAL time: 27 secs 
+Phase 8.8  Global Placement (Checksum:524a614e) REAL time: 18 secs 
 
 Phase 9.5  Local Placement Optimization
-Phase 9.5  Local Placement Optimization (Checksum:380666b0) REAL time: 27 secs 
+Phase 9.5  Local Placement Optimization (Checksum:524a614e) REAL time: 18 secs 
 
 Phase 10.18  Placement Optimization
-Phase 10.18  Placement Optimization (Checksum:4a9246c3) REAL time: 28 secs 
+Phase 10.18  Placement Optimization (Checksum:6513d83c) REAL time: 19 secs 
 
 Phase 11.5  Local Placement Optimization
-Phase 11.5  Local Placement Optimization (Checksum:4a9246c3) REAL time: 28 secs 
+Phase 11.5  Local Placement Optimization (Checksum:6513d83c) REAL time: 19 secs 
 
 Phase 12.34  Placement Validation
-Phase 12.34  Placement Validation (Checksum:4a9246c3) REAL time: 28 secs 
+Phase 12.34  Placement Validation (Checksum:6513d83c) REAL time: 19 secs 
 
-Total REAL time to Placer completion: 28 secs 
-Total CPU  time to Placer completion: 26 secs 
+Total REAL time to Placer completion: 19 secs 
+Total CPU  time to Placer completion: 19 secs 
 Running post-placement packing...
 Writing output files...
 WARNING:PhysDesignRules:2500 - This design does not have a PS7 block.
    Instantiate the PS7 block in order to ensure proper fabric tie-offs and
    correct operation of the processing_system7.
+WARNING:PhysDesignRules:2452 - The IOB S<30> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
 WARNING:PhysDesignRules:2452 - The IOB S<15> is either not constrained (LOC) to
    a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
    condition may seriously affect the device and will be an error in bitstream
@@ -270,11 +275,6 @@ WARNING:PhysDesignRules:2452 - The IOB A<25> is either not constrained (LOC) to
    condition may seriously affect the device and will be an error in bitstream
    creation. It should be corrected by properly specifying the pin location and
    I/O Standard.
-WARNING:PhysDesignRules:2452 - The IOB cout is either not constrained (LOC) to a
-   specific location and/or has an undefined I/O Standard (IOSTANDARD). This
-   condition may seriously affect the device and will be an error in bitstream
-   creation. It should be corrected by properly specifying the pin location and
-   I/O Standard.
 WARNING:PhysDesignRules:2452 - The IOB B<10> is either not constrained (LOC) to
    a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
    condition may seriously affect the device and will be an error in bitstream
@@ -412,6 +412,11 @@ WARNING:PhysDesignRules:2452 - The IOB B<28> is either not constrained (LOC) to
    I/O Standard.
 WARNING:PhysDesignRules:2452 - The IOB B<29> is either not constrained (LOC) to
    a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB co is either not constrained (LOC) to a
+   specific location and/or has an undefined I/O Standard (IOSTANDARD). This
    condition may seriously affect the device and will be an error in bitstream
    creation. It should be corrected by properly specifying the pin location and
    I/O Standard.
@@ -555,11 +560,6 @@ WARNING:PhysDesignRules:2452 - The IOB S<22> is either not constrained (LOC) to
    condition may seriously affect the device and will be an error in bitstream
    creation. It should be corrected by properly specifying the pin location and
    I/O Standard.
-WARNING:PhysDesignRules:2452 - The IOB S<30> is either not constrained (LOC) to
-   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
-   condition may seriously affect the device and will be an error in bitstream
-   creation. It should be corrected by properly specifying the pin location and
-   I/O Standard.
 
 Design Summary
 --------------
@@ -630,9 +630,9 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                1.48
 
-Peak Memory Usage:  4905 MB
-Total REAL time to MAP completion:  30 secs 
-Total CPU time to MAP completion:   29 secs 
+Peak Memory Usage:  4887 MB
+Total REAL time to MAP completion:  21 secs 
+Total CPU time to MAP completion:   21 secs 
 
 Mapping completed.
 See MAP report file "adderSubtractor_map.mrp" for details.

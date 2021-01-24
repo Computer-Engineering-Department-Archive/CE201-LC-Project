@@ -10,7 +10,7 @@ Target Device  : xc7z010
 Target Package : clg400
 Target Speed   : -3
 Mapper Version : zynq -- $Revision: 1.55 $
-Mapped Date    : Sun Jan 24 09:10:12 2021
+Mapped Date    : Sun Jan 24 09:26:06 2021
 
 Design Summary
 --------------
@@ -79,9 +79,9 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                1.48
 
-Peak Memory Usage:  4905 MB
-Total REAL time to MAP completion:  30 secs 
-Total CPU time to MAP completion:   29 secs 
+Peak Memory Usage:  4887 MB
+Total REAL time to MAP completion:  21 secs 
+Total CPU time to MAP completion:   21 secs 
 
 Table of Contents
 -----------------
@@ -110,6 +110,11 @@ WARNING:LIT:702 - PAD symbol "A<31>" is not constrained (LOC) to a specific
 WARNING:PhysDesignRules:2500 - This design does not have a PS7 block.
    Instantiate the PS7 block in order to ensure proper fabric tie-offs and
    correct operation of the processing_system7.
+WARNING:PhysDesignRules:2452 - The IOB S<30> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
 WARNING:PhysDesignRules:2452 - The IOB S<15> is either not constrained (LOC) to
    a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
    condition may seriously affect the device and will be an error in bitstream
@@ -305,11 +310,6 @@ WARNING:PhysDesignRules:2452 - The IOB A<25> is either not constrained (LOC) to
    condition may seriously affect the device and will be an error in bitstream
    creation. It should be corrected by properly specifying the pin location and
    I/O Standard.
-WARNING:PhysDesignRules:2452 - The IOB cout is either not constrained (LOC) to a
-   specific location and/or has an undefined I/O Standard (IOSTANDARD). This
-   condition may seriously affect the device and will be an error in bitstream
-   creation. It should be corrected by properly specifying the pin location and
-   I/O Standard.
 WARNING:PhysDesignRules:2452 - The IOB B<10> is either not constrained (LOC) to
    a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
    condition may seriously affect the device and will be an error in bitstream
@@ -447,6 +447,11 @@ WARNING:PhysDesignRules:2452 - The IOB B<28> is either not constrained (LOC) to
    I/O Standard.
 WARNING:PhysDesignRules:2452 - The IOB B<29> is either not constrained (LOC) to
    a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB co is either not constrained (LOC) to a
+   specific location and/or has an undefined I/O Standard (IOSTANDARD). This
    condition may seriously affect the device and will be an error in bitstream
    creation. It should be corrected by properly specifying the pin location and
    I/O Standard.
@@ -590,11 +595,6 @@ WARNING:PhysDesignRules:2452 - The IOB S<22> is either not constrained (LOC) to
    condition may seriously affect the device and will be an error in bitstream
    creation. It should be corrected by properly specifying the pin location and
    I/O Standard.
-WARNING:PhysDesignRules:2452 - The IOB S<30> is either not constrained (LOC) to
-   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
-   condition may seriously affect the device and will be an error in bitstream
-   creation. It should be corrected by properly specifying the pin location and
-   I/O Standard.
 
 Section 3 - Informational
 -------------------------
@@ -718,7 +718,7 @@ Section 6 - IOB Properties
 | S<29>                              | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
 | S<30>                              | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
 | S<31>                              | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
-| cout                               | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| co                                 | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Section 7 - RPMs

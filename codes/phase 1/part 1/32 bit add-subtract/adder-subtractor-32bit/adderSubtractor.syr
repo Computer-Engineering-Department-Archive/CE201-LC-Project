@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Reading design: adderSubtractor.prj
 
@@ -302,8 +302,8 @@ Delay:               6.813ns (Levels of Logic = 18)
      LUT5:I3->O            3   0.043   0.353  [25].fa/co1 (cin<26>)
      LUT5:I3->O            3   0.043   0.353  [27].fa/co1 (cin<28>)
      LUT5:I3->O            3   0.043   0.353  [29].fa/co1 (cin<30>)
-     LUT5:I3->O            1   0.043   0.279  [31].fa/co1 (cout_OBUF)
-     OBUF:I->O                 0.000          cout_OBUF (cout)
+     LUT5:I3->O            1   0.043   0.279  [31].fa/co1 (co_OBUF)
+     OBUF:I->O                 0.000          co_OBUF (co)
     ----------------------------------------
     Total                      6.813ns (0.688ns logic, 6.125ns route)
                                        (10.1% logic, 89.9% route)
@@ -316,12 +316,12 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 13.00 secs
-Total CPU time to Xst completion: 12.94 secs
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.00 secs
  
 --> 
 
-Total memory usage is 4626540 kilobytes
+Total memory usage is 4626584 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

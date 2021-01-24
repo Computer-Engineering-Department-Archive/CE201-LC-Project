@@ -22,7 +22,7 @@ module adderSubtractor(
 		input [31:0] A,
 		input [31:0] B,
 		output [31:0] S,
-		output cout
+		output co
     );
 	 
 	 wire [32:0] cin;
@@ -33,7 +33,6 @@ module adderSubtractor(
 			FA fa(A[i], B[i], cin[i], S[i], cin[i+1]);
 	 end
 	 
-	 assign cout = cin[32];
-
+	 assign co = cin[32];
 
 endmodule
