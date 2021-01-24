@@ -96,9 +96,8 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1611470966" xil_pn:in_ck="7791327861681337701" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-387647118967296350" xil_pn:start_ts="1611470955">
+    <transform xil_pn:end_ts="1611521377" xil_pn:in_ck="7791327861681337701" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-387647118967296350" xil_pn:start_ts="1611521362">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
@@ -118,7 +117,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1611470973" xil_pn:in_ck="-273511369540500433" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="4935164526794574358" xil_pn:start_ts="1611470966">
+    <transform xil_pn:end_ts="1611521398" xil_pn:in_ck="-273511369540500433" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="4935164526794574358" xil_pn:start_ts="1611521377">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_ngo"/>
@@ -127,7 +126,7 @@
       <outfile xil_pn:name="adderSubtractor.ngd"/>
       <outfile xil_pn:name="adderSubtractor_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1611470997" xil_pn:in_ck="-273511369540500432" xil_pn:name="TRANEXT_map_virtex7" xil_pn:prop_ck="-3331210236775961722" xil_pn:start_ts="1611470973">
+    <transform xil_pn:end_ts="1611521453" xil_pn:in_ck="-273511369540500432" xil_pn:name="TRANEXT_map_virtex7" xil_pn:prop_ck="-3331210236775961722" xil_pn:start_ts="1611521398">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -141,7 +140,7 @@
       <outfile xil_pn:name="adderSubtractor_summary.xml"/>
       <outfile xil_pn:name="adderSubtractor_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1611471023" xil_pn:in_ck="4670917355736230729" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-1288923720530104205" xil_pn:start_ts="1611470997">
+    <transform xil_pn:end_ts="1611521517" xil_pn:in_ck="4670917355736230729" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-1288923720530104205" xil_pn:start_ts="1611521453">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
@@ -155,7 +154,7 @@
       <outfile xil_pn:name="adderSubtractor_pad.txt"/>
       <outfile xil_pn:name="adderSubtractor_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1611471023" xil_pn:in_ck="-273511369540500564" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1611471011">
+    <transform xil_pn:end_ts="1611521517" xil_pn:in_ck="-273511369540500564" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1611521488">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
