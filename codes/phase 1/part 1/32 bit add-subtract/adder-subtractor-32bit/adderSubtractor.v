@@ -29,10 +29,13 @@ module adderSubtractor(
 	 wire [32:0] cin;
 	 assign cin[0] = sel;
 	 genvar i;
-	 for ( i = 0; i < 32; i = i + 1 )
-	 begin
-			FA fa(A[i], B[i]^sel, cin[i], S[i], cin[i+1]);
-	 end
+	 
+	 generate
+		 for ( i = 0; i < 32; i = i + 1 )
+		 begin : loop
+				FA fa(.A(A[i]), .B(B[i]), .cin(cin[i]), .sel(sel), .sum(S[i]), .co(cin[i+1]));
+		 end
+	 endgenerate
 	 
 	 assign co = cin[32];
 

@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Reading design: adderSubtractor.prj
 
@@ -105,13 +105,10 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part 1\32 bit add-subtract\adder-subtractor-32bit\HA.v" into library work
-Parsing module <HA>.
 Analyzing Verilog file "E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part 1\32 bit add-subtract\adder-subtractor-32bit\FA.v" into library work
 Parsing module <FA>.
 Analyzing Verilog file "E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part 1\32 bit add-subtract\adder-subtractor-32bit\adderSubtractor.v" into library work
 Parsing module <adderSubtractor>.
-WARNING:HDLCompiler:248 - "E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part 1\32 bit add-subtract\adder-subtractor-32bit\adderSubtractor.v" Line 32: Block identifier is required on this block
 
 =========================================================================
 *                            HDL Elaboration                            *
@@ -121,8 +118,6 @@ Elaborating module <adderSubtractor>.
 
 Elaborating module <FA>.
 
-Elaborating module <HA>.
-
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
@@ -130,18 +125,13 @@ Elaborating module <HA>.
 Synthesizing Unit <adderSubtractor>.
     Related source file is "E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part 1\32 bit add-subtract\adder-subtractor-32bit\adderSubtractor.v".
     Summary:
+	no macro.
 Unit <adderSubtractor> synthesized.
 
 Synthesizing Unit <FA>.
     Related source file is "E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part 1\32 bit add-subtract\adder-subtractor-32bit\FA.v".
     Summary:
-	no macro.
 Unit <FA> synthesized.
-
-Synthesizing Unit <HA>.
-    Related source file is "E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part 1\32 bit add-subtract\adder-subtractor-32bit\HA.v".
-    Summary:
-Unit <HA> synthesized.
 
 =========================================================================
 HDL Synthesis Report
@@ -285,22 +275,22 @@ Delay:               6.915ns (Levels of Logic = 18)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            47   0.000   0.651  sel_IBUF (sel_IBUF)
-     LUT5:I0->O            3   0.043   0.353  [1].fa/co1 (cin<2>)
-     LUT6:I4->O            3   0.043   0.353  [3].fa/co1 (cin<4>)
-     LUT6:I4->O            3   0.043   0.353  [5].fa/co1 (cin<6>)
-     LUT6:I4->O            3   0.043   0.353  [7].fa/co1 (cin<8>)
-     LUT6:I4->O            3   0.043   0.353  [9].fa/co1 (cin<10>)
-     LUT6:I4->O            3   0.043   0.353  [11].fa/co1 (cin<12>)
-     LUT6:I4->O            3   0.043   0.353  [13].fa/co1 (cin<14>)
-     LUT6:I4->O            3   0.043   0.353  [15].fa/co1 (cin<16>)
-     LUT6:I4->O            3   0.043   0.353  [17].fa/co1 (cin<18>)
-     LUT6:I4->O            3   0.043   0.353  [19].fa/co1 (cin<20>)
-     LUT6:I4->O            3   0.043   0.353  [21].fa/co1 (cin<22>)
-     LUT6:I4->O            3   0.043   0.353  [23].fa/co1 (cin<24>)
-     LUT6:I4->O            3   0.043   0.353  [25].fa/co1 (cin<26>)
-     LUT6:I4->O            3   0.043   0.353  [27].fa/co1 (cin<28>)
-     LUT6:I4->O            3   0.043   0.353  [29].fa/co1 (cin<30>)
-     LUT4:I2->O            1   0.043   0.279  [30].fa/ha2/Mxor_sum_xo<0>1 (S_30_OBUF)
+     LUT5:I0->O            3   0.043   0.353  loop[1].fa/co1 (cin<2>)
+     LUT6:I4->O            3   0.043   0.353  loop[3].fa/co1 (cin<4>)
+     LUT6:I4->O            3   0.043   0.353  loop[5].fa/co1 (cin<6>)
+     LUT6:I4->O            3   0.043   0.353  loop[7].fa/co1 (cin<8>)
+     LUT6:I4->O            3   0.043   0.353  loop[9].fa/co1 (cin<10>)
+     LUT6:I4->O            3   0.043   0.353  loop[11].fa/co1 (cin<12>)
+     LUT6:I4->O            3   0.043   0.353  loop[13].fa/co1 (cin<14>)
+     LUT6:I4->O            3   0.043   0.353  loop[15].fa/co1 (cin<16>)
+     LUT6:I4->O            3   0.043   0.353  loop[17].fa/co1 (cin<18>)
+     LUT6:I4->O            3   0.043   0.353  loop[19].fa/co1 (cin<20>)
+     LUT6:I4->O            3   0.043   0.353  loop[21].fa/co1 (cin<22>)
+     LUT6:I4->O            3   0.043   0.353  loop[23].fa/co1 (cin<24>)
+     LUT6:I4->O            3   0.043   0.353  loop[25].fa/co1 (cin<26>)
+     LUT6:I4->O            3   0.043   0.353  loop[27].fa/co1 (cin<28>)
+     LUT6:I4->O            3   0.043   0.353  loop[29].fa/co1 (cin<30>)
+     LUT4:I2->O            1   0.043   0.279  loop[30].fa/Mxor_sum_xo<0>1 (S_30_OBUF)
      OBUF:I->O                 0.000          S_30_OBUF (S<30>)
     ----------------------------------------
     Total                      6.915ns (0.688ns logic, 6.227ns route)
@@ -314,14 +304,14 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 8.46 secs
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 11.98 secs
  
 --> 
 
-Total memory usage is 4625528 kilobytes
+Total memory usage is 4626560 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    1 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

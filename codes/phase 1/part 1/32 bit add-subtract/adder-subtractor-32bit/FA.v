@@ -22,24 +22,22 @@ module FA(
 		A,
 		B,
 		cin,
+		sel,
 		sum,
 		co
     );
 	input A,
 			B,
-			cin;
+			cin,
+			sel;
 	output sum,
 			 co;
-	
-	wire ha1_s, // HA1 sum
-		  ha1_c, // HA1 carry
-		  ha2_s, // HA2 sum
-		  ha2_c; // HA2 carry
-		  
-	HA ha1(A, B, ha1_s, ha1_c);
-	HA ha2(cin, ha1_s, ha2_s, ha2_c);
-	
-	assign sum = ha2_s,
-			 co = ha1_c | ha2_c;
+		
+	//add or subtract
+	wire Bin;
+	assign Bin = B^sel;
+			 
+	assign sum = A^Bin^cin;
+	assign co = A&Bin | Bin&cin | A&cin;
 
 endmodule
