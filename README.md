@@ -10,6 +10,8 @@ LC Lab final project fall 99
         - [ ] 16 bit multiplier
         - [x] 32 bit Adder/Subtractor
     - [ ] Gas and smoke sensor
+        - [x] State diagram
+        - [x] DFF formula 
         - [ ] Independent detector
         - [ ] Overlap detector
     - [ ] Heating and cooling system
