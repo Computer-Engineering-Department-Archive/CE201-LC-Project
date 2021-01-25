@@ -8,6 +8,15 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Courses/AUT/semester 3/Logic Circuit/project/codes/phase 1/part 1/32 bit add-subtract/adder-subtractor-32bit/FA.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Courses/AUT/semester 3/Logic Circuit/project/codes/phase 1/part 1/32 bit add-subtract/adder-subtractor-32bit/HA.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Courses/AUT/semester 3/Logic Circuit/project/codes/phase 1/part 1/32 bit add-subtract/adder-subtractor-32bit/adderSubtractor.v&quot; into library work</arg>
+</msg>
+
 <msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Courses/AUT/semester 3/Logic Circuit/project/codes/phase 1/part 1/32 bit add-subtract/adder-subtractor-32bit/tb.v&quot; into library work</arg>
 </msg>
 

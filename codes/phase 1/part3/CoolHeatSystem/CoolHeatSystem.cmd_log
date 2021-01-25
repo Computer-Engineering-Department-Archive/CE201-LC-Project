@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/Courses/AUT/semester 3/Logic Circuit/project/codes/phase 1/part3/CoolHeatSystem/CoolHeatSystem.xst" -ofn "E:/Courses/AUT/semester 3/Logic Circuit/project/codes/phase 1/part3/CoolHeatSystem/CoolHeatSystem.syr" 

@@ -62,16 +62,15 @@
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
-         <ClosedNode>/adderSubtractor E:|Courses|AUT|semester 3|Logic Circuit|project|codes|phase 1|part 1|32 bit add-subtract|adder-subtractor-32bit|adderSubtractor.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>tb (E:/Courses/AUT/semester 3/Logic Circuit/project/codes/phase 1/part 1/32 bit add-subtract/adder-subtractor-32bit/tb.v)</SelectedItem>
+         <SelectedItem>adderSubtractor (E:/Courses/AUT/semester 3/Logic Circuit/project/codes/phase 1/part 1/32 bit add-subtract/adder-subtractor-32bit/adderSubtractor.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000102000000020000000000000000000000000200000064ffffffff000000810000000300000002000001020000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>tb (E:/Courses/AUT/semester 3/Logic Circuit/project/codes/phase 1/part 1/32 bit add-subtract/adder-subtractor-32bit/tb.v)</CurrentItem>
+      <CurrentItem>adderSubtractor (E:/Courses/AUT/semester 3/Logic Circuit/project/codes/phase 1/part 1/32 bit add-subtract/adder-subtractor-32bit/adderSubtractor.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>

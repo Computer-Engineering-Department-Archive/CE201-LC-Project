@@ -43,9 +43,17 @@ module CoolHeatSystemUtils(
 	 FanSpeed fanSpeed(arst, clk, speed, pwm_data);
 	 
 	 initial begin
-			clk = 0;
-			arst = 1;
-			speed = 8'b01000000;
+		  chs_conf = 8'hFFFF;   #100;
+		  chs_conf = 8'hF56F;   #100;
+		  chs_conf = 8'h3FFF;   #100;
+		  chs_conf = 8'h0001;   #100;
+		  chs_conf = 8'hF10F;   #100;
+		  chs_conf = 8'h7822;   #100;
+		  chs_conf = 8'h7ABC;   #100; 
+		  
+		  clk = 0;
+		  arst = 1;
+		  speed = 8'b01000000;
 	 end
 	 
 	 always begin
