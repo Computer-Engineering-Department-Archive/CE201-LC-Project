@@ -21,6 +21,7 @@
 module tb(
     );
 
+/*
 	 // Inputs
     reg [7:0]in;
 
@@ -39,4 +40,19 @@ module tb(
         in = 8'h7822;   #100;
         in = 8'h7ABC;   #100;   
     end
+*/
+		reg [7:0] speed = 8'b01000000;
+		wire pwd_data;
+		reg clk;
+		
+		DutyCycle dc(.speed(speed), .clk(clk), .pwd_data(pwd_data));
+
+		 initial begin
+			clk = 0;
+		 end
+		 
+		 always begin
+			#5  clk = 0;
+			#5  clk = 1;
+		 end
 endmodule

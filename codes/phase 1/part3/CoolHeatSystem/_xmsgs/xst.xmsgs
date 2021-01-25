@@ -5,37 +5,19 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="568" delta="old" >"E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part3\CoolHeatSystem\tb.v" Line 34: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">8</arg>&gt; bits.
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part3\CoolHeatSystem\tb.v" Line 44: Using initial value of <arg fmt="%s" index="1">speed</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="568" delta="old" >"E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part3\CoolHeatSystem\tb.v" Line 35: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">8</arg>&gt; bits.
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part3\CoolHeatSystem\DutyCycle.v" Line 28: Using initial value of <arg fmt="%s" index="1">periodLen</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="568" delta="old" >"E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part3\CoolHeatSystem\tb.v" Line 36: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">8</arg>&gt; bits.
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part3\CoolHeatSystem\tb.v" Line 48: Assignment to <arg fmt="%s" index="1">pwd_data</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="568" delta="old" >"E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part3\CoolHeatSystem\tb.v" Line 38: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">8</arg>&gt; bits.
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part3\CoolHeatSystem\tb.v</arg>&quot; line <arg fmt="%d" index="2">48</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">dc</arg>&gt; of block &lt;<arg fmt="%s" index="4">DutyCycle</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">tb</arg>&gt;. Underlying logic will be removed.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="568" delta="old" >"E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part3\CoolHeatSystem\tb.v" Line 39: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">8</arg>&gt; bits.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="568" delta="old" >"E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part3\CoolHeatSystem\tb.v" Line 40: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">8</arg>&gt; bits.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="872" delta="old" >"E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part3\CoolHeatSystem\tb.v" Line 33: Using initial value of <arg fmt="%s" index="1">in</arg> since it is never assigned
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part3\CoolHeatSystem\tb.v" Line 31: Assignment to <arg fmt="%s" index="1">chs_power</arg> ignored, since the identifier is never used
-</msg>
-
-<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part3\CoolHeatSystem\tb.v</arg>&quot; line <arg fmt="%d" index="2">31</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">m84</arg>&gt; of block &lt;<arg fmt="%s" index="4">M8to4</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">tb</arg>&gt;. Underlying logic will be removed.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part3\CoolHeatSystem\tb.v</arg>&quot; line <arg fmt="%s" index="2">31</arg>: Output port &lt;<arg fmt="%s" index="3">chs_power</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">m84</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part3\CoolHeatSystem\tb.v</arg>&quot; line <arg fmt="%s" index="2">31</arg>: Output port &lt;<arg fmt="%s" index="3">chs_mode</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">m84</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part3\CoolHeatSystem\tb.v</arg>&quot; line <arg fmt="%s" index="2">48</arg>: Output port &lt;<arg fmt="%s" index="3">pwd_data</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">dc</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 </messages>

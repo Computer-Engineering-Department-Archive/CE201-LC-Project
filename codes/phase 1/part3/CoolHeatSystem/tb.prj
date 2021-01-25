@@ -1,2 +1,2 @@
-verilog work "M8to4.v"
+verilog work "DutyCycle.v"
 verilog work "tb.v"

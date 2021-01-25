@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: tb.prj
 
@@ -105,27 +105,24 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part3\CoolHeatSystem\M8to4.v" into library work
-Parsing module <M8to4>.
+Analyzing Verilog file "E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part3\CoolHeatSystem\DutyCycle.v" into library work
+Parsing module <DutyCycle>.
 Analyzing Verilog file "E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part3\CoolHeatSystem\tb.v" into library work
 Parsing module <tb>.
-WARNING:HDLCompiler:568 - "E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part3\CoolHeatSystem\tb.v" Line 34: Constant value is truncated to fit in <8> bits.
-WARNING:HDLCompiler:568 - "E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part3\CoolHeatSystem\tb.v" Line 35: Constant value is truncated to fit in <8> bits.
-WARNING:HDLCompiler:568 - "E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part3\CoolHeatSystem\tb.v" Line 36: Constant value is truncated to fit in <8> bits.
-WARNING:HDLCompiler:568 - "E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part3\CoolHeatSystem\tb.v" Line 38: Constant value is truncated to fit in <8> bits.
-WARNING:HDLCompiler:568 - "E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part3\CoolHeatSystem\tb.v" Line 39: Constant value is truncated to fit in <8> bits.
-WARNING:HDLCompiler:568 - "E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part3\CoolHeatSystem\tb.v" Line 40: Constant value is truncated to fit in <8> bits.
 
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
 
 Elaborating module <tb>.
-WARNING:HDLCompiler:872 - "E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part3\CoolHeatSystem\tb.v" Line 33: Using initial value of in since it is never assigned
+WARNING:HDLCompiler:872 - "E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part3\CoolHeatSystem\tb.v" Line 44: Using initial value of speed since it is never assigned
 
-Elaborating module <M8to4>.
-WARNING:HDLCompiler:1127 - "E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part3\CoolHeatSystem\tb.v" Line 31: Assignment to chs_power ignored, since the identifier is never used
-WARNING:Xst:2972 - "E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part3\CoolHeatSystem\tb.v" line 31. All outputs of instance <m84> of block <M8to4> are unconnected in block <tb>. Underlying logic will be removed.
+Elaborating module <DutyCycle>.
+WARNING:HDLCompiler:872 - "E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part3\CoolHeatSystem\DutyCycle.v" Line 28: Using initial value of periodLen since it is never assigned
+"E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part3\CoolHeatSystem\DutyCycle.v" Line 37. $display 1
+"E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part3\CoolHeatSystem\DutyCycle.v" Line 42. $display 0
+WARNING:HDLCompiler:1127 - "E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part3\CoolHeatSystem\tb.v" Line 48: Assignment to pwd_data ignored, since the identifier is never used
+WARNING:Xst:2972 - "E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part3\CoolHeatSystem\tb.v" line 48. All outputs of instance <dc> of block <DutyCycle> are unconnected in block <tb>. Underlying logic will be removed.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -133,8 +130,7 @@ WARNING:Xst:2972 - "E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 
 
 Synthesizing Unit <tb>.
     Related source file is "E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part3\CoolHeatSystem\tb.v".
-INFO:Xst:3210 - "E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part3\CoolHeatSystem\tb.v" line 31: Output port <chs_power> of the instance <m84> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part3\CoolHeatSystem\tb.v" line 31: Output port <chs_mode> of the instance <m84> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part3\CoolHeatSystem\tb.v" line 48: Output port <pwd_data> of the instance <dc> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <tb> synthesized.
@@ -260,14 +256,14 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 10.45 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.13 secs
  
 --> 
 
-Total memory usage is 4626564 kilobytes
+Total memory usage is 4626556 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    9 (   0 filtered)
-Number of infos    :    2 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
 
