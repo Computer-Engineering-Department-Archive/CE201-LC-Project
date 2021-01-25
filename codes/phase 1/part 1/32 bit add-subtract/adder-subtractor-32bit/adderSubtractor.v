@@ -38,5 +38,4 @@ module adderSubtractor(
 	 endgenerate
 	 
 	 assign co = cin[32];
-
 endmodule

@@ -1,0 +1,13 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o E:/Courses/AUT/semester 3/Logic Circuit/project/codes/phase 1/part 1/32 bit add-subtract/adder-subtractor-32bit/adderSubtractor_isim_beh.exe -prj E:/Courses/AUT/semester 3/Logic Circuit/project/codes/phase 1/part 1/32 bit add-subtract/adder-subtractor-32bit/adderSubtractor_beh.prj work.adderSubtractor work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "E:/Courses/AUT/semester 3/Logic Circuit/project/codes/phase 1/part 1/32 bit add-subtract/adder-subtractor-32bit/FA.v" into library work
+Analyzing Verilog file "E:/Courses/AUT/semester 3/Logic Circuit/project/codes/phase 1/part 1/32 bit add-subtract/adder-subtractor-32bit/adderSubtractor.v" into library work
+ERROR:HDLCompiler:1660 - "E:/Courses/AUT/semester 3/Logic Circuit/project/codes/phase 1/part 1/32 bit add-subtract/adder-subtractor-32bit/adderSubtractor.v" Line 44: Procedural assignment to a non-register A is not permitted, left-hand side should be reg/integer/time/genvar
+ERROR:HDLCompiler:1660 - "E:/Courses/AUT/semester 3/Logic Circuit/project/codes/phase 1/part 1/32 bit add-subtract/adder-subtractor-32bit/adderSubtractor.v" Line 44: Procedural assignment to a non-register A is not permitted, left-hand side should be reg/integer/time/genvar
+ERROR:HDLCompiler:1660 - "E:/Courses/AUT/semester 3/Logic Circuit/project/codes/phase 1/part 1/32 bit add-subtract/adder-subtractor-32bit/adderSubtractor.v" Line 45: Procedural assignment to a non-register B is not permitted, left-hand side should be reg/integer/time/genvar
+ERROR:HDLCompiler:1660 - "E:/Courses/AUT/semester 3/Logic Circuit/project/codes/phase 1/part 1/32 bit add-subtract/adder-subtractor-32bit/adderSubtractor.v" Line 45: Procedural assignment to a non-register B is not permitted, left-hand side should be reg/integer/time/genvar
+ERROR:HDLCompiler:598 - "E:/Courses/AUT/semester 3/Logic Circuit/project/codes/phase 1/part 1/32 bit add-subtract/adder-subtractor-32bit/adderSubtractor.v" Line 21: Module <adderSubtractor> ignored due to previous errors.
+Verilog file E:/Courses/AUT/semester 3/Logic Circuit/project/codes/phase 1/part 1/32 bit add-subtract/adder-subtractor-32bit/adderSubtractor.v ignored due to errors
