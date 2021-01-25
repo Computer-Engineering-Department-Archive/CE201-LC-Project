@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "E:/Courses/AUT/semester 3/Logic Circuit/project/codes/phase 1/part3/CoolHeatSystem/tb_isim_beh.exe" -prj "E:/Courses/AUT/semester 3/Logic Circuit/project/codes/phase 1/part3/CoolHeatSystem/tb_beh.prj" "work.tb" "work.glbl" 
