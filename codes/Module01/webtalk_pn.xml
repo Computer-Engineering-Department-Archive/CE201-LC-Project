@@ -3,12 +3,12 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Tue Jan 26 01:29:47 2021">
+<application name="pn" timeStamp="Tue Jan 26 04:13:44 2021">
 <section name="Project Information" visible="false">
-<property name="ProjectID" value="00EA60100D3A4CA5834A2CC5FBC0D817" type="project"/>
-<property name="ProjectIteration" value="1" type="project"/>
-<property name="ProjectFile" value="E:/Courses/AUT/semester 3/Logic Circuit/project/codes/phase 1/part 1/Module01/Module01.xise" type="project"/>
-<property name="ProjectCreationTimestamp" value="2021-01-26T01:22:57" type="project"/>
+<property name="ProjectID" value="6E9F2BF16AD64E189FD4CE4EBA138551" type="project"/>
+<property name="ProjectIteration" value="0" type="project"/>
+<property name="ProjectFile" value="M:/uni/thirdsummestur/az manteghi/final proj/phase 1/part 1/moudle1.xise" type="project"/>
+<property name="ProjectCreationTimestamp" value="2021-01-26T01:40:15" type="project"/>
 </section>
 <section name="Project Statistics" visible="true">
 <property name="PROP_Enable_Message_Filtering" value="false" type="design"/>
@@ -17,25 +17,26 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_LastAppliedStrategy" value="Xilinx Default (unlocked)" type="design"/>
 <property name="PROP_ManualCompileOrderImp" value="false" type="design"/>
 <property name="PROP_PropSpecInProjFile" value="Store all values" type="design"/>
+<property name="PROP_SelectedInstanceHierarchicalPath" value="/tb_division" type="process"/>
 <property name="PROP_Simulator" value="ISim (VHDL/Verilog)" type="design"/>
 <property name="PROP_SynthTopFile" value="changed" type="process"/>
 <property name="PROP_Top_Level_Module_Type" value="HDL" type="design"/>
 <property name="PROP_UseSmartGuide" value="false" type="design"/>
 <property name="PROP_UserConstraintEditorPreference" value="Text Editor" type="process"/>
-<property name="PROP_intProjectCreationTimestamp" value="2021-01-26T01:22:57" type="design"/>
-<property name="PROP_intWbtProjectID" value="00EA60100D3A4CA5834A2CC5FBC0D817" type="design"/>
-<property name="PROP_intWbtProjectIteration" value="1" type="process"/>
+<property name="PROP_intProjectCreationTimestamp" value="2021-01-26T01:40:15" type="design"/>
+<property name="PROP_intWbtProjectID" value="6E9F2BF16AD64E189FD4CE4EBA138551" type="design"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
-<property name="PROP_AutoTop" value="true" type="design"/>
-<property name="PROP_DevFamily" value="Zynq" type="design"/>
-<property name="PROP_DevDevice" value="xc7z010" type="design"/>
-<property name="PROP_DevFamilyPMName" value="zynq" type="design"/>
-<property name="PROP_DevPackage" value="clg400" type="design"/>
+<property name="PROP_selectedSimRootSourceNode_behav" value="work.tb_division" type="process"/>
+<property name="PROP_AutoTop" value="false" type="design"/>
+<property name="PROP_DevFamily" value="Spartan3" type="design"/>
+<property name="PROP_DevDevice" value="xc3s50" type="design"/>
+<property name="PROP_DevFamilyPMName" value="spartan3" type="design"/>
+<property name="PROP_DevPackage" value="pq208" type="design"/>
 <property name="PROP_Synthesis_Tool" value="XST (VHDL/Verilog)" type="design"/>
-<property name="PROP_DevSpeed" value="-3" type="design"/>
+<property name="PROP_DevSpeed" value="-4" type="design"/>
 <property name="PROP_PreferredLanguage" value="Verilog" type="design"/>
-<property name="FILE_VERILOG" value="6" type="source"/>
+<property name="FILE_VERILOG" value="11" type="source"/>
 </section>
 </application>
 </document>

@@ -1,0 +1,421 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.31 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.32 secs
+ 
+--> Reading design: Multiplier16x16.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Multiplier16x16.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Multiplier16x16"
+Output Format                      : NGC
+Target Device                      : xc3s50-4-pq208
+
+---- Source Options
+Top Module Name                    : Multiplier16x16
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "HA.v" in library work
+Compiling verilog file "FA.v" in library work
+Module <HA> compiled
+Compiling verilog file "FA8bit.v" in library work
+Module <FA> compiled
+Compiling verilog file "Multiplier8x8.v" in library work
+Module <FA8bit> compiled
+Compiling verilog file "FA24bit.v" in library work
+Module <Multiplier8x8> compiled
+Compiling verilog file "FA16bit.v" in library work
+Module <FA24bit> compiled
+Compiling verilog file "Multiplier16x16.v" in library work
+Module <FA16> compiled
+Module <Multiplier16x16> compiled
+No errors in compilation
+Analysis of file <"Multiplier16x16.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <Multiplier16x16> in library <work>.
+
+Analyzing hierarchy for module <Multiplier8x8> in library <work>.
+
+Analyzing hierarchy for module <FA16> in library <work>.
+
+Analyzing hierarchy for module <FA24bit> in library <work>.
+
+Analyzing hierarchy for module <FA8bit> in library <work>.
+
+Analyzing hierarchy for module <FA> in library <work>.
+
+Analyzing hierarchy for module <HA> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Multiplier16x16>.
+Module <Multiplier16x16> is correct for synthesis.
+ 
+Analyzing module <Multiplier8x8> in library <work>.
+Module <Multiplier8x8> is correct for synthesis.
+ 
+Analyzing module <FA8bit> in library <work>.
+Module <FA8bit> is correct for synthesis.
+ 
+Analyzing module <FA> in library <work>.
+Module <FA> is correct for synthesis.
+ 
+Analyzing module <HA> in library <work>.
+Module <HA> is correct for synthesis.
+ 
+Analyzing module <FA16> in library <work>.
+Module <FA16> is correct for synthesis.
+ 
+Analyzing module <FA24bit> in library <work>.
+Module <FA24bit> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <HA>.
+    Related source file is "HA.v".
+    Found 1-bit xor2 for signal <sum>.
+Unit <HA> synthesized.
+
+
+Synthesizing Unit <FA>.
+    Related source file is "FA.v".
+Unit <FA> synthesized.
+
+
+Synthesizing Unit <FA16>.
+    Related source file is "FA16bit.v".
+Unit <FA16> synthesized.
+
+
+Synthesizing Unit <FA24bit>.
+    Related source file is "FA24bit.v".
+Unit <FA24bit> synthesized.
+
+
+Synthesizing Unit <FA8bit>.
+    Related source file is "FA8bit.v".
+Unit <FA8bit> synthesized.
+
+
+Synthesizing Unit <Multiplier8x8>.
+    Related source file is "Multiplier8x8.v".
+WARNING:Xst:1780 - Signal <c6> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <S2<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <Multiplier8x8> synthesized.
+
+
+Synthesizing Unit <Multiplier16x16>.
+    Related source file is "Multiplier16x16.v".
+WARNING:Xst:646 - Signal <co3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <co2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <co1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <b0> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <Multiplier16x16> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Xors                                                 : 576
+ 1-bit xor2                                            : 576
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <ha2> is unconnected in block <fa0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ha2> is unconnected in block <fa0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ha2> is unconnected in block <fa0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ha2> is unconnected in block <fa0>.
+   It will be removed from the design.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Xors                                                 : 576
+ 1-bit xor2                                            : 576
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Multiplier16x16> ...
+
+Optimizing unit <FA16> ...
+
+Optimizing unit <FA24bit> ...
+
+Optimizing unit <FA8bit> ...
+
+Optimizing unit <Multiplier8x8> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Multiplier16x16, actual ratio is 60.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Multiplier16x16.ngr
+Top Level Output File Name         : Multiplier16x16
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 64
+
+Cell Usage :
+# BELS                             : 648
+#      LUT2                        : 45
+#      LUT3                        : 51
+#      LUT4                        : 507
+#      MUXF5                       : 45
+# IO Buffers                       : 64
+#      IBUF                        : 32
+#      OBUF                        : 32
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50pq208-4 
+
+ Number of Slices:                      337  out of    768    43%  
+ Number of 4 input LUTs:                603  out of   1536    39%  
+ Number of IOs:                          64
+ Number of bonded IOBs:                  64  out of    124    51%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 67.140ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 350335482 / 32
+-------------------------------------------------------------------------
+Delay:               67.140ns (Levels of Logic = 37)
+  Source:            A<1> (PAD)
+  Destination:       P<31> (PAD)
+
+  Data Path: A<1> to P<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            42   0.821   2.105  A_1_IBUF (A_1_IBUF)
+     LUT4:I1->O            3   0.551   1.246  first/FA8bit_0/fa0/co1 (first/FA8bit_0/c1)
+     LUT4:I0->O            2   0.551   0.877  first/FA8bit_0/fa1/co1 (first/FA8bit_0/c2)
+     MUXF5:S->O            2   0.621   0.903  first/FA8bit_0/fa2/ha2/Mxor_sum_Result1_f5 (first/S0<2>)
+     LUT4:I3->O            2   0.551   1.216  first/FA8bit_1/fa1/co1 (first/FA8bit_1/c2)
+     LUT4:I0->O            2   0.551   1.216  first/FA8bit_1/fa2/co1 (first/FA8bit_1/c3)
+     LUT4:I0->O            2   0.551   1.216  first/FA8bit_1/fa3/co1 (first/FA8bit_1/c4)
+     LUT4:I0->O            2   0.551   1.072  first/FA8bit_1/fa4/co1 (first/FA8bit_1/c5)
+     LUT4:I1->O            2   0.551   1.216  first/FA8bit_1/fa5/ha2/Mxor_sum_Result1 (first/S1<5>)
+     LUT4:I0->O            2   0.551   1.216  first/FA8bit_2/fa4/ha2/Mxor_sum_Result1 (first/S2<4>)
+     LUT4:I0->O            2   0.551   1.216  first/FA8bit_3/fa3/ha2/Mxor_sum_Result1 (first/S3<3>)
+     LUT4:I0->O            3   0.551   0.933  first/FA8bit_4/fa2/ha2/Mxor_sum_Result1 (first/S4<2>)
+     LUT4:I3->O            2   0.551   1.216  first/FA8bit_5/fa1/co1 (first/FA8bit_5/c2)
+     LUT4:I0->O            2   0.551   1.216  first/FA8bit_5/fa2/co1 (first/FA8bit_5/c3)
+     LUT4:I0->O            2   0.551   1.216  first/FA8bit_5/fa3/co1 (first/FA8bit_5/c4)
+     LUT4:I0->O            2   0.551   1.216  first/FA8bit_5/fa4/co1 (first/FA8bit_5/c5)
+     LUT4:I0->O            2   0.551   1.216  first/FA8bit_5/fa5/co1 (first/FA8bit_5/c6)
+     LUT4:I0->O            2   0.551   1.072  first/FA8bit_5/fa6/co1 (first/FA8bit_5/c7)
+     LUT4:I1->O            2   0.551   1.216  first/FA8bit_5/fa7/ha2/Mxor_sum_Result1 (first/S5<7>)
+     LUT4:I0->O            2   0.551   1.216  first/FA8bit_6/fa6/ha2/Mxor_sum_Result1 (out1<13>)
+     LUT3:I0->O            2   0.551   0.903  F1/fa5/ha2/Mxor_sum_Result1 (outmid1<5>)
+     LUT4:I3->O            2   0.551   1.216  F3/fa5/co1 (F3/c6)
+     LUT4:I0->O            2   0.551   1.216  F3/fa6/co1 (F3/c7)
+     LUT4:I0->O            2   0.551   1.216  F3/fa7/co1 (F3/c8)
+     LUT4:I0->O            2   0.551   0.903  F3/fa8/co1 (F3/c9)
+     LUT4:I3->O            2   0.551   1.072  F3/fa9/co1 (F3/c10)
+     LUT3:I1->O            2   0.551   1.072  F3/fa10/co1 (F3/c11)
+     LUT3:I1->O            2   0.551   1.072  F3/fa11/co1 (F3/c12)
+     LUT3:I1->O            2   0.551   1.072  F3/fa12/co1 (F3/c13)
+     LUT3:I1->O            2   0.551   1.072  F3/fa13/co1 (F3/c14)
+     LUT3:I1->O            4   0.551   1.112  F3/fa14/co1 (F3/c15)
+     LUT3:I1->O            2   0.551   1.216  F3/fa15/co1 (F3/c16)
+     LUT4:I0->O            3   0.551   1.246  F3/fa17/co1 (F3/c18)
+     LUT4:I0->O            3   0.551   0.975  F3/fa19/co1 (F3/c20)
+     LUT4:I2->O            1   0.551   1.140  F3/fa123/ha2/Mxor_sum_Result1_SW0 (N14)
+     LUT4:I0->O            1   0.551   0.801  F3/fa123/ha2/Mxor_sum_Result1 (P_31_OBUF)
+     OBUF:I->O                 5.644          P_31_OBUF (P<31>)
+    ----------------------------------------
+    Total                     67.140ns (25.820ns logic, 41.320ns route)
+                                       (38.5% logic, 61.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 23.00 secs
+Total CPU time to Xst completion: 22.56 secs
+ 
+--> 
+
+Total memory usage is 4554352 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   43 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
