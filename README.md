@@ -14,9 +14,9 @@ LC Lab final project fall 99
         - [x] DFF formula 
         - [ ] Independent detector
         - [ ] Overlap detector
-    - [ ] Heating and cooling system
-        - [ ] Proper function of the internal circuit
-        - [ ] proper function for different job task
+    - [x] Heating and cooling system
+        - [x] Proper function of the internal circuit
+        - [x] proper function for different job task
     - [ ] Lighting system (optional)
         - [ ] decoder
         - [ ] Implementation based on table  
