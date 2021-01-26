@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2021-01-26T00:27:54</DateModified>
+  <DateModified>2021-01-26T04:58:43</DateModified>
   <ModuleName>multi8bit</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>E:/Courses/AUT/semester 3/Logic Circuit/project/codes/phase 1/part 1/8 bit multiplier/muliplier/iseconfig/multi8bit.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>E:/Courses/AUT/semester 3/Logic Circuit/project/codes/phase 1/part 1/8 bit multiplier/muliplier</ImplementationReportsDirectory>
+  <SavedFilePath>M:/uni/thirdsummestur/az manteghi/final proj/bardia's codes/LCF99/codes/phase 1/part 1/8 bit multiplier/muliplier/iseconfig/multi8bit.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>M:/uni/thirdsummestur/az manteghi/final proj/bardia's codes/LCF99/codes/phase 1/part 1/8 bit multiplier/muliplier\</ImplementationReportsDirectory>
   <DateInitialized>2021-01-26T00:27:53</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
