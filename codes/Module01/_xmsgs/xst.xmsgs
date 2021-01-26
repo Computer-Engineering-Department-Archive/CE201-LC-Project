@@ -5,13 +5,200 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">A&lt;31:31&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier8x8.v&quot; line 60 </arg>Connection to input port &apos;<arg fmt="%s" index="2">A</arg>&apos; does not match port size
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">B&lt;31:31&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier8x8.v&quot; line 62 </arg>Connection to input port &apos;<arg fmt="%s" index="2">cin</arg>&apos; does not match port size
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">E:\Courses\AUT\semester 3\Logic Circuit\project\codes\phase 1\part 1\Module01\AdderSubtractor32bit.v</arg>&quot; line <arg fmt="%s" index="2">36</arg>: Output port &lt;<arg fmt="%s" index="3">co</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">loop[30].fa</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier8x8.v&quot; line 86 </arg>Connection to input port &apos;<arg fmt="%s" index="2">cin</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier8x8.v&quot; line 110 </arg>Connection to input port &apos;<arg fmt="%s" index="2">cin</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier8x8.v&quot; line 134 </arg>Connection to input port &apos;<arg fmt="%s" index="2">cin</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier8x8.v&quot; line 158 </arg>Connection to input port &apos;<arg fmt="%s" index="2">cin</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier8x8.v&quot; line 182 </arg>Connection to input port &apos;<arg fmt="%s" index="2">cin</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier8x8.v&quot; line 205 </arg>Connection to input port &apos;<arg fmt="%s" index="2">cin</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier8x8.v&quot; line 60 </arg>Connection to input port &apos;<arg fmt="%s" index="2">A</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier8x8.v&quot; line 62 </arg>Connection to input port &apos;<arg fmt="%s" index="2">cin</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier8x8.v&quot; line 86 </arg>Connection to input port &apos;<arg fmt="%s" index="2">cin</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier8x8.v&quot; line 110 </arg>Connection to input port &apos;<arg fmt="%s" index="2">cin</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier8x8.v&quot; line 134 </arg>Connection to input port &apos;<arg fmt="%s" index="2">cin</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier8x8.v&quot; line 158 </arg>Connection to input port &apos;<arg fmt="%s" index="2">cin</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier8x8.v&quot; line 182 </arg>Connection to input port &apos;<arg fmt="%s" index="2">cin</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier8x8.v&quot; line 205 </arg>Connection to input port &apos;<arg fmt="%s" index="2">cin</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier8x8.v&quot; line 60 </arg>Connection to input port &apos;<arg fmt="%s" index="2">A</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier8x8.v&quot; line 62 </arg>Connection to input port &apos;<arg fmt="%s" index="2">cin</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier8x8.v&quot; line 86 </arg>Connection to input port &apos;<arg fmt="%s" index="2">cin</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier8x8.v&quot; line 110 </arg>Connection to input port &apos;<arg fmt="%s" index="2">cin</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier8x8.v&quot; line 134 </arg>Connection to input port &apos;<arg fmt="%s" index="2">cin</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier8x8.v&quot; line 158 </arg>Connection to input port &apos;<arg fmt="%s" index="2">cin</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier8x8.v&quot; line 182 </arg>Connection to input port &apos;<arg fmt="%s" index="2">cin</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier8x8.v&quot; line 205 </arg>Connection to input port &apos;<arg fmt="%s" index="2">cin</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier8x8.v&quot; line 60 </arg>Connection to input port &apos;<arg fmt="%s" index="2">A</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier8x8.v&quot; line 62 </arg>Connection to input port &apos;<arg fmt="%s" index="2">cin</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier8x8.v&quot; line 86 </arg>Connection to input port &apos;<arg fmt="%s" index="2">cin</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier8x8.v&quot; line 110 </arg>Connection to input port &apos;<arg fmt="%s" index="2">cin</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier8x8.v&quot; line 134 </arg>Connection to input port &apos;<arg fmt="%s" index="2">cin</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier8x8.v&quot; line 158 </arg>Connection to input port &apos;<arg fmt="%s" index="2">cin</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier8x8.v&quot; line 182 </arg>Connection to input port &apos;<arg fmt="%s" index="2">cin</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier8x8.v&quot; line 205 </arg>Connection to input port &apos;<arg fmt="%s" index="2">cin</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier8x8.v&quot; line 60 </arg>Connection to input port &apos;<arg fmt="%s" index="2">A</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier8x8.v&quot; line 62 </arg>Connection to input port &apos;<arg fmt="%s" index="2">cin</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier8x8.v&quot; line 86 </arg>Connection to input port &apos;<arg fmt="%s" index="2">cin</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier8x8.v&quot; line 110 </arg>Connection to input port &apos;<arg fmt="%s" index="2">cin</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier8x8.v&quot; line 134 </arg>Connection to input port &apos;<arg fmt="%s" index="2">cin</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier8x8.v&quot; line 158 </arg>Connection to input port &apos;<arg fmt="%s" index="2">cin</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier8x8.v&quot; line 182 </arg>Connection to input port &apos;<arg fmt="%s" index="2">cin</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier8x8.v&quot; line 205 </arg>Connection to input port &apos;<arg fmt="%s" index="2">cin</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;Multiplier16x16.v&quot; line 60 </arg>Connection to input port &apos;<arg fmt="%s" index="2">cin</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">p1</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">b1</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">a1</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">A&lt;31&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">B&lt;31&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1305" delta="new" >Output &lt;<arg fmt="%s" index="1">S&lt;31&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">cin&lt;31&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">c6</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">S2&lt;0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">co3</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">co2</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">co1</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">b0</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">fa123</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">F2</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">fa123</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">F3</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">ha2</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">fa0</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">ha2</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">fa0</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">ha2</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">fa0</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">ha2</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">fa0</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">ha2</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">fa0</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="2254" delta="new" >Area constraint could not be met for block &lt;<arg fmt="%s" index="1">TemperatureCalculator</arg>&gt;, final ratio is <arg fmt="%i" index="2">148</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1336" delta="new" > (*) More than 100% of Device resources are used
 </msg>
 
 </messages>
