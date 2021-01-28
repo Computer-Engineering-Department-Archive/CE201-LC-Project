@@ -27,21 +27,19 @@ module TemperatureCalculator (
 	output [31:0] tempc      // temp [temperature celsius]
 );
 
-	/* write your code here */
 	wire [7:0] tempRef;
 	assign tempRef=~(tc_ref-1);
 	wire [31:0] tempbase;
 	assign tempbase=~(tc_base-1);
 	wire [15:0] out;
-	Multiplier8x8 multi(.A(tempRef[7:0]),.B(tempRef[7:0]),.P(out[15:0]));
+	Multiplier8x8 m8x8(.A(tempRef[7:0]),.B(tempRef[7:0]),.P(out[15:0]));
 	wire [31:0] out1;
-	Multiplier16x16 multi1(.A(out[15:0]),.B({1'b0,adc_data[14:0]}),.P(out1[31:0]));
+	Multiplier16x16 m16x16(.A(out[15:0]),.B({1'b0,adc_data[14:0]}),.P(out1[31:0]));
 	wire  [31:0] out2;
-	AdderSubtractor32x32 adder(.A(tempbase[31:0]),.B(out1[31:0]),.sel(adc_data[15]),.S(out2[31:0]));
 	wire [31:0] ttempc;
-	division devide(.A(out2[31:0]),.B({32'b00000000000000000000000000100000}),.Res(ttempc[31:0]));
-	assign tempc=~ttempc+1;
+	division div(.A(out1[31:0]),.B({32'b00000000000000000000000000100000}),.Res(out2[31:0]));
+	AdderSubtractor32x32 adder32x32(.A(tempbase[31:0]),.B(out2[31:0]),.sel(adc_data[15]),.S(ttempc[31:0]));
+		assign tempc=~ttempc+1;
 	
-	/* write your code here */
 
 endmodule
