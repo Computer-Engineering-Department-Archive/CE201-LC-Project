@@ -1,19 +1,30 @@
-Running: E:\programs\ise\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o M:/uni/thirdsummestur/az manteghi/final proj/phase 1/part 1/tb_division_isim_beh.exe -prj M:/uni/thirdsummestur/az manteghi/final proj/phase 1/part 1/tb_division_beh.prj work.tb_division work.glbl 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o E:/git/LCF99/codes/Module01/TemperatureCalculatorUtils_isim_beh.exe -prj E:/git/LCF99/codes/Module01/TemperatureCalculatorUtils_beh.prj work.TemperatureCalculatorUtils work.glbl 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
-Analyzing Verilog file "M:/uni/thirdsummestur/az manteghi/final proj/phase 1/part 1/division.v" into library work
-Analyzing Verilog file "M:/uni/thirdsummestur/az manteghi/final proj/phase 1/part 1/tb_division.v" into library work
-Analyzing Verilog file "E:/programs/ise/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Analyzing Verilog file "E:/git/LCF99/codes/Module01/FA.v" into library work
+Analyzing Verilog file "E:/git/LCF99/codes/Module01/Multiplier8x8.v" into library work
+Analyzing Verilog file "E:/git/LCF99/codes/Module01/Multiplier16x16.v" into library work
+Analyzing Verilog file "E:/git/LCF99/codes/Module01/division.v" into library work
+Analyzing Verilog file "E:/git/LCF99/codes/Module01/AdderSubtractor32bit.v" into library work
+Analyzing Verilog file "E:/git/LCF99/codes/Module01/TemperatureCalculator.v" into library work
+Analyzing Verilog file "E:/git/LCF99/codes/Module01/TemperatureCalculatorUtils.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
+WARNING:HDLCompiler:189 - "E:/git/LCF99/codes/Module01/TemperatureCalculatorUtils.v" Line 28: Size mismatch in connection of port <adc_data>. Formal port size is 16-bit while actual signal size is 1-bit.
 Completed static elaboration
-Compiling module division(WIDTH=8)
-Compiling module tb_division
+Compiling module Multiplier8x8
+Compiling module Multiplier16x16
+Compiling module division
+Compiling module FA
+Compiling module AdderSubtractor32x32
+Compiling module TemperatureCalculator
+Compiling module TemperatureCalculatorUtils
 Compiling module glbl
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
-Compiled 3 Verilog Units
-Built simulation executable M:/uni/thirdsummestur/az manteghi/final proj/phase 1/part 1/tb_division_isim_beh.exe
-Fuse Memory Usage: 28356 KB
-Fuse CPU Usage: 1046 ms
+Compiled 8 Verilog Units
+Built simulation executable E:/git/LCF99/codes/Module01/TemperatureCalculatorUtils_isim_beh.exe
+Fuse Memory Usage: 29956 KB
+Fuse CPU Usage: 436 ms

@@ -20,10 +20,43 @@
 -----------------------------------------------------------*/
 `timescale 1 ns/1 ns
 
-/***********************************************************/
-/************** Design Your Own Modules Below **************/
+module GasEngineUtils();
 
-
+	reg arst, clk, din;
+	wire [2:0]dout;
 	
-/************** Design Your Own Modules Above **************/
-/***********************************************************/
+	GasDetectorSensor gds(arst, clk, din, dout);
+	
+	always begin
+		#5; clk = ~clk;
+	end
+		
+	initial begin
+		clk = 0; arst = 1; din = 0; #10
+		din = 1; #10;
+		din = 0; #10;
+		din = 1; #10;
+		din = 1; #10;
+		din = 1; #10;
+		din = 0; #10;
+		din = 1; #10;
+		din = 0; #10;
+		din = 1; #10;
+		din = 0; #10; //ch4
+		din = 0; #10; 
+		din = 1; #10; 
+		din = 0; #10;
+		din = 0; #10;
+		din = 1; #10;
+		din = 1; #10; //co
+		din = 1; #10;
+		din = 0; #10;
+		din = 0; #10;
+		din = 1; #10;
+		din = 0; #10;
+		din = 0; #10;
+		din = 1; #10;
+		din = 0; #10;
+		din = 0; #10; //co2
+	end
+endmodule
