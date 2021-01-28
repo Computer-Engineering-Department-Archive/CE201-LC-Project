@@ -7,16 +7,19 @@ LC Lab final project fall 99
 - [ ] **Project Phase 1**
     - [ ] Temperature sensor
         - [x] 8 bit multiplier
-        - [ ] 16 bit multiplier
+        - [x] 16 bit multiplier
         - [x] 32 bit Adder/Subtractor
-    - [ ] Gas and smoke sensor
+        - [ ] test bench
+    - [x] Gas and smoke sensor
         - [x] State diagram
         - [x] DFF formula 
-        - [ ] Independent detector
-        - [ ] Overlap detector
+        - [x] Independent detector
+        - [x] Overlap detector
+        - [x] test bench
     - [x] Heating and cooling system
         - [x] Proper function of the internal circuit
         - [x] proper function for different job task
+        - [x] test bench
     - [ ] Lighting system (optional)
         - [ ] decoder
         - [ ] Implementation based on table  

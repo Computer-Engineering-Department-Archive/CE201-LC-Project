@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2021-01-28T15:53:16</DateModified>
+  <DateModified>2021-01-28T15:57:20</DateModified>
   <ModuleName>TemperatureCalculator</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>E:/Courses/AUT/semester 3/Logic Circuit/project/codes/Module01/iseconfig/TemperatureCalculator.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>E:/Courses/AUT/semester 3/Logic Circuit/project/codes/Module01\</ImplementationReportsDirectory>
+  <SavedFilePath>E:/git/LCF99/codes/Module01/iseconfig/TemperatureCalculator.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>E:/git/LCF99/codes/Module01\</ImplementationReportsDirectory>
   <DateInitialized>2021-01-28T11:17:40</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
