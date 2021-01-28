@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="moudle1" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/AdderSubtractor32x32 M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|AdderSubtractor32bit.v</ClosedNode>
+         <ClosedNode>/FA16 M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|FA16bit.v</ClosedNode>
+         <ClosedNode>/FA24bit M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|FA24bit.v</ClosedNode>
+         <ClosedNode>/FA8bit M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|FA8bit.v</ClosedNode>
+         <ClosedNode>/Multiplier16x16 M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|Multiplier16x16.v/F1 - FA16</ClosedNode>
+         <ClosedNode>/Multiplier16x16 M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|Multiplier16x16.v/F2 - FA24bit</ClosedNode>
+         <ClosedNode>/Multiplier16x16 M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|Multiplier16x16.v/F3 - FA24bit</ClosedNode>
+         <ClosedNode>/Multiplier16x16 M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|Multiplier16x16.v/first - Multiplier8x8</ClosedNode>
+         <ClosedNode>/Multiplier16x16 M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|Multiplier16x16.v/fourth - Multiplier8x8</ClosedNode>
+         <ClosedNode>/Multiplier16x16 M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|Multiplier16x16.v/second - Multiplier8x8</ClosedNode>
+         <ClosedNode>/Multiplier16x16 M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|Multiplier16x16.v/third - Multiplier8x8</ClosedNode>
+         <ClosedNode>/Multiplier8x8 M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|Multiplier8x8.v</ClosedNode>
+         <ClosedNode>/Multiplier8x8 M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|Multiplier8x8.v/FA8bit_0 - FA8bit/fa0 - FA</ClosedNode>
+         <ClosedNode>/Multiplier8x8 M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|Multiplier8x8.v/FA8bit_0 - FA8bit/fa1 - FA</ClosedNode>
+         <ClosedNode>/Multiplier8x8 M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|Multiplier8x8.v/FA8bit_0 - FA8bit/fa2 - FA</ClosedNode>
+         <ClosedNode>/Multiplier8x8 M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|Multiplier8x8.v/FA8bit_0 - FA8bit/fa3 - FA</ClosedNode>
+         <ClosedNode>/Multiplier8x8 M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|Multiplier8x8.v/FA8bit_0 - FA8bit/fa4 - FA</ClosedNode>
+         <ClosedNode>/Multiplier8x8 M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|Multiplier8x8.v/FA8bit_0 - FA8bit/fa5 - FA</ClosedNode>
+         <ClosedNode>/Multiplier8x8 M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|Multiplier8x8.v/FA8bit_0 - FA8bit/fa6 - FA</ClosedNode>
+         <ClosedNode>/Multiplier8x8 M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|Multiplier8x8.v/FA8bit_0 - FA8bit/fa7 - FA</ClosedNode>
+         <ClosedNode>/Multiplier8x8 M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|Multiplier8x8.v/FA8bit_1 - FA8bit</ClosedNode>
+         <ClosedNode>/Multiplier8x8 M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|Multiplier8x8.v/FA8bit_2 - FA8bit</ClosedNode>
+         <ClosedNode>/Multiplier8x8 M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|Multiplier8x8.v/FA8bit_3 - FA8bit</ClosedNode>
+         <ClosedNode>/Multiplier8x8 M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|Multiplier8x8.v/FA8bit_4 - FA8bit</ClosedNode>
+         <ClosedNode>/Multiplier8x8 M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|Multiplier8x8.v/FA8bit_5 - FA8bit</ClosedNode>
+         <ClosedNode>/Multiplier8x8 M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|Multiplier8x8.v/FA8bit_6 - FA8bit</ClosedNode>
+         <ClosedNode>/TemperatureCalculator M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|TemperatureCalculator.v/adder - AdderSubtractor32x32</ClosedNode>
+         <ClosedNode>/TemperatureCalculator M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|TemperatureCalculator.v/adder - AdderSubtractor32x32/fa - FA</ClosedNode>
+         <ClosedNode>/TemperatureCalculator M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|TemperatureCalculator.v/multi - Multiplier8x8</ClosedNode>
+         <ClosedNode>/TemperatureCalculator M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|TemperatureCalculator.v/multi1 - Multiplier16x16</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>uut - TemperatureCalculator (E:/git/LCF99/codes/Module01/TemperatureCalculator.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001ad000000020000000000000000000000000200000064ffffffff000000810000000300000002000001ad0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>uut - TemperatureCalculator (E:/git/LCF99/codes/Module01/TemperatureCalculator.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c90000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000003a3000000040101000100000000000000000000000064ffffffff0000008100000000000000040000003d00000001000000000000002100000001000000000000005d0000000100000000000002e80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>AdderSubtractor32bit.v</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000109000000010001000100000000000000000000000064ffffffff000000810000000000000001000001090000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Design Summary/Reports</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000156000000010000000100000000000000000000000064ffffffff000000810000000000000001000001560000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Design Summary/Reports</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/AdderSubtractor32x32 M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|AdderSubtractor32bit.v</ClosedNode>
+         <ClosedNode>/Multiplier16x16 M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|Multiplier16x16.v</ClosedNode>
+         <ClosedNode>/Multiplier8x8 M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|Multiplier8x8.v</ClosedNode>
+         <ClosedNode>/tb_calculator M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|tb_calculator.v/uut - TemperatureCalculator</ClosedNode>
+         <ClosedNode>/tb_division M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|tb_division.v</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>TemperatureCalculatorUtils (E:/git/LCF99/codes/Module01/TemperatureCalculatorUtils.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001ad000000020000000000000000000000000200000064ffffffff000000810000000300000002000001ad0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>TemperatureCalculatorUtils (E:/git/LCF99/codes/Module01/TemperatureCalculatorUtils.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000156000000010000000100000000000000000000000064ffffffff000000810000000000000001000001560000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000156000000010000000100000000000000000000000064ffffffff000000810000000000000001000001560000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff00000000000000020000011e0000012901000000050100000002</SourceProcessView>
+   <CurrentView>Behavioral Simulation</CurrentView>
+</Project>

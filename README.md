@@ -5,11 +5,11 @@ LC Lab final project fall 99
 
 ## Todo
 - [ ] **Project Phase 1**
-    - [ ] Temperature sensor
+    - [x] Temperature sensor
         - [x] 8 bit multiplier
         - [x] 16 bit multiplier
         - [x] 32 bit Adder/Subtractor
-        - [ ] test bench
+        - [x] test bench
     - [x] Gas and smoke sensor
         - [x] State diagram
         - [x] DFF formula 

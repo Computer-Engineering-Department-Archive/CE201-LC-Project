@@ -42,6 +42,7 @@ module CoolHeatSystemUtils(
 			clk = 0;
 			arst = 1;
 			speed = 8'b01000000;
+			#500;
 	 end
 	 
 	 always begin

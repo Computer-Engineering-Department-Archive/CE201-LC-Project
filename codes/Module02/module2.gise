@@ -139,7 +139,7 @@
       <outfile xil_pn:name="co2Detector.v"/>
       <outfile xil_pn:name="coDetector.v"/>
     </transform>
-    <transform xil_pn:end_ts="1611851587" xil_pn:in_ck="6187090318890569992" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2218895262088040818" xil_pn:start_ts="1611851584">
+    <transform xil_pn:end_ts="1611859259" xil_pn:in_ck="6187090318890569992" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2218895262088040818" xil_pn:start_ts="1611859255">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -151,7 +151,7 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1611851587" xil_pn:in_ck="9196724604848428420" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="8168986648029515025" xil_pn:start_ts="1611851587">
+    <transform xil_pn:end_ts="1611859259" xil_pn:in_ck="9196724604848428420" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="8168986648029515025" xil_pn:start_ts="1611859259">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>

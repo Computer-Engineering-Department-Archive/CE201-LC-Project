@@ -1,0 +1,28 @@
+Command line:
+   TemperatureCalculatorUtils_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  57714
+
+Thu Jan 28 22:10:15 2021
+
+
+ Elaboration Time: 0.125 sec
+
+ Current Memory Usage: 5164.43 Meg
+
+ Total Signals          : 33
+ Total Nets             : 237
+ Total Signal Drivers   : 15
+ Total Blocks           : 6
+ Total Primitive Blocks : 4
+ Total Processes        : 18
+ Total Traceable Variables  : 22
+ Total Scalar Nets and Variables : 405
+
+ Total Simulation Time: 0.234375 sec
+
+ Current Memory Usage: 5164.43 Meg
+
+Thu Jan 28 22:10:34 2021
+
