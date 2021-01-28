@@ -1,0 +1,45 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to E:/git/LCF99/codes/Module02/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to E:/git/LCF99/codes/Module02/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "coDetector.v" in library work
+Compiling verilog file "co2Detector.v" in library work
+Module <coDetector> compiled
+Compiling verilog file "ch4Detector.v" in library work
+Module <co2Detector> compiled
+Compiling verilog file "GasDetectorSensor.v" in library work
+Module <ch4Detector> compiled
+Compiling verilog file "GasEngineUtils.v" in library work
+Module <GasDetectorSensor> compiled
+Module <GasEngineUtils> compiled
+No errors in compilation
+Analysis of file <"GasEngineUtils.prj"> succeeded.
+ 
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.21 secs
+ 
+--> 
+
+Total memory usage is 4477476 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

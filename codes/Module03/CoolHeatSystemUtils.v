@@ -26,20 +26,6 @@ module CoolHeatSystemUtils(
 	wire [3:0] chs_power;
 	wire chs_mode, pwm_data;
 	
-	/*
-	ModePower mp(chs_conf, chs_power, chs_mode);
-	
-	initial begin
-        chs_conf = 8'hFFFF;   #100;
-        chs_conf = 8'hF56F;   #100;
-        chs_conf = 8'h3FFF;   #100;
-        chs_conf = 8'h0001;   #100;
-        chs_conf = 8'hF10F;   #100;
-        chs_conf = 8'h7822;   #100;
-        chs_conf = 8'h7ABC;   #100;   
-    end
-	 */
-	 
 	 //CoolHeatSystem(arst, clk, speed, chs_conf, chs_power, chs_mode, pwm_data);
 	 ModePower modePower(chs_conf, chs_power, chs_mode);
 	 FanSpeed fanSpeed(arst, clk, speed, pwm_data);

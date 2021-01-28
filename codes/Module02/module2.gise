@@ -22,6 +22,7 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="module2.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="GasDetectorSensor.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="GasDetectorSensor.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="GasDetectorSensor.lso"/>
@@ -57,6 +58,9 @@
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="GasDetectorSensor_summary.xml"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="GasDetectorSensor_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="GasDetectorSensor_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="GasEngineUtils.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="GasEngineUtils.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="GasEngineUtils.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="GasEngineUtils_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="GasEngineUtils_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="GasEngineUtils_isim_beh.wdb"/>
@@ -105,7 +109,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1611836126" xil_pn:in_ck="6187090318890569992" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1611836126">
+    <transform xil_pn:end_ts="1611851584" xil_pn:in_ck="6187090318890569992" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1611851584">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="GasDetectorSensor.v"/>
@@ -126,7 +130,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1611836126" xil_pn:in_ck="6187090318890569992" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1611836126">
+    <transform xil_pn:end_ts="1611851584" xil_pn:in_ck="6187090318890569992" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1611851584">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="GasDetectorSensor.v"/>
@@ -135,7 +139,7 @@
       <outfile xil_pn:name="co2Detector.v"/>
       <outfile xil_pn:name="coDetector.v"/>
     </transform>
-    <transform xil_pn:end_ts="1611836147" xil_pn:in_ck="6187090318890569992" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2218895262088040818" xil_pn:start_ts="1611836143">
+    <transform xil_pn:end_ts="1611851587" xil_pn:in_ck="6187090318890569992" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2218895262088040818" xil_pn:start_ts="1611851584">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -147,7 +151,7 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1611836685" xil_pn:in_ck="9196724604848428420" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="8168986648029515025" xil_pn:start_ts="1611836685">
+    <transform xil_pn:end_ts="1611851587" xil_pn:in_ck="9196724604848428420" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="8168986648029515025" xil_pn:start_ts="1611851587">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -184,11 +188,12 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1611836626" xil_pn:in_ck="6187090318890569992" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="5324955392837689389" xil_pn:start_ts="1611836615">
+    <transform xil_pn:end_ts="1611851565" xil_pn:in_ck="6187090318890569992" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="5324955392837689389" xil_pn:start_ts="1611851558">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name=".lso"/>
       <outfile xil_pn:name="GasDetectorSensor.lso"/>
       <outfile xil_pn:name="GasDetectorSensor.ngc"/>
       <outfile xil_pn:name="GasDetectorSensor.ngr"/>
@@ -207,7 +212,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1611836636" xil_pn:in_ck="3063218987011952235" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-2503827997048413941" xil_pn:start_ts="1611836626">
+    <transform xil_pn:end_ts="1611851570" xil_pn:in_ck="3063218987011952235" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-2503827997048413941" xil_pn:start_ts="1611851565">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="GasDetectorSensor.bld"/>
@@ -216,7 +221,7 @@
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1611836642" xil_pn:in_ck="1042184016241656438" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="6037968062645765743" xil_pn:start_ts="1611836636">
+    <transform xil_pn:end_ts="1611851574" xil_pn:in_ck="1042184016241656438" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="6037968062645765743" xil_pn:start_ts="1611851570">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="GasDetectorSensor.pcf"/>
@@ -229,7 +234,7 @@
       <outfile xil_pn:name="GasDetectorSensor_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1611836652" xil_pn:in_ck="-2388955205429781361" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="3266239339701135281" xil_pn:start_ts="1611836642">
+    <transform xil_pn:end_ts="1611851581" xil_pn:in_ck="-2388955205429781361" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="3266239339701135281" xil_pn:start_ts="1611851574">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="GasDetectorSensor.ncd"/>
@@ -243,7 +248,7 @@
       <outfile xil_pn:name="GasDetectorSensor_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1611836652" xil_pn:in_ck="1042184016241656306" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1611836649">
+    <transform xil_pn:end_ts="1611851581" xil_pn:in_ck="1042184016241656306" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1611851578">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="GasDetectorSensor.twr"/>

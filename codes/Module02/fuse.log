@@ -1,13 +1,13 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o E:/Courses/AUT/semester 3/Logic Circuit/project/codes/Module02/GasEngineUtils_isim_beh.exe -prj E:/Courses/AUT/semester 3/Logic Circuit/project/codes/Module02/GasEngineUtils_beh.prj work.GasEngineUtils work.glbl 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o E:/git/LCF99/codes/Module02/GasEngineUtils_isim_beh.exe -prj E:/git/LCF99/codes/Module02/GasEngineUtils_beh.prj work.GasEngineUtils work.glbl 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
-Analyzing Verilog file "E:/Courses/AUT/semester 3/Logic Circuit/project/codes/Module02/coDetector.v" into library work
-Analyzing Verilog file "E:/Courses/AUT/semester 3/Logic Circuit/project/codes/Module02/co2Detector.v" into library work
-Analyzing Verilog file "E:/Courses/AUT/semester 3/Logic Circuit/project/codes/Module02/ch4Detector.v" into library work
-Analyzing Verilog file "E:/Courses/AUT/semester 3/Logic Circuit/project/codes/Module02/GasDetectorSensor.v" into library work
-Analyzing Verilog file "E:/Courses/AUT/semester 3/Logic Circuit/project/codes/Module02/GasEngineUtils.v" into library work
+Analyzing Verilog file "E:/git/LCF99/codes/Module02/coDetector.v" into library work
+Analyzing Verilog file "E:/git/LCF99/codes/Module02/co2Detector.v" into library work
+Analyzing Verilog file "E:/git/LCF99/codes/Module02/ch4Detector.v" into library work
+Analyzing Verilog file "E:/git/LCF99/codes/Module02/GasDetectorSensor.v" into library work
+Analyzing Verilog file "E:/git/LCF99/codes/Module02/GasEngineUtils.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
 Completed static elaboration
@@ -19,6 +19,6 @@ Compiling module GasEngineUtils
 Compiling module glbl
 Time Resolution for simulation is 1ps.
 Compiled 6 Verilog Units
-Built simulation executable E:/Courses/AUT/semester 3/Logic Circuit/project/codes/Module02/GasEngineUtils_isim_beh.exe
-Fuse Memory Usage: 29336 KB
-Fuse CPU Usage: 577 ms
+Built simulation executable E:/git/LCF99/codes/Module02/GasEngineUtils_isim_beh.exe
+Fuse Memory Usage: 29240 KB
+Fuse CPU Usage: 343 ms

@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-DESKTOP-682MTB3::  Thu Jan 28 15:54:03 2021
+DESKTOP-682MTB3::  Thu Jan 28 20:02:55 2021
 
 par -w -intstyle ise -ol high -t 1 GasDetectorSensor_map.ncd
 GasDetectorSensor.ncd GasDetectorSensor.pcf 
@@ -39,52 +39,52 @@ Placer effort level (-pl):    High
 Placer cost table entry (-t): 1
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 1 secs 
-Finished initial Timing Analysis.  REAL time: 1 secs 
+Starting initial Timing Analysis.  REAL time: 0 secs 
+Finished initial Timing Analysis.  REAL time: 0 secs 
 
 
 Starting Placer
-Total REAL time at the beginning of Placer: 1 secs 
-Total CPU  time at the beginning of Placer: 1 secs 
+Total REAL time at the beginning of Placer: 0 secs 
+Total CPU  time at the beginning of Placer: 0 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:17f) REAL time: 1 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:17f) REAL time: 0 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:17f) REAL time: 1 secs 
+Phase 2.7  Design Feasibility Check (Checksum:17f) REAL time: 0 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:17f) REAL time: 1 secs 
+Phase 3.31  Local Placement Optimization (Checksum:17f) REAL time: 0 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 ..............
-Phase 4.2  Initial Clock and IO Placement (Checksum:3c38cf) REAL time: 1 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:3c38cf) REAL time: 0 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:3c38cf) REAL time: 1 secs 
+Phase 5.36  Local Placement Optimization (Checksum:3c38cf) REAL time: 0 secs 
 
 Phase 6.3  Local Placement Optimization
 ..............
-Phase 6.3  Local Placement Optimization (Checksum:a10440) REAL time: 1 secs 
+Phase 6.3  Local Placement Optimization (Checksum:a10440) REAL time: 0 secs 
 
 Phase 7.5  Local Placement Optimization
-Phase 7.5  Local Placement Optimization (Checksum:a10440) REAL time: 1 secs 
+Phase 7.5  Local Placement Optimization (Checksum:a10440) REAL time: 0 secs 
 
 Phase 8.8  Global Placement
 ...
-Phase 8.8  Global Placement (Checksum:d6f2614) REAL time: 2 secs 
+Phase 8.8  Global Placement (Checksum:d6f2614) REAL time: 1 secs 
 
 Phase 9.5  Local Placement Optimization
-Phase 9.5  Local Placement Optimization (Checksum:d6f2614) REAL time: 2 secs 
+Phase 9.5  Local Placement Optimization (Checksum:d6f2614) REAL time: 1 secs 
 
 Phase 10.18  Placement Optimization
-Phase 10.18  Placement Optimization (Checksum:d5e9fb3) REAL time: 2 secs 
+Phase 10.18  Placement Optimization (Checksum:d5e9fb3) REAL time: 1 secs 
 
 Phase 11.5  Local Placement Optimization
-Phase 11.5  Local Placement Optimization (Checksum:d5e9fb3) REAL time: 2 secs 
+Phase 11.5  Local Placement Optimization (Checksum:d5e9fb3) REAL time: 1 secs 
 
-Total REAL time to Placer completion: 2 secs 
-Total CPU  time to Placer completion: 2 secs 
+Total REAL time to Placer completion: 1 secs 
+Total CPU  time to Placer completion: 1 secs 
 Writing design to file GasDetectorSensor.ncd
 
 
@@ -92,30 +92,30 @@ Writing design to file GasDetectorSensor.ncd
 Starting Router
 
 
-Phase  1  : 148 unrouted;      REAL time: 2 secs 
+Phase  1  : 148 unrouted;      REAL time: 1 secs 
 
-Phase  2  : 130 unrouted;      REAL time: 2 secs 
+Phase  2  : 130 unrouted;      REAL time: 1 secs 
 
-Phase  3  : 43 unrouted;      REAL time: 2 secs 
+Phase  3  : 43 unrouted;      REAL time: 1 secs 
 
-Phase  4  : 52 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  4  : 52 unrouted; (Par is working to improve performance)     REAL time: 1 secs 
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 secs 
 
 Updating file: GasDetectorSensor.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
 
-Total REAL time to Router completion: 3 secs 
-Total CPU time to Router completion: 3 secs 
+Total REAL time to Router completion: 2 secs 
+Total CPU time to Router completion: 2 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -170,8 +170,8 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 4 secs 
-Total CPU time to PAR completion: 3 secs 
+Total REAL time to PAR completion: 2 secs 
+Total CPU time to PAR completion: 2 secs 
 
 Peak Memory Usage:  4392 MB
 

@@ -1,0 +1,5 @@
+verilog work "coDetector.v"
+verilog work "co2Detector.v"
+verilog work "ch4Detector.v"
+verilog work "GasDetectorSensor.v"
+verilog work "GasEngineUtils.v"

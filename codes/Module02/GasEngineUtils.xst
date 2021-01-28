@@ -1,0 +1,5 @@
+set -tmpdir "E:/git/LCF99/codes/Module02/xst/projnav.tmp"
+set -xsthdpdir "E:/git/LCF99/codes/Module02/xst"
+elaborate
+-ifn GasEngineUtils.prj
+-ifmt mixed

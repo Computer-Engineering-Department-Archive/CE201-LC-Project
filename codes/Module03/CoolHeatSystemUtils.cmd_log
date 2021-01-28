@@ -1,3 +1,0 @@
-xst -intstyle ise -ifn "E:/Courses/AUT/semester 3/Logic Circuit/project/codes/Module03/CoolHeatSystemUtils.xst" -ofn "E:/Courses/AUT/semester 3/Logic Circuit/project/codes/Module03/CoolHeatSystemUtils.syr" 
-xst -intstyle ise -ifn "E:/Courses/AUT/semester 3/Logic Circuit/project/codes/Module03/CoolHeatSystemUtils.xst" -ofn "E:/Courses/AUT/semester 3/Logic Circuit/project/codes/Module03/CoolHeatSystemUtils.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa7a100t-csg324-2I "CoolHeatSystemUtils.ngc" CoolHeatSystemUtils.ngd  
