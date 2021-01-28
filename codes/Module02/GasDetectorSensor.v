@@ -30,5 +30,7 @@ module GasDetectorSensor (
 	/* write your code here */
 	
 	/* write your code here */
-
+	ch4Detector first(.x(din),.Z(dout[0]),.CLK(clk),.RST(arst));
+	coDetector second(.x(din),.Z(dout[1]),.CLK(clk),.RST(arst));
+	co2Detector third(.x(din),.Z(dout[2]),.CLK(clk),.RST(arst));
 endmodule

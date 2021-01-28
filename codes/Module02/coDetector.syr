@@ -1,0 +1,413 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.28 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.28 secs
+ 
+--> Reading design: coDetector.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "coDetector.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "coDetector"
+Output Format                      : NGC
+Target Device                      : xc3s50-4-pq208
+
+---- Source Options
+Top Module Name                    : coDetector
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "coDetector.v" in library work
+Module <coDetector> compiled
+No errors in compilation
+Analysis of file <"coDetector.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <coDetector> in library <work> with parameters.
+	S0 = "0000"
+	S1 = "0001"
+	S10 = "1010"
+	S11 = "1011"
+	S12 = "1100"
+	S2 = "0010"
+	S3 = "0011"
+	S4 = "0100"
+	S5 = "0101"
+	S6 = "0110"
+	S7 = "0111"
+	S8 = "1000"
+	S9 = "1001"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <coDetector>.
+	S0 = 4'b0000
+	S1 = 4'b0001
+	S10 = 4'b1010
+	S11 = 4'b1011
+	S12 = 4'b1100
+	S2 = 4'b0010
+	S3 = 4'b0011
+	S4 = 4'b0100
+	S5 = 4'b0101
+	S6 = 4'b0110
+	S7 = 4'b0111
+	S8 = 4'b1000
+	S9 = 4'b1001
+Module <coDetector> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <coDetector>.
+    Related source file is "coDetector.v".
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 13                                             |
+    | Transitions        | 26                                             |
+    | Inputs             | 1                                              |
+    | Outputs            | 9                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | RST                       (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <coDetector> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <state/FSM> on signal <state[1:13]> with one-hot encoding.
+------------------------
+ State | Encoding
+------------------------
+ 0000  | 0000000000001
+ 0001  | 0000000000010
+ 0010  | 0000000000100
+ 0011  | 0000000001000
+ 0100  | 0000000010000
+ 0101  | 0000000100000
+ 0110  | 0000001000000
+ 0111  | 0000010000000
+ 1000  | 0000100000000
+ 1001  | 0001000000000
+ 1010  | 0010000000000
+ 1011  | 0100000000000
+ 1100  | 1000000000000
+------------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <coDetector> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block coDetector, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 13
+ Flip-Flops                                            : 13
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : coDetector.ngr
+Top Level Output File Name         : coDetector
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 4
+
+Cell Usage :
+# BELS                             : 21
+#      INV                         : 1
+#      LUT2                        : 11
+#      LUT2_L                      : 1
+#      LUT3                        : 2
+#      LUT4                        : 5
+#      LUT4_L                      : 1
+# FlipFlops/Latches                : 13
+#      FDC                         : 12
+#      FDP                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 3
+#      IBUF                        : 2
+#      OBUF                        : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50pq208-4 
+
+ Number of Slices:                       11  out of    768     1%  
+ Number of Slice Flip Flops:             13  out of   1536     0%  
+ Number of 4 input LUTs:                 21  out of   1536     1%  
+ Number of IOs:                           4
+ Number of bonded IOBs:                   4  out of    124     3%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 13    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-------------------------------------------------------+------------------------+-------+
+Control Signal                                         | Buffer(FF name)        | Load  |
+-------------------------------------------------------+------------------------+-------+
+state_FSM_Acst_FSM_inv(state_FSM_Acst_FSM_inv1_INV_0:O)| NONE(state_FSM_FFd1)   | 13    |
+-------------------------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 4.098ns (Maximum Frequency: 244.021MHz)
+   Minimum input arrival time before clock: 3.084ns
+   Maximum output required time after clock: 10.653ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 4.098ns (frequency: 244.021MHz)
+  Total number of paths / destination ports: 26 / 13
+-------------------------------------------------------------------------
+Delay:               4.098ns (Levels of Logic = 2)
+  Source:            state_FSM_FFd3 (FF)
+  Destination:       state_FSM_FFd13 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: state_FSM_FFd3 to state_FSM_FFd13
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.720   1.246  state_FSM_FFd3 (state_FSM_FFd3)
+     LUT2:I0->O            1   0.551   0.827  state_FSM_FFd13-In1 (state_FSM_FFd13-In1)
+     LUT4:I3->O            1   0.551   0.000  state_FSM_FFd13-In23 (state_FSM_FFd13-In)
+     FDP:D                     0.203          state_FSM_FFd13
+    ----------------------------------------
+    Total                      4.098ns (2.025ns logic, 2.073ns route)
+                                       (49.4% logic, 50.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 13 / 13
+-------------------------------------------------------------------------
+Offset:              3.084ns (Levels of Logic = 2)
+  Source:            x (PAD)
+  Destination:       state_FSM_FFd1 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: x to state_FSM_FFd1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            13   0.821   1.509  x_IBUF (x_IBUF)
+     LUT2:I0->O            1   0.551   0.000  state_FSM_FFd9-In1 (state_FSM_FFd9-In)
+     FDC:D                     0.203          state_FSM_FFd9
+    ----------------------------------------
+    Total                      3.084ns (1.575ns logic, 1.509ns route)
+                                       (51.1% logic, 48.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 9 / 1
+-------------------------------------------------------------------------
+Offset:              10.653ns (Levels of Logic = 3)
+  Source:            state_FSM_FFd9 (FF)
+  Destination:       Z (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: state_FSM_FFd9 to Z
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.720   1.246  state_FSM_FFd9 (state_FSM_FFd9)
+     LUT4:I0->O            1   0.551   1.140  Z4 (Z4)
+     LUT3:I0->O            1   0.551   0.801  Z18 (Z_OBUF)
+     OBUF:I->O                 5.644          Z_OBUF (Z)
+    ----------------------------------------
+    Total                     10.653ns (7.466ns logic, 3.187ns route)
+                                       (70.1% logic, 29.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 10.22 secs
+ 
+--> 
+
+Total memory usage is 4505816 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

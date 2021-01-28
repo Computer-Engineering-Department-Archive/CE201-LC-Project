@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="module2.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="GasDetectorSensor.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="GasDetectorSensor.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="GasDetectorSensor.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="GasDetectorSensor.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="GasDetectorSensor.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="GasDetectorSensor.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="GasDetectorSensor.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="GasDetectorSensor.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="GasDetectorSensor_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="GasDetectorSensor_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="GasDetectorSensor_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="co2Detector.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="co2Detector.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="co2Detector.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="co2Detector.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="co2Detector.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="co2Detector.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="co2Detector.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="co2Detector.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="co2Detector_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="co2Detector_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="co2Detector_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="coDetector.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="coDetector.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="coDetector.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="coDetector.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="coDetector.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="coDetector.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="coDetector.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="coDetector.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="coDetector_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="coDetector_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1611824934" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1611824934">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611824934" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="5860939115571005886" xil_pn:start_ts="1611824934">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611824934" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="5729568174606334125" xil_pn:start_ts="1611824934">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611824934" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1611824934">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611824934" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="2303761716539480070" xil_pn:start_ts="1611824934">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611824934" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="4779560239316253549" xil_pn:start_ts="1611824934">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611824934" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="3214128261717390647" xil_pn:start_ts="1611824934">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611824956" xil_pn:in_ck="-793292677247886622" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="5324955392837689389" xil_pn:start_ts="1611824934">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="GasDetectorSensor.lso"/>
+      <outfile xil_pn:name="GasDetectorSensor.ngc"/>
+      <outfile xil_pn:name="GasDetectorSensor.ngr"/>
+      <outfile xil_pn:name="GasDetectorSensor.prj"/>
+      <outfile xil_pn:name="GasDetectorSensor.stx"/>
+      <outfile xil_pn:name="GasDetectorSensor.syr"/>
+      <outfile xil_pn:name="GasDetectorSensor.xst"/>
+      <outfile xil_pn:name="GasDetectorSensor_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="co2Detector.ngr"/>
+      <outfile xil_pn:name="coDetector.ngr"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+  </transforms>
+
+</generated_project>
