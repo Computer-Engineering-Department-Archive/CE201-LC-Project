@@ -3,11 +3,11 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Thu Jan 28 12:18:40 2021">
+<application name="pn" timeStamp="Thu Jan 28 16:49:35 2021">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="6E9F2BF16AD64E189FD4CE4EBA138551" type="project"/>
-<property name="ProjectIteration" value="0" type="project"/>
-<property name="ProjectFile" value="M:/uni/thirdsummestur/az manteghi/final proj/phase 1/part 1/moudle1.xise" type="project"/>
+<property name="ProjectIteration" value="9" type="project"/>
+<property name="ProjectFile" value="E:/git/LCF99/codes/Module01/moudle1.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2021-01-26T01:40:15" type="project"/>
 </section>
 <section name="Project Statistics" visible="true">
@@ -18,7 +18,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_LastAppliedStrategy" value="Xilinx Default (unlocked)" type="design"/>
 <property name="PROP_ManualCompileOrderImp" value="false" type="design"/>
 <property name="PROP_PropSpecInProjFile" value="Store all values" type="design"/>
-<property name="PROP_SelectedInstanceHierarchicalPath" value="/tb_division" type="process"/>
+<property name="PROP_SelectedInstanceHierarchicalPath" value="/TemperatureCalculatorUtils" type="process"/>
 <property name="PROP_Simulator" value="ISim (VHDL/Verilog)" type="design"/>
 <property name="PROP_SynthTopFile" value="changed" type="process"/>
 <property name="PROP_Top_Level_Module_Type" value="HDL" type="design"/>
@@ -26,9 +26,10 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_UserConstraintEditorPreference" value="Text Editor" type="process"/>
 <property name="PROP_intProjectCreationTimestamp" value="2021-01-26T01:40:15" type="design"/>
 <property name="PROP_intWbtProjectID" value="6E9F2BF16AD64E189FD4CE4EBA138551" type="design"/>
+<property name="PROP_intWbtProjectIteration" value="9" type="process"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
-<property name="PROP_selectedSimRootSourceNode_behav" value="work.tb_division" type="process"/>
+<property name="PROP_selectedSimRootSourceNode_behav" value="work.TemperatureCalculatorUtils" type="process"/>
 <property name="PROP_xilxBitgStart_IntDone" value="true" type="process"/>
 <property name="PROP_AutoTop" value="false" type="design"/>
 <property name="PROP_DevFamily" value="Spartan3" type="design"/>

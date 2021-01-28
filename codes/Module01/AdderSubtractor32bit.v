@@ -26,9 +26,8 @@ module AdderSubtractor32x32 (
 	input         sel  , // input  [add:sel=0 || sub:sel=1] 
 	output [31:0] S      // output [2's complement 32 bits]
 );
-	// if sel = 0 then add else subtract
-	/* write your code here */
-	wire [31:0] cin;
+	 // if sel = 0 then add else subtract
+	 wire [31:0] cin;
 	 assign cin[0] = sel;
 	 genvar i;
 	 
@@ -38,6 +37,5 @@ module AdderSubtractor32x32 (
 				FA fa(.A(A[i]), .B(B[i]^sel), .cin(cin[i]), .sum(S[i]), .co(cin[i+1]));
 		 end
 	 endgenerate
-	/* write your code here */
 
 endmodule

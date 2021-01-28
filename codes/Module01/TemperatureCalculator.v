@@ -37,9 +37,15 @@ module TemperatureCalculator (
 	Multiplier16x16 m16x16(.A(out[15:0]),.B({1'b0,adc_data[14:0]}),.P(out1[31:0]));
 	wire  [31:0] out2;
 	wire [31:0] ttempc;
-	division div(.A(out1[31:0]),.B({32'b00000000000000000000000000100000}),.Res(out2[31:0]));
+	division div(.A(out1[31:0]),.B({32'b00000000000000000000000000010000}),.Res(out2[31:0]));
 	AdderSubtractor32x32 adder32x32(.A(tempbase[31:0]),.B(out2[31:0]),.sel(adc_data[15]),.S(ttempc[31:0]));
-		assign tempc=~ttempc+1;
+		assign tempc=ttempc;
+	always @* begin
+		$display("out: %b", out);
+		$display("out1: %b", out1);
+		$display("out2: %b", out2);
+		$display("ttempc: %b", ttempc);
+	end
 	
 
 endmodule
