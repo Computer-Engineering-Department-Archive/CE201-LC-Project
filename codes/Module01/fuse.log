@@ -21,5 +21,5 @@ Compiling module glbl
 Time Resolution for simulation is 1ps.
 Compiled 6 Verilog Units
 Built simulation executable E:/git/LCF99/codes/Module01/TemperatureCalculatorUtils_isim_beh.exe
-Fuse Memory Usage: 29088 KB
-Fuse CPU Usage: 593 ms
+Fuse Memory Usage: 29028 KB
+Fuse CPU Usage: 671 ms

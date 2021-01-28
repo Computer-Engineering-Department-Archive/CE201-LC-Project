@@ -28,17 +28,17 @@ module TemperatureCalculator (
 	output [31:0] tempc      // temp [temperature celsius]
 );
 
-	wire [7:0] tempRef;
 	wire [15:0] _8x8res;
-	wire [31:0] tempbase, ttempc, _16x16res;
+	wire [7:0] tempRef;
+	wire [31:0] div, _16x16res, ttempc;
 	
 	assign tempRef=(tc_ref[7]?-tc_ref:tc_ref);
-	assign tempbase=~(tc_base-1);
 	
-	Multiplier8x8 m8x8(.A(tempRef[7:0]),.B(tempRef[7:0]),.P(_8x8res[15:0]));
-	Multiplier16x16 m16x16(.A(_8x8res[15:0]),.B({1'b0,adc_data[14:0]}),.P(_16x16res[31:0]));
-	AdderSubtractor32x32 adder32x32(.A(tempbase[31:0]),.B(_16x16res[31:0]),.sel(adc_data[15]),.S(ttempc[31:0]));
-	assign tempc=~ttempc+1;
+	Multiplier8x8 multiplier_first(.A(tempRef[7:0]),.B(tempRef[7:0]),.P(_8x8res[15:0]));
+	Multiplier16x16 multiplier_second(.A(_8x8res[15:0]),.B({1'b0,adc_data[14:0]}),.P(_16x16res[31:0]));
+
+	assign div = _16x16res / 64;
+	AdderSubtractor32x32 adder32x32(.A(tc_base[31:0]),.B(div[31:0]),.sel(adc_data[15]),.S(tempc[31:0]));
 	
 
 endmodule
