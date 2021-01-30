@@ -1,0 +1,262 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2I
+-n 3 -fastpaths -xml LightingSystem.twx LightingSystem.ncd -o
+LightingSystem.twr LightingSystem.pcf
+
+Design file:              LightingSystem.ncd
+Physical constraint file: LightingSystem.pcf
+Device,package,speed:     xa7a100t,csg324,I,-2I (PRELIMINARY 1.07 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock tcode<0>
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+lenght<2>   |   -0.196(F)|      FAST  |    1.784(F)|      SLOW  |al/_n0021         |   0.000|
+lenght<3>   |   -0.095(F)|      FAST  |    1.495(F)|      SLOW  |al/_n0021         |   0.000|
+ulight<0>   |    0.013(F)|      FAST  |    1.402(F)|      SLOW  |al/_n0021         |   0.000|
+ulight<1>   |    0.490(F)|      SLOW  |    1.220(F)|      SLOW  |al/_n0021         |   0.000|
+ulight<2>   |    0.417(F)|      SLOW  |    1.401(F)|      SLOW  |al/_n0021         |   0.000|
+ulight<3>   |    0.650(F)|      SLOW  |    1.143(F)|      SLOW  |al/_n0021         |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock tcode<1>
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+lenght<2>   |   -0.308(F)|      FAST  |    2.019(F)|      SLOW  |al/_n0021         |   0.000|
+lenght<3>   |   -0.207(F)|      FAST  |    1.730(F)|      SLOW  |al/_n0021         |   0.000|
+ulight<0>   |   -0.099(F)|      FAST  |    1.637(F)|      SLOW  |al/_n0021         |   0.000|
+ulight<1>   |    0.296(F)|      SLOW  |    1.455(F)|      SLOW  |al/_n0021         |   0.000|
+ulight<2>   |    0.223(F)|      SLOW  |    1.636(F)|      SLOW  |al/_n0021         |   0.000|
+ulight<3>   |    0.456(F)|      SLOW  |    1.378(F)|      SLOW  |al/_n0021         |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock tcode<2>
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+lenght<2>   |   -0.341(F)|      FAST  |    2.076(F)|      SLOW  |al/_n0021         |   0.000|
+lenght<3>   |   -0.240(F)|      FAST  |    1.787(F)|      SLOW  |al/_n0021         |   0.000|
+ulight<0>   |   -0.132(F)|      FAST  |    1.694(F)|      SLOW  |al/_n0021         |   0.000|
+ulight<1>   |    0.245(F)|      SLOW  |    1.512(F)|      SLOW  |al/_n0021         |   0.000|
+ulight<2>   |    0.172(F)|      SLOW  |    1.693(F)|      SLOW  |al/_n0021         |   0.000|
+ulight<3>   |    0.405(F)|      SLOW  |    1.435(F)|      SLOW  |al/_n0021         |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock tcode<3>
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+lenght<2>   |   -0.419(F)|      FAST  |    2.334(F)|      SLOW  |al/_n0021         |   0.000|
+lenght<3>   |   -0.318(F)|      FAST  |    2.045(F)|      SLOW  |al/_n0021         |   0.000|
+ulight<0>   |   -0.210(F)|      FAST  |    1.952(F)|      SLOW  |al/_n0021         |   0.000|
+ulight<1>   |    0.097(F)|      FAST  |    1.770(F)|      SLOW  |al/_n0021         |   0.000|
+ulight<2>   |    0.015(F)|      FAST  |    1.951(F)|      SLOW  |al/_n0021         |   0.000|
+ulight<3>   |    0.209(F)|      FAST  |    1.693(F)|      SLOW  |al/_n0021         |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock tcode<0> to Pad
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+              |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination   |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+lightnum<0>   |         7.008(F)|      SLOW  |         3.151(F)|      FAST  |al/_n0021         |   0.000|
+lightnum<1>   |         6.952(F)|      SLOW  |         3.151(F)|      FAST  |al/_n0021         |   0.000|
+lightnum<2>   |         6.830(F)|      SLOW  |         3.085(F)|      FAST  |al/_n0021         |   0.000|
+lightnum<3>   |         6.723(F)|      SLOW  |         3.034(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<0> |         8.173(F)|      SLOW  |         3.086(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<1> |         8.065(F)|      SLOW  |         3.090(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<2> |         8.300(F)|      SLOW  |         3.141(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<3> |         8.180(F)|      SLOW  |         3.230(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<4> |         8.190(F)|      SLOW  |         3.116(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<5> |         7.963(F)|      SLOW  |         3.027(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<6> |         7.746(F)|      SLOW  |         2.940(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<7> |         5.713(F)|      SLOW  |         2.531(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<8> |         7.958(F)|      SLOW  |         3.019(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<9> |         8.033(F)|      SLOW  |         3.043(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<10>|         7.876(F)|      SLOW  |         2.989(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<11>|         8.016(F)|      SLOW  |         3.178(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<12>|         7.721(F)|      SLOW  |         2.895(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<13>|         8.012(F)|      SLOW  |         3.091(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<14>|         7.839(F)|      SLOW  |         2.953(F)|      FAST  |al/_n0021         |   0.000|
+wshade<0>     |         6.603(F)|      SLOW  |         2.970(F)|      FAST  |al/_n0021         |   0.000|
+wshade<1>     |         6.484(F)|      SLOW  |         2.907(F)|      FAST  |al/_n0021         |   0.000|
+wshade<2>     |         6.364(F)|      SLOW  |         2.843(F)|      FAST  |al/_n0021         |   0.000|
+wshade<3>     |         6.252(F)|      SLOW  |         2.787(F)|      FAST  |al/_n0021         |   0.000|
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock tcode<1> to Pad
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+              |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination   |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+lightnum<0>   |         7.243(F)|      SLOW  |         3.263(F)|      FAST  |al/_n0021         |   0.000|
+lightnum<1>   |         7.187(F)|      SLOW  |         3.263(F)|      FAST  |al/_n0021         |   0.000|
+lightnum<2>   |         7.065(F)|      SLOW  |         3.197(F)|      FAST  |al/_n0021         |   0.000|
+lightnum<3>   |         6.958(F)|      SLOW  |         3.146(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<0> |         8.408(F)|      SLOW  |         3.198(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<1> |         8.300(F)|      SLOW  |         3.202(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<2> |         8.535(F)|      SLOW  |         3.253(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<3> |         8.415(F)|      SLOW  |         3.342(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<4> |         8.425(F)|      SLOW  |         3.228(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<5> |         8.198(F)|      SLOW  |         3.139(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<6> |         7.981(F)|      SLOW  |         3.052(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<7> |         5.948(F)|      SLOW  |         2.643(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<8> |         8.193(F)|      SLOW  |         3.131(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<9> |         8.268(F)|      SLOW  |         3.155(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<10>|         8.111(F)|      SLOW  |         3.101(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<11>|         8.251(F)|      SLOW  |         3.290(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<12>|         7.956(F)|      SLOW  |         3.007(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<13>|         8.247(F)|      SLOW  |         3.203(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<14>|         8.074(F)|      SLOW  |         3.065(F)|      FAST  |al/_n0021         |   0.000|
+wshade<0>     |         6.838(F)|      SLOW  |         3.082(F)|      FAST  |al/_n0021         |   0.000|
+wshade<1>     |         6.719(F)|      SLOW  |         3.019(F)|      FAST  |al/_n0021         |   0.000|
+wshade<2>     |         6.599(F)|      SLOW  |         2.955(F)|      FAST  |al/_n0021         |   0.000|
+wshade<3>     |         6.487(F)|      SLOW  |         2.899(F)|      FAST  |al/_n0021         |   0.000|
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock tcode<2> to Pad
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+              |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination   |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+lightnum<0>   |         7.300(F)|      SLOW  |         3.296(F)|      FAST  |al/_n0021         |   0.000|
+lightnum<1>   |         7.244(F)|      SLOW  |         3.296(F)|      FAST  |al/_n0021         |   0.000|
+lightnum<2>   |         7.122(F)|      SLOW  |         3.230(F)|      FAST  |al/_n0021         |   0.000|
+lightnum<3>   |         7.015(F)|      SLOW  |         3.179(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<0> |         8.465(F)|      SLOW  |         3.231(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<1> |         8.357(F)|      SLOW  |         3.235(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<2> |         8.592(F)|      SLOW  |         3.286(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<3> |         8.472(F)|      SLOW  |         3.375(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<4> |         8.482(F)|      SLOW  |         3.261(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<5> |         8.255(F)|      SLOW  |         3.172(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<6> |         8.038(F)|      SLOW  |         3.085(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<7> |         6.005(F)|      SLOW  |         2.676(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<8> |         8.250(F)|      SLOW  |         3.164(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<9> |         8.325(F)|      SLOW  |         3.188(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<10>|         8.168(F)|      SLOW  |         3.134(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<11>|         8.308(F)|      SLOW  |         3.323(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<12>|         8.013(F)|      SLOW  |         3.040(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<13>|         8.304(F)|      SLOW  |         3.236(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<14>|         8.131(F)|      SLOW  |         3.098(F)|      FAST  |al/_n0021         |   0.000|
+wshade<0>     |         6.895(F)|      SLOW  |         3.115(F)|      FAST  |al/_n0021         |   0.000|
+wshade<1>     |         6.776(F)|      SLOW  |         3.052(F)|      FAST  |al/_n0021         |   0.000|
+wshade<2>     |         6.656(F)|      SLOW  |         2.988(F)|      FAST  |al/_n0021         |   0.000|
+wshade<3>     |         6.544(F)|      SLOW  |         2.932(F)|      FAST  |al/_n0021         |   0.000|
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock tcode<3> to Pad
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+              |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination   |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+lightnum<0>   |         7.558(F)|      SLOW  |         3.374(F)|      FAST  |al/_n0021         |   0.000|
+lightnum<1>   |         7.502(F)|      SLOW  |         3.374(F)|      FAST  |al/_n0021         |   0.000|
+lightnum<2>   |         7.380(F)|      SLOW  |         3.308(F)|      FAST  |al/_n0021         |   0.000|
+lightnum<3>   |         7.273(F)|      SLOW  |         3.257(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<0> |         8.723(F)|      SLOW  |         3.309(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<1> |         8.615(F)|      SLOW  |         3.313(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<2> |         8.850(F)|      SLOW  |         3.364(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<3> |         8.730(F)|      SLOW  |         3.453(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<4> |         8.740(F)|      SLOW  |         3.339(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<5> |         8.513(F)|      SLOW  |         3.250(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<6> |         8.296(F)|      SLOW  |         3.163(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<7> |         6.263(F)|      SLOW  |         2.754(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<8> |         8.508(F)|      SLOW  |         3.242(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<9> |         8.583(F)|      SLOW  |         3.266(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<10>|         8.426(F)|      SLOW  |         3.212(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<11>|         8.566(F)|      SLOW  |         3.401(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<12>|         8.271(F)|      SLOW  |         3.118(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<13>|         8.562(F)|      SLOW  |         3.314(F)|      FAST  |al/_n0021         |   0.000|
+lightstate<14>|         8.389(F)|      SLOW  |         3.176(F)|      FAST  |al/_n0021         |   0.000|
+wshade<0>     |         7.153(F)|      SLOW  |         3.193(F)|      FAST  |al/_n0021         |   0.000|
+wshade<1>     |         7.034(F)|      SLOW  |         3.130(F)|      FAST  |al/_n0021         |   0.000|
+wshade<2>     |         6.914(F)|      SLOW  |         3.066(F)|      FAST  |al/_n0021         |   0.000|
+wshade<3>     |         6.802(F)|      SLOW  |         3.010(F)|      FAST  |al/_n0021         |   0.000|
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock tcode<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+tcode<0>       |         |         |    0.794|    0.794|
+tcode<1>       |         |         |    0.547|    0.547|
+tcode<2>       |         |         |    0.813|    0.813|
+tcode<3>       |         |         |    0.823|    0.823|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock tcode<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+tcode<0>       |         |         |    0.600|    0.600|
+tcode<1>       |         |         |    0.353|    0.353|
+tcode<2>       |         |         |    0.619|    0.619|
+tcode<3>       |         |         |    0.629|    0.629|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock tcode<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+tcode<0>       |         |         |    0.549|    0.549|
+tcode<1>       |         |         |    0.302|    0.302|
+tcode<2>       |         |         |    0.568|    0.568|
+tcode<3>       |         |         |    0.578|    0.578|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock tcode<3>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+tcode<0>       |         |         |    0.341|    0.341|
+tcode<1>       |         |         |    0.178|    0.178|
+tcode<2>       |         |         |    0.360|    0.360|
+tcode<3>       |         |         |    0.370|    0.370|
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Sat Jan 30 22:40:14 2021 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 5021 MB
+
+
+

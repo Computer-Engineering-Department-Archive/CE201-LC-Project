@@ -20,12 +20,13 @@ LC Lab final project fall 99
         - [x] Proper function of the internal circuit
         - [x] proper function for different job task
         - [x] test bench
-    - [ ] Lighting system (optional)
+    - [x] Lighting system (optional)
         - [ ] decoder
-        - [ ] Implementation based on table  
-    - [ ] Dancing Light (optional)
-        - [ ] internal circuit
-        - [ ] random number generator
+        - [x] Check decoder formula
+        - [x] Implementation based on table  
+    - [x] Dancing Light (optional)
+        - [x] internal circuit
+        - [x] random number generator
 - [ ] **Project Phase 2**
     - [ ] Memory unit
     - [ ] Configuration unit and password
