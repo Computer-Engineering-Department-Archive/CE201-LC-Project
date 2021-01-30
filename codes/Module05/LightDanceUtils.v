@@ -19,11 +19,21 @@
 ---  Description: Module5:
 -----------------------------------------------------------*/
 `timescale 1 ns/1 ns
-
-/***********************************************************/
-/************** Design Your Own Modules Below **************/
-
-
+module LightDanceUtils(
+);
+	reg arst, clk, din, load;
+	reg [7:0]pdata;
+	wire [7:0]qdata;
 	
-/************** Design Your Own Modules Above **************/
-/***********************************************************/
+	LightDance ld(arst, clk, din, load, pdata, qdata);
+	
+	initial begin
+		clk = 0; arst = 0; load = 0; din = 1; #5; 
+		arst = 1;
+		pdata = 8'b00000100; #10;
+	end
+	
+	always begin
+		#5; clk = ~clk;
+	end
+endmodule

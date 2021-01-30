@@ -74,6 +74,8 @@
     <transform xil_pn:end_ts="1611859943" xil_pn:in_ck="-7364054183330909689" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="5000261741185286204" xil_pn:start_ts="1611859939">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="TemperatureCalculatorUtils_beh.prj"/>
       <outfile xil_pn:name="TemperatureCalculatorUtils_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -81,9 +83,11 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1611859943" xil_pn:in_ck="7299535594529726975" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3622945697657980513" xil_pn:start_ts="1611859943">
+    <transform xil_pn:end_ts="1611860097" xil_pn:in_ck="7299535594529726975" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3622945697657980513" xil_pn:start_ts="1611860096">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="TemperatureCalculatorUtils_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>

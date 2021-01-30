@@ -25,11 +25,14 @@ module DFlop (
 	input  clk   , // clock posedge
 	input  din   , // data  in
 	input  load  , // data  load 
-	output dout    // data  out
+	output reg dout    // data  out
 );
 
-	/* write your code here */
-	
-	/* write your code here */
+	always@(posedge clk or negedge arst) begin
+		 if(~arst)
+			dout <= 1'b0;
+		 else if(~load)
+			dout <= din;
+	end
 
 endmodule
