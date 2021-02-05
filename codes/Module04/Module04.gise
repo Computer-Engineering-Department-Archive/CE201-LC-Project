@@ -112,6 +112,7 @@
     <transform xil_pn:end_ts="1612033997" xil_pn:in_ck="-1371745646121095192" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="7054114705899307890" xil_pn:start_ts="1612033995">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <outfile xil_pn:name="LightningSystemUtils_beh.prj"/>
       <outfile xil_pn:name="LightningSystemUtils_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -121,6 +122,10 @@
     <transform xil_pn:end_ts="1612033997" xil_pn:in_ck="6898061108195252073" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-1829136518184982475" xil_pn:start_ts="1612033997">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="LightningSystemUtils_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
     </transform>
