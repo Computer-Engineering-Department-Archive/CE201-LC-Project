@@ -4,7 +4,7 @@
 LC Lab final project fall 99
 
 ## Todo
-- [ ] **Project Phase 1**
+- [x] **Project Phase 1**
     - [x] Temperature sensor
         - [x] 8 bit multiplier
         - [x] 16 bit multiplier
@@ -21,7 +21,7 @@ LC Lab final project fall 99
         - [x] proper function for different job task
         - [x] test bench
     - [x] Lighting system (optional)
-        - [ ] decoder
+        - [x] decoder
         - [x] Check decoder formula
         - [x] Implementation based on table  
     - [x] Dancing Light (optional)
