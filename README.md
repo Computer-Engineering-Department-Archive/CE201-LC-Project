@@ -27,9 +27,9 @@ LC Lab final project fall 99
     - [x] Dancing Light (optional)
         - [x] internal circuit
         - [x] random number generator
-- [ ] **Project Phase 2**
-    - [ ] Memory unit
-    - [ ] Configuration unit and password
+- [x] **Project Phase 2**
+    - [x] Memory unit
+    - [x] Configuration unit and password
 
 ## contributors
 [Bardia Ardakanian](https://github.com/bardia-ardakanian)
