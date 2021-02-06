@@ -1,32 +1,23 @@
-/*--  *******************************************************
---  Computer Architecture Course, Laboratory Sources 
---  Amirkabir University of Technology (Tehran Polytechnic)
---  Department of Computer Engineering (CE-AUT)
---  https://ce[dot]aut[dot]ac[dot]ir
---  *******************************************************
---  All Rights reserved (C) 2019-2020
---  *******************************************************
---  Student ID  : 
---  Student Name: 
---  Student Mail: 
---  *******************************************************
---  Additional Comments:
---
---*/
-
-/*-----------------------------------------------------------
----  Module Name: Control Unit
----  Description: Module7:
------------------------------------------------------------*/
-`timescale 1 ns/1 ns
-`define AAA 3'b001 // IDLE
-`define BBB 3'b010 // ACTIVE
-`define CCC 3'b011 // REQUEST
-`define DDD 3'b100 // STORE
-`define EEE 3'b101 // TRAP
-`define FFF 3'b111 // FFF
-
-`define STATE_OFF     3'b000
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    14:40:50 02/03/2021 
+// Design Name: 
+// Module Name:    ControlUnit 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
 `define STATE_IDLE    3'b001
 `define STATE_ACTIVE  3'b010
 `define STATE_REQUEST 3'b011
@@ -34,8 +25,7 @@
 `define STATE_TRAP    3'b101
 `define STATE_OTHERS  3'b111
 
-
-module ControlUnit (
+module ControlUnit(
 	input         arst      , // async  reset
 	input         clk       , // clock  posedge
 	input         request   , // request input (asynch) 
@@ -44,42 +34,63 @@ module ControlUnit (
 	input  [ 1:0] syskey    , // key  from memoty unit
 	input  [34:0] configin  , // conf from user
 	output reg [34:0] configout , // conf to memory unit
-	output        write_en  , // conf mem write enable
-	output [ 2:0] dbg_state   // current state (debug)
-	);
-
-	reg [2:0] State;
-	wire passcheck;
-	PassCheckUnit passCheck(.pass(password[1:0]),.key(syskey[1:0]),.equal(passcheck));
-	
-	assign dbg_state=State;
-	
-	always @(posedge clk or negedge arst or posedge request) begin
-		if(arst ) State =`STATE_OFF;
-		else if(request) State=`STATE_OFF;
-		else begin
-			if(request) begin
-					State=`STATE_IDLE;
-					if(confirm) begin
-						State=`STATE_ACTIVE;
-						if(passcheck) begin
-							State=`STATE_REQUEST;
-							
-							if(write_en) State=`STATE_STORE;
-							else State=`STATE_OTHERS;
-						end else begin
-							State=`STATE_TRAP;
-						end
-					end	
-			 else State=`STATE_OTHERS;
-		 end else State=`STATE_OFF;
-		end
-	end //end of always	
-
-	always @(posedge clk)
+	output reg write_en  , // conf mem write enable
+	output reg [ 2:0] dbg_state   // current state (debug)
+    );
+	wire write;
+	PassCheckUnit P(.pass(password),.key(syskey),.equal(write));
+	always @ (posedge clk or negedge arst)
 	begin
-		case(dbg_state)
-			`STATE_STORE:configout<=configin;
-		endcase
-end		
+		if (~arst)
+		begin
+			configout =0;
+			write_en = 1'b0;
+			dbg_state = `STATE_IDLE;
+		end
+		else
+		begin
+			case (dbg_state)
+				`STATE_IDLE : begin
+					write_en = 1'b0;
+					if (request) dbg_state = `STATE_ACTIVE;
+				end
+				`STATE_ACTIVE : begin
+					if (~request) dbg_state = `STATE_IDLE;
+					else if (confirm)
+					begin
+						write_en = write;
+						if (write_en)
+							dbg_state = `STATE_REQUEST;
+						else
+							dbg_state = `STATE_TRAP;
+					end
+					else dbg_state = `STATE_OTHERS;
+				end
+				`STATE_REQUEST : begin
+					if (~request) dbg_state = `STATE_IDLE;
+					else if (confirm)
+					begin
+						configout = configin;
+						dbg_state = `STATE_STORE;
+					end
+					else dbg_state = `STATE_OTHERS;
+				end
+				`STATE_STORE : begin
+					if (~request) dbg_state = `STATE_IDLE;
+					else
+					begin
+						configout = configin;
+					end
+				end
+				`STATE_TRAP : begin
+					if (~request) dbg_state = `STATE_IDLE;
+				end
+				`STATE_OTHERS : begin
+					if (write_en) dbg_state = `STATE_REQUEST;
+					else dbg_state = `STATE_ACTIVE;
+				end	
+			endcase
+		end
+	end
+
 endmodule

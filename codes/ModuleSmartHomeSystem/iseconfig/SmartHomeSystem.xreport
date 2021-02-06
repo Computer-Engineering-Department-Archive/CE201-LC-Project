@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2021-02-06T09:36:52</DateModified>
+  <DateModified>2021-02-06T20:01:48</DateModified>
   <ModuleName>SmartHomeSystem</ModuleName>
-  <SummaryTimeStamp>2021-02-06T09:36:25</SummaryTimeStamp>
+  <SummaryTimeStamp>2021-02-06T20:00:03</SummaryTimeStamp>
   <SavedFilePath>E:/git/LCF99/codes/ModuleSmartHomeSystem/iseconfig/SmartHomeSystem.xreport</SavedFilePath>
   <ImplementationReportsDirectory>E:/git/LCF99/codes/ModuleSmartHomeSystem\</ImplementationReportsDirectory>
-  <DateInitialized>2021-02-06T09:14:27</DateInitialized>
+  <DateInitialized>2021-02-06T13:00:28</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

@@ -111,7 +111,6 @@ module SmartHomeSystem (
 		.din(mem_in),
 		.dout(mem_out));
 
-/*
 	ControlUnit Module7 (
 		.arst     (arst     ),
 		.clk      (clk      ),
@@ -124,6 +123,5 @@ module SmartHomeSystem (
 		.write_en (mem_wren ),
 		.dbg_state(dbg_state)
 	);
-*/
 
 endmodule

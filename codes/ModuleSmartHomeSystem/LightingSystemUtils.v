@@ -15,27 +15,15 @@
 --*/
 
 /*-----------------------------------------------------------
----  Module Name: Light Dance
----  Description: Module5:
+---  Module Name: Lighting System Utils
+---  Description: Module4:
 -----------------------------------------------------------*/
 `timescale 1 ns/1 ns
 
-module DFlop (
-	input  arst  , // async reset
-	input  clk   , // clock posedge
-	input  din   , // data  in
-	input  load,
-	input load_data, // data  load 
-	output reg dout    // data  out
-);
+/***********************************************************/
+/************** Design Your Own Modules Below **************/
 
-	always@(posedge clk or negedge arst) begin
-		 if(~arst)
-			dout <= 1'b0;
-		 else if(~load)
-			dout <= din;
-			else
-			 dout<=load_data;
-	end
 
-endmodule
+	
+/************** Design Your Own Modules Above **************/
+/***********************************************************/

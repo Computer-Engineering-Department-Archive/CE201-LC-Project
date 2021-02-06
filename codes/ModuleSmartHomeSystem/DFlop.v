@@ -24,7 +24,8 @@ module DFlop (
 	input  arst  , // async reset
 	input  clk   , // clock posedge
 	input  din   , // data  in
-	input  load  , // data  load 
+	input  load,
+	input load_data, // data  load 
 	output reg dout    // data  out
 );
 
@@ -33,6 +34,8 @@ module DFlop (
 			dout <= 1'b0;
 		 else if(~load)
 			dout <= din;
+			else
+			 dout<=load_data;
 	end
 
 endmodule

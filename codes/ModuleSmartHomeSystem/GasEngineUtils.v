@@ -15,27 +15,48 @@
 --*/
 
 /*-----------------------------------------------------------
----  Module Name: Light Dance
----  Description: Module5:
+---  Module Name: Gas Engine Utils
+---  Description: Module2:
 -----------------------------------------------------------*/
 `timescale 1 ns/1 ns
 
-module DFlop (
-	input  arst  , // async reset
-	input  clk   , // clock posedge
-	input  din   , // data  in
-	input  load,
-	input load_data, // data  load 
-	output reg dout    // data  out
-);
+module GasEngineUtils();
 
-	always@(posedge clk or negedge arst) begin
-		 if(~arst)
-			dout <= 1'b0;
-		 else if(~load)
-			dout <= din;
-			else
-			 dout<=load_data;
+	reg arst, clk, din;
+	wire [2:0]dout;
+	
+	GasDetectorSensor gds(arst, clk, din, dout);
+	
+	always begin
+		#5; clk = ~clk;
 	end
-
+		
+	initial begin
+		clk = 0; arst = 1; din = 0; #10
+		din = 1; #10;
+		din = 0; #10;
+		din = 1; #10;
+		din = 1; #10;
+		din = 1; #10;
+		din = 0; #10;
+		din = 1; #10;
+		din = 0; #10;
+		din = 1; #10;
+		din = 0; #10; //ch4
+		din = 0; #10; 
+		din = 1; #10; 
+		din = 0; #10;
+		din = 0; #10;
+		din = 1; #10;
+		din = 1; #10; //co
+		din = 1; #10;
+		din = 0; #10;
+		din = 0; #10;
+		din = 1; #10;
+		din = 0; #10;
+		din = 0; #10;
+		din = 1; #10;
+		din = 0; #10;
+		din = 0; #10; //co2
+	end
 endmodule

@@ -29,13 +29,13 @@ module LightDance (
 	output wire [7:0] qdata   // output data
 );
 
-	DFlop d7(arst, clk, din^qdata[0], load, qdata[7]);
-	DFlop d6(arst, clk, qdata[7], load, qdata[6]);
-	DFlop d5(arst, clk, qdata[6]^qdata[0], load, qdata[5]);
-	DFlop d4(arst, clk, qdata[5]^qdata[0], load, qdata[4]);
-	DFlop d3(arst, clk, qdata[4], load, qdata[3]);
-	DFlop d2(arst, clk, qdata[3], load, qdata[2]);
-	DFlop d1(arst, clk, qdata[2]^qdata[0], load, qdata[1]);
-	DFlop d0(arst, clk, qdata[1]^qdata[0], load, qdata[0]);
+	DFlop d7(arst, clk, din^qdata[0], load,pdata[7], qdata[7]);
+	DFlop d6(arst, clk, qdata[7], load,pdata[6], qdata[6]);
+	DFlop d5(arst, clk, qdata[6]^qdata[0], load,pdata[5], qdata[5]);
+	DFlop d4(arst, clk, qdata[5]^qdata[0], load, pdata[4],qdata[4]);
+	DFlop d3(arst, clk, qdata[4], load, pdata[3],qdata[3]);
+	DFlop d2(arst, clk, qdata[3], load,pdata[2], qdata[2]);
+	DFlop d1(arst, clk, qdata[2]^qdata[0], pdata[1],load, qdata[1]);
+	DFlop d0(arst, clk, qdata[1]^qdata[0], load,pdata[0], qdata[0]);
 	
 endmodule

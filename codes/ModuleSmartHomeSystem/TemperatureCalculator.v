@@ -30,7 +30,7 @@ module TemperatureCalculator (
 
 	wire [15:0] _8x8res;
 	wire [7:0] tempRef;
-	wire [31:0] div, _16x16res, ttempc;
+	wire [31:0] div, _16x16res;
 	
 	assign tempRef=(tc_ref[7]?-tc_ref:tc_ref);
 	
