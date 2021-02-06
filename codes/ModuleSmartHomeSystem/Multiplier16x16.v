@@ -15,25 +15,20 @@
 --*/
 
 /*-----------------------------------------------------------
----  Module Name: Memory Unit
----  Description: Module6:
+---  Module Name: 16 Bit Multiplier
+---  Description: Module1: 
 -----------------------------------------------------------*/
 `timescale 1 ns/1 ns
 
-module MemoryUnit (
-	input         arst , // async  reset
-	input         clk  , // clock  posedge
-	input         wren , // write  enabledata
-	input  [34:0] din  , // input  data
-	output reg [34:0] dout   // output data
+module Multiplier16x16 (
+	input  [15:0] A , // input  [unsigned 16 bits]
+	input  [15:0] B , // input  [unsigned 16 bits]
+	output [31:0] P   // output [unsigned 32 bits]
 );
 
-	always @(posedge clk or posedge arst) begin
-			if(arst) dout<=0;
-			else begin
-			if(wren) 
-				 dout <= din;
-			end
-		end
+assign P=A*B;
+	
+	
+	/* write your code here */
 
 endmodule

@@ -51,35 +51,59 @@ module ControlUnit (
 	reg [2:0] State;
 	wire passcheck;
 	PassCheckUnit passCheck(.pass(password[1:0]),.key(syskey[1:0]),.equal(passcheck));
-	
 	assign dbg_state=State;
 	
-	always @(posedge clk or negedge arst or posedge request) begin
-		if(arst ) State =`STATE_OFF;
-		else if(request) State=`STATE_OFF;
-		else begin
-			if(request) begin
+	always @(posedge clk or negedge arst or posedge request)
+		begin
+		if(arst )
+			begin
+				State =`STATE_OFF;
+			end
+		else if(request)
+			begin
+				State=`STATE_OFF;
+			end
+		else
+			begin
+			if(request)
+				begin
 					State=`STATE_IDLE;
-					if(confirm) begin
+				if(confirm)
+					begin
 						State=`STATE_ACTIVE;
-						if(passcheck) begin
-							State=`STATE_REQUEST;
-							
-							if(write_en) State=`STATE_STORE;
-							else State=`STATE_OTHERS;
-						end else begin
-							State=`STATE_TRAP;
-						end
+						if(passcheck)
+							begin
+								State=`STATE_REQUEST;
+								if(write_en)
+									begin
+										State=`STATE_STORE;
+									end
+								else
+									begin
+										State=`STATE_OTHERS;
+									end
+							end	
+						else
+							begin
+								State=`STATE_TRAP;
+							end
 					end	
-			 else State=`STATE_OTHERS;
-		 end else State=`STATE_OFF;
-		end
-	end //end of always	
-
+				else
+					begin
+						State=`STATE_OTHERS;
+					end
+				end
+			else
+				begin
+					State=`STATE_OFF;
+				end
+			end	
+	end		
 	always @(posedge clk)
 	begin
 		case(dbg_state)
 			`STATE_STORE:configout<=configin;
 		endcase
+		
 end		
 endmodule

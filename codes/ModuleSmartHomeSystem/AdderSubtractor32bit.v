@@ -15,25 +15,26 @@
 --*/
 
 /*-----------------------------------------------------------
----  Module Name: Memory Unit
----  Description: Module6:
+---  Module Name: 32 Bit Adder/Subtractor
+---  Description: Module1: 
 -----------------------------------------------------------*/
 `timescale 1 ns/1 ns
 
-module MemoryUnit (
-	input         arst , // async  reset
-	input         clk  , // clock  posedge
-	input         wren , // write  enabledata
-	input  [34:0] din  , // input  data
-	output reg [34:0] dout   // output data
+module AdderSubtractor32x32 (
+	input  [31:0] A    , // input  [2's complement 32 bits]
+	input  [31:0] B    , // input  [2's complement 32 bits]
+	input         sel  , // input  [add:sel=0 || sub:sel=1] 
+	output [31:0] S      // output [2's complement 32 bits]
 );
-
-	always @(posedge clk or posedge arst) begin
-			if(arst) dout<=0;
-			else begin
-			if(wren) 
-				 dout <= din;
+		reg [31:0] s2;
+		always @(sel or A or B)
+		if(sel)
+			begin
+				s2=A-B;
 			end
-		end
-
+		else
+			begin
+				s2=A+B;
+			end
+		assign S=s2;
 endmodule

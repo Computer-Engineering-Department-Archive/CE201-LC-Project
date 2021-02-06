@@ -15,25 +15,19 @@
 --*/
 
 /*-----------------------------------------------------------
----  Module Name: Memory Unit
----  Description: Module6:
+---  Module Name: Password Checker Unit
+---  Description: Module7: 
 -----------------------------------------------------------*/
 `timescale 1 ns/1 ns
 
-module MemoryUnit (
-	input         arst , // async  reset
-	input         clk  , // clock  posedge
-	input         wren , // write  enabledata
-	input  [34:0] din  , // input  data
-	output reg [34:0] dout   // output data
+module PassCheckUnit (
+	input  [ 1:0] pass   , // input  [user   password]
+	input  [ 1:0] key    , // input  [system password]
+	output        equal    // output [(pass==key) : 1]
 );
 
-	always @(posedge clk or posedge arst) begin
-			if(arst) dout<=0;
-			else begin
-			if(wren) 
-				 dout <= din;
-			end
-		end
+	/* write your code here */
+	assign equal = (pass == key) ? 1'b1: 1'b0;
+	/* write your code here */
 
 endmodule

@@ -15,25 +15,24 @@
 --*/
 
 /*-----------------------------------------------------------
----  Module Name: Memory Unit
----  Description: Module6:
+---  Module Name: Light Dance
+---  Description: Module5:
 -----------------------------------------------------------*/
 `timescale 1 ns/1 ns
 
-module MemoryUnit (
-	input         arst , // async  reset
-	input         clk  , // clock  posedge
-	input         wren , // write  enabledata
-	input  [34:0] din  , // input  data
-	output reg [34:0] dout   // output data
+module DFlop (
+	input  arst  , // async reset
+	input  clk   , // clock posedge
+	input  din   , // data  in
+	input  load  , // data  load 
+	output reg dout    // data  out
 );
 
-	always @(posedge clk or posedge arst) begin
-			if(arst) dout<=0;
-			else begin
-			if(wren) 
-				 dout <= din;
-			end
-		end
+	always@(posedge clk or negedge arst) begin
+		 if(~arst)
+			dout <= 1'b0;
+		 else if(~load)
+			dout <= din;
+	end
 
 endmodule

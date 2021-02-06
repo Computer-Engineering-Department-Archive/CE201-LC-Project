@@ -15,25 +15,19 @@
 --*/
 
 /*-----------------------------------------------------------
----  Module Name: Memory Unit
----  Description: Module6:
+---  Module Name: Gas Detector Sensor
+---  Description: Module2:
 -----------------------------------------------------------*/
 `timescale 1 ns/1 ns
 
-module MemoryUnit (
-	input         arst , // async  reset
-	input         clk  , // clock  posedge
-	input         wren , // write  enabledata
-	input  [34:0] din  , // input  data
-	output reg [34:0] dout   // output data
+module GasDetectorSensor (
+	input        arst     , // async reset
+	input        clk      , // clock posedge
+	input        din      , // input data 
+	output [2:0] dout       // output data
 );
 
-	always @(posedge clk or posedge arst) begin
-			if(arst) dout<=0;
-			else begin
-			if(wren) 
-				 dout <= din;
-			end
-		end
-
+	ch4Detector CH4(.x(din),.Z(dout[0]),.CLK(clk),.RST(arst));
+	coDetector CO(.x(din),.Z(dout[1]),.CLK(clk),.RST(arst));
+	co2Detector CO2(.x(din),.Z(dout[2]),.CLK(clk),.RST(arst));
 endmodule
