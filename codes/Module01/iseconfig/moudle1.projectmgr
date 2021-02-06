@@ -39,6 +39,7 @@
          <ClosedNode>/TemperatureCalculator M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|TemperatureCalculator.v/multi1 - Multiplier16x16</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
+<<<<<<< HEAD
          <SelectedItem>TemperatureCalculator (E:/git/LCF99/codes/Module01/TemperatureCalculator.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
@@ -46,6 +47,15 @@
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000199000000020000000000000000000000000200000064ffffffff000000810000000300000002000001990000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
       <CurrentItem>TemperatureCalculator (E:/git/LCF99/codes/Module01/TemperatureCalculator.v)</CurrentItem>
+=======
+         <SelectedItem>uut - TemperatureCalculator (E:/git/LCF99/codes/Module01/TemperatureCalculator.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001ad000000020000000000000000000000000200000064ffffffff000000810000000300000002000001ad0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>uut - TemperatureCalculator (E:/git/LCF99/codes/Module01/TemperatureCalculator.v)</CurrentItem>
+>>>>>>> cf7cbb9ed0800a9de5a5f8ba23d39996c1d43e6a
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -93,13 +103,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Design Summary/Reports</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000156000000010000000100000000000000000000000064ffffffff000000810000000000000001000001560000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Design Summary/Reports</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
@@ -107,16 +117,17 @@
          <ClosedNode>/AdderSubtractor32x32 M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|AdderSubtractor32bit.v</ClosedNode>
          <ClosedNode>/Multiplier16x16 M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|Multiplier16x16.v</ClosedNode>
          <ClosedNode>/Multiplier8x8 M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|Multiplier8x8.v</ClosedNode>
+         <ClosedNode>/tb_calculator M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|tb_calculator.v/uut - TemperatureCalculator</ClosedNode>
          <ClosedNode>/tb_division M:|uni|thirdsummestur|az manteghi|final proj|phase 1|part 1|tb_division.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>tb_division (M:/uni/thirdsummestur/az manteghi/final proj/phase 1/part 1/tb_division.v)</SelectedItem>
+         <SelectedItem>TemperatureCalculatorUtils (E:/git/LCF99/codes/Module01/TemperatureCalculatorUtils.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000148000000020000000000000000000000000200000064ffffffff000000810000000300000002000001480000000100000003000000000000000100000003</ViewHeaderState>
-      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>tb_division (M:/uni/thirdsummestur/az manteghi/final proj/phase 1/part 1/tb_division.v)</CurrentItem>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001ad000000020000000000000000000000000200000064ffffffff000000810000000300000002000001ad0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>TemperatureCalculatorUtils (E:/git/LCF99/codes/Module01/TemperatureCalculatorUtils.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -128,7 +139,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000156000000010000000100000000000000000000000064ffffffff000000810000000000000001000001560000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem/>
    </ItemView>
@@ -141,10 +152,10 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000156000000010000000100000000000000000000000064ffffffff000000810000000000000001000001560000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000011e0000012901000000050100000002</SourceProcessView>
-   <CurrentView>Implementation</CurrentView>
+   <CurrentView>Behavioral Simulation</CurrentView>
 </Project>
