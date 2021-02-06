@@ -25,6 +25,172 @@
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="CoolHeatSystem_guide.ncd" xil_pn:origination="imported"/>
   </files>
 
+<<<<<<< HEAD
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1611612458" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1611612458">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611612622" xil_pn:in_ck="-3406356465289042015" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1611612622">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="CoolHeatSystem.v"/>
+      <outfile xil_pn:name="CoolHeatSystemUtils.v"/>
+      <outfile xil_pn:name="FanSpeed.v"/>
+      <outfile xil_pn:name="ModePower.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1611612458" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-2645154339406624388" xil_pn:start_ts="1611612458">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611612458" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-123984003048725464" xil_pn:start_ts="1611612458">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611612585" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-5112598022356711351" xil_pn:start_ts="1611612585">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+    </transform>
+    <transform xil_pn:end_ts="1611612622" xil_pn:in_ck="-3406356465289042015" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1611612622">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="CoolHeatSystem.v"/>
+      <outfile xil_pn:name="CoolHeatSystemUtils.v"/>
+      <outfile xil_pn:name="FanSpeed.v"/>
+      <outfile xil_pn:name="ModePower.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1611612624" xil_pn:in_ck="-3406356465289042015" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1990858851524142920" xil_pn:start_ts="1611612622">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="CoolHeatSystemUtils_beh.prj"/>
+      <outfile xil_pn:name="CoolHeatSystemUtils_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1611612625" xil_pn:in_ck="-5736105139996985324" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3354163121639042315" xil_pn:start_ts="1611612624">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="CoolHeatSystemUtils_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+    </transform>
+    <transform xil_pn:end_ts="1611612310" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1611612310">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611613019" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="814737521536288151" xil_pn:start_ts="1611613019">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611613019" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="4952086646700025240" xil_pn:start_ts="1611613019">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611613019" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1611613019">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611613019" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="8570169785712495723" xil_pn:start_ts="1611613019">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611613019" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="5702940744460053484" xil_pn:start_ts="1611613019">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611613019" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="2436646733811081762" xil_pn:start_ts="1611613019">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611613050" xil_pn:in_ck="-3406356465289042015" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-8151668948436227998" xil_pn:start_ts="1611613019">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="CoolHeatSystem.lso"/>
+      <outfile xil_pn:name="CoolHeatSystem.ngc"/>
+      <outfile xil_pn:name="CoolHeatSystem.ngr"/>
+      <outfile xil_pn:name="CoolHeatSystem.prj"/>
+      <outfile xil_pn:name="CoolHeatSystem.stx"/>
+      <outfile xil_pn:name="CoolHeatSystem.syr"/>
+      <outfile xil_pn:name="CoolHeatSystem.xst"/>
+      <outfile xil_pn:name="CoolHeatSystemUtils.prj"/>
+      <outfile xil_pn:name="CoolHeatSystemUtils_beh.prj"/>
+      <outfile xil_pn:name="CoolHeatSystem_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1611613050" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="5501655212743851670" xil_pn:start_ts="1611613050">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611613057" xil_pn:in_ck="-7996897689706967867" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-5216725493991619594" xil_pn:start_ts="1611613050">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="CoolHeatSystem.bld"/>
+      <outfile xil_pn:name="CoolHeatSystem.ngd"/>
+      <outfile xil_pn:name="CoolHeatSystem_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1611613083" xil_pn:in_ck="-5137354811979181925" xil_pn:name="TRANEXT_map_virtex7" xil_pn:prop_ck="3373610943407121171" xil_pn:start_ts="1611613057">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="CoolHeatSystem.pcf"/>
+      <outfile xil_pn:name="CoolHeatSystem_map.map"/>
+      <outfile xil_pn:name="CoolHeatSystem_map.mrp"/>
+      <outfile xil_pn:name="CoolHeatSystem_map.ncd"/>
+      <outfile xil_pn:name="CoolHeatSystem_map.ngm"/>
+      <outfile xil_pn:name="CoolHeatSystem_map.xrpt"/>
+      <outfile xil_pn:name="CoolHeatSystem_summary.xml"/>
+      <outfile xil_pn:name="CoolHeatSystem_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1611613113" xil_pn:in_ck="1442969345545729332" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-8066324139983898644" xil_pn:start_ts="1611613083">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="CoolHeatSystem.ncd"/>
+      <outfile xil_pn:name="CoolHeatSystem.pad"/>
+      <outfile xil_pn:name="CoolHeatSystem.par"/>
+      <outfile xil_pn:name="CoolHeatSystem.ptwx"/>
+      <outfile xil_pn:name="CoolHeatSystem.unroutes"/>
+      <outfile xil_pn:name="CoolHeatSystem.xpi"/>
+      <outfile xil_pn:name="CoolHeatSystem_pad.csv"/>
+      <outfile xil_pn:name="CoolHeatSystem_pad.txt"/>
+      <outfile xil_pn:name="CoolHeatSystem_par.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1611613113" xil_pn:in_ck="-5137354811979182057" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="-3742689831323817471" xil_pn:start_ts="1611613101">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="CoolHeatSystem.twr"/>
+      <outfile xil_pn:name="CoolHeatSystem.twx"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+    </transform>
+  </transforms>
+=======
   <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
+>>>>>>> cf7cbb9ed0800a9de5a5f8ba23d39996c1d43e6a
 
 </generated_project>

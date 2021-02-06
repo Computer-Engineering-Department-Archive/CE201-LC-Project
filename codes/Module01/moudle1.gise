@@ -22,6 +22,12 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="moudle1.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+<<<<<<< HEAD
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="TemperatureCalculator_guide.ncd" xil_pn:origination="imported"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
+=======
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TemperatureCalculatorUtils_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="TemperatureCalculatorUtils_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="TemperatureCalculatorUtils_isim_beh.wdb"/>
@@ -93,5 +99,6 @@
       <outfile xil_pn:name="isim.log"/>
     </transform>
   </transforms>
+>>>>>>> cf7cbb9ed0800a9de5a5f8ba23d39996c1d43e6a
 
 </generated_project>

@@ -36,7 +36,11 @@
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="TemperatureCalculatorUtils.v" xil_pn:type="FILE_VERILOG">
+<<<<<<< HEAD
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="63"/>
+=======
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="5"/>
+>>>>>>> cf7cbb9ed0800a9de5a5f8ba23d39996c1d43e6a
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
   </files>

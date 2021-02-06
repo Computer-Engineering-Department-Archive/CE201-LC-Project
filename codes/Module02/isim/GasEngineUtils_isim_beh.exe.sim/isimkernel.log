@@ -1,0 +1,28 @@
+Command line:
+   GasEngineUtils_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  52290
+
+Thu Jan 28 15:54:47 2021
+
+
+ Elaboration Time: 0.125 sec
+
+ Current Memory Usage: 5164.5 Meg
+
+ Total Signals          : 30
+ Total Nets             : 19
+ Total Signal Drivers   : 11
+ Total Blocks           : 6
+ Total Primitive Blocks : 4
+ Total Processes        : 17
+ Total Traceable Variables  : 58
+ Total Scalar Nets and Variables : 250
+
+ Total Simulation Time: 0.25 sec
+
+ Current Memory Usage: 5164.5 Meg
+
+Thu Jan 28 15:55:09 2021
+

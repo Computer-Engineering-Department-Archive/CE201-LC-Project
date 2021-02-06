@@ -38,7 +38,7 @@ module division(A,B,Res);
         a1 = A;
         b1 = B;
         p1= 0;
-        for(i=0;i < WIDTH;i=i+1)    begin //start the for loop
+        for(i=0;i < WIDTH;i=i+1) begin //start the for loop
             p1 = {p1[WIDTH-2:0],a1[WIDTH-1]};
             a1[WIDTH-1:1] = a1[WIDTH-2:0];
             p1 = p1-b1;

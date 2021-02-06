@@ -1,11 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
+<<<<<<< HEAD
+  <DateModified>2021-01-28T15:54:26</DateModified>
+  <ModuleName>GasDetectorSensor</ModuleName>
+  <SummaryTimeStamp>2021-01-26T09:29:23</SummaryTimeStamp>
+  <SavedFilePath>E:/Courses/AUT/semester 3/Logic Circuit/project/codes/Module02/iseconfig/GasDetectorSensor.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>E:/Courses/AUT/semester 3/Logic Circuit/project/codes/Module02\</ImplementationReportsDirectory>
+=======
   <DateModified>2021-02-06T09:13:22</DateModified>
   <ModuleName>GasDetectorSensor</ModuleName>
   <SummaryTimeStamp>2021-01-26T09:29:23</SummaryTimeStamp>
   <SavedFilePath>E:/git/LCF99/codes/Module02/iseconfig/GasDetectorSensor.xreport</SavedFilePath>
   <ImplementationReportsDirectory>E:/git/LCF99/codes/Module02\</ImplementationReportsDirectory>
+>>>>>>> cf7cbb9ed0800a9de5a5f8ba23d39996c1d43e6a
   <DateInitialized>2021-01-26T09:34:50</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

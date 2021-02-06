@@ -1,0 +1,667 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: TemperatureCalculator.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "TemperatureCalculator.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "TemperatureCalculator"
+Output Format                      : NGC
+Target Device                      : xc3s50-4-pq208
+
+---- Source Options
+Top Module Name                    : TemperatureCalculator
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "FA.v" in library work
+Compiling verilog file "Multiplier8x8.v" in library work
+Module <FA> compiled
+Compiling verilog file "Multiplier16x16.v" in library work
+Module <Multiplier8x8> compiled
+Compiling verilog file "division.v" in library work
+Module <Multiplier16x16> compiled
+Compiling verilog file "AdderSubtractor32bit.v" in library work
+Module <division> compiled
+Compiling verilog file "TemperatureCalculator.v" in library work
+Module <AdderSubtractor32x32> compiled
+Module <TemperatureCalculator> compiled
+No errors in compilation
+Analysis of file <"TemperatureCalculator.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <TemperatureCalculator> in library <work>.
+
+Analyzing hierarchy for module <Multiplier8x8> in library <work>.
+
+Analyzing hierarchy for module <Multiplier16x16> in library <work>.
+
+Analyzing hierarchy for module <division> in library <work> with parameters.
+	WIDTH = "00000000000000000000000000100000"
+
+Analyzing hierarchy for module <AdderSubtractor32x32> in library <work>.
+
+Analyzing hierarchy for module <FA> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <TemperatureCalculator>.
+Module <TemperatureCalculator> is correct for synthesis.
+ 
+Analyzing module <Multiplier8x8> in library <work>.
+Module <Multiplier8x8> is correct for synthesis.
+ 
+Analyzing module <Multiplier16x16> in library <work>.
+Module <Multiplier16x16> is correct for synthesis.
+ 
+Analyzing module <division> in library <work>.
+	WIDTH = 32'sb00000000000000000000000000100000
+Module <division> is correct for synthesis.
+ 
+Analyzing module <AdderSubtractor32x32> in library <work>.
+Module <AdderSubtractor32x32> is correct for synthesis.
+ 
+Analyzing module <FA> in library <work>.
+Module <FA> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Multiplier8x8>.
+    Related source file is "Multiplier8x8.v".
+    Found 8x8-bit multiplier for signal <P>.
+    Summary:
+	inferred   1 Multiplier(s).
+Unit <Multiplier8x8> synthesized.
+
+
+Synthesizing Unit <Multiplier16x16>.
+    Related source file is "Multiplier16x16.v".
+    Found 16x16-bit multiplier for signal <P>.
+    Summary:
+	inferred   1 Multiplier(s).
+Unit <Multiplier16x16> synthesized.
+
+
+Synthesizing Unit <division>.
+    Related source file is "division.v".
+WARNING:Xst:646 - Signal <p1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <b1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <a1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 33-bit adder for signal <old_p1_12$addsub0000> created at line 47.
+    Found 33-bit adder for signal <old_p1_15$addsub0000> created at line 47.
+    Found 33-bit adder for signal <old_p1_18$addsub0000> created at line 47.
+    Found 33-bit adder for signal <old_p1_21$addsub0000> created at line 47.
+    Found 33-bit adder for signal <old_p1_24$addsub0000> created at line 47.
+    Found 33-bit adder for signal <old_p1_27$addsub0000> created at line 47.
+    Found 33-bit adder for signal <old_p1_3$addsub0000> created at line 47.
+    Found 33-bit adder for signal <old_p1_30$addsub0000> created at line 47.
+    Found 33-bit adder for signal <old_p1_33$addsub0000> created at line 47.
+    Found 33-bit adder for signal <old_p1_36$addsub0000> created at line 47.
+    Found 33-bit adder for signal <old_p1_39$addsub0000> created at line 47.
+    Found 33-bit adder for signal <old_p1_42$addsub0000> created at line 47.
+    Found 33-bit adder for signal <old_p1_45$addsub0000> created at line 47.
+    Found 33-bit adder for signal <old_p1_48$addsub0000> created at line 47.
+    Found 33-bit adder for signal <old_p1_51$addsub0000> created at line 47.
+    Found 33-bit adder for signal <old_p1_54$addsub0000> created at line 47.
+    Found 33-bit adder for signal <old_p1_57$addsub0000> created at line 47.
+    Found 33-bit adder for signal <old_p1_6$addsub0000> created at line 47.
+    Found 33-bit adder for signal <old_p1_60$addsub0000> created at line 47.
+    Found 33-bit adder for signal <old_p1_63$addsub0000> created at line 47.
+    Found 33-bit adder for signal <old_p1_66$addsub0000> created at line 47.
+    Found 33-bit adder for signal <old_p1_69$addsub0000> created at line 47.
+    Found 33-bit adder for signal <old_p1_72$addsub0000> created at line 47.
+    Found 33-bit adder for signal <old_p1_75$addsub0000> created at line 47.
+    Found 33-bit adder for signal <old_p1_78$addsub0000> created at line 47.
+    Found 33-bit adder for signal <old_p1_81$addsub0000> created at line 47.
+    Found 33-bit adder for signal <old_p1_84$addsub0000> created at line 47.
+    Found 33-bit adder for signal <old_p1_87$addsub0000> created at line 47.
+    Found 33-bit adder for signal <old_p1_9$addsub0000> created at line 47.
+    Found 33-bit adder for signal <old_p1_90$addsub0000> created at line 47.
+    Found 33-bit adder for signal <old_p1_93$addsub0000> created at line 47.
+    Summary:
+	inferred  63 Adder/Subtractor(s).
+Unit <division> synthesized.
+
+
+Synthesizing Unit <FA>.
+    Related source file is "FA.v".
+    Found 1-bit adder carry out for signal <AUX_96$addsub0001> created at line 34.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+Unit <FA> synthesized.
+
+
+Synthesizing Unit <AdderSubtractor32x32>.
+    Related source file is "AdderSubtractor32bit.v".
+WARNING:Xst:647 - Input <A<31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <B<31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1305 - Output <S<31>> is never assigned. Tied to value 0.
+WARNING:Xst:646 - Signal <cin<31>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit xor2 for signal <$xor0000> created at line 37.
+    Found 1-bit xor2 for signal <$xor0001> created at line 37.
+    Found 1-bit xor2 for signal <$xor0002> created at line 37.
+    Found 1-bit xor2 for signal <$xor0003> created at line 37.
+    Found 1-bit xor2 for signal <$xor0004> created at line 37.
+    Found 1-bit xor2 for signal <$xor0005> created at line 37.
+    Found 1-bit xor2 for signal <$xor0006> created at line 37.
+    Found 1-bit xor2 for signal <$xor0007> created at line 37.
+    Found 1-bit xor2 for signal <$xor0008> created at line 37.
+    Found 1-bit xor2 for signal <$xor0009> created at line 37.
+    Found 1-bit xor2 for signal <$xor0010> created at line 37.
+    Found 1-bit xor2 for signal <$xor0011> created at line 37.
+    Found 1-bit xor2 for signal <$xor0012> created at line 37.
+    Found 1-bit xor2 for signal <$xor0013> created at line 37.
+    Found 1-bit xor2 for signal <$xor0014> created at line 37.
+    Found 1-bit xor2 for signal <$xor0015> created at line 37.
+    Found 1-bit xor2 for signal <$xor0016> created at line 37.
+    Found 1-bit xor2 for signal <$xor0017> created at line 37.
+    Found 1-bit xor2 for signal <$xor0018> created at line 37.
+    Found 1-bit xor2 for signal <$xor0019> created at line 37.
+    Found 1-bit xor2 for signal <$xor0020> created at line 37.
+    Found 1-bit xor2 for signal <$xor0021> created at line 37.
+    Found 1-bit xor2 for signal <$xor0022> created at line 37.
+    Found 1-bit xor2 for signal <$xor0023> created at line 37.
+    Found 1-bit xor2 for signal <$xor0024> created at line 37.
+    Found 1-bit xor2 for signal <$xor0025> created at line 37.
+    Found 1-bit xor2 for signal <$xor0026> created at line 37.
+    Found 1-bit xor2 for signal <$xor0027> created at line 37.
+    Found 1-bit xor2 for signal <$xor0028> created at line 37.
+    Found 1-bit xor2 for signal <$xor0029> created at line 37.
+    Found 1-bit xor2 for signal <$xor0030> created at line 37.
+Unit <AdderSubtractor32x32> synthesized.
+
+
+Synthesizing Unit <TemperatureCalculator>.
+    Related source file is "TemperatureCalculator.v".
+    Found 32-bit adder for signal <tempc>.
+    Found 32-bit subtractor for signal <tempbase$addsub0000> created at line 33.
+    Found 10-bit subtractor for signal <tempRef$sub0000> created at line 31.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+Unit <TemperatureCalculator> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 2
+ 16x16-bit multiplier                                  : 1
+ 8x8-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 128
+ 1-bit adder carry out                                 : 31
+ 10-bit subtractor                                     : 1
+ 2-bit adder                                           : 31
+ 32-bit adder                                          : 1
+ 32-bit subtractor                                     : 1
+ 33-bit adder                                          : 31
+ 33-bit subtractor                                     : 32
+# Xors                                                 : 31
+ 1-bit xor2                                            : 31
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 2
+ 16x16-bit multiplier                                  : 1
+ 8x8-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 128
+ 1-bit adder carry out                                 : 31
+ 2-bit adder                                           : 31
+ 31-bit adder                                          : 31
+ 32-bit adder                                          : 1
+ 32-bit subtractor                                     : 33
+ 8-bit subtractor                                      : 1
+# Xors                                                 : 31
+ 1-bit xor2                                            : 31
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <TemperatureCalculator> ...
+
+Optimizing unit <division> ...
+
+Optimizing unit <AdderSubtractor32x32> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block TemperatureCalculator, actual ratio is 154.
+Optimizing block <TemperatureCalculator> to meet ratio 100 (+ 5) of 768 slices :
+Area constraint is met for block <TemperatureCalculator>, final ratio is 102.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : TemperatureCalculator.ngr
+Top Level Output File Name         : TemperatureCalculator
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 88
+
+Cell Usage :
+# BELS                             : 4365
+#      GND                         : 1
+#      INV                         : 56
+#      LUT1                        : 678
+#      LUT2                        : 4
+#      LUT3                        : 705
+#      LUT4                        : 63
+#      MUXCY                       : 1413
+#      MUXF5                       : 2
+#      VCC                         : 1
+#      XORCY                       : 1442
+# IO Buffers                       : 87
+#      IBUF                        : 55
+#      OBUF                        : 32
+# MULTs                            : 2
+#      MULT18X18                   : 2
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50pq208-4 
+
+ Number of Slices:                      785  out of    768   102% (*) 
+ Number of 4 input LUTs:               1506  out of   1536    98%  
+ Number of IOs:                          88
+ Number of bonded IOBs:                  87  out of    124    70%  
+ Number of MULT18X18s:                    2  out of      4    50%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 226.534ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1248109707750678100000000000000000000000000000000000000000 / 32
+-------------------------------------------------------------------------
+Delay:               226.534ns (Levels of Logic = 193)
+  Source:            tc_ref<0> (PAD)
+  Destination:       tempc<31> (PAD)
+
+  Data Path: tc_ref<0> to tempc<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   0.821   1.342  tc_ref_0_IBUF (Msub_tempRef_sub0000_Madd_cy<0>)
+     LUT4:I0->O            5   0.551   1.116  tempRef_not0000<4>11 (N4)
+     LUT4:I1->O            1   0.551   0.000  tempRef_not0000<7>11 (tempRef_not0000<7>1)
+     MUXF5:I1->O           2   0.360   0.877  tempRef_not0000<7>1_f5 (tempRef<7>)
+     MULT18X18:A7->P15     1   3.615   0.801  m8x8/Mmult_P (out<15>)
+     MULT18X18:A15->P31    1   4.851   1.140  m16x16/Mmult_P (out1<31>)
+     LUT1:I0->O            1   0.551   0.000  div/Msub__old_p1_17_Madd_cy<5>_rt (div/Msub__old_p1_17_Madd_cy<5>_rt)
+     MUXCY:S->O            1   0.500   0.000  div/Msub__old_p1_17_Madd_cy<5> (div/Msub__old_p1_17_Madd_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  div/Msub__old_p1_17_Madd_cy<6> (div/Msub__old_p1_17_Madd_cy<6>)
+     XORCY:CI->O           2   0.904   1.216  div/Msub__old_p1_17_Madd_xor<7> (div/_old_p1_17<7>)
+     LUT1:I0->O            1   0.551   0.000  div/Madd_old_p1_18_addsub0000_Madd_cy<7>_rt (div/Madd_old_p1_18_addsub0000_Madd_cy<7>_rt)
+     MUXCY:S->O            1   0.500   0.000  div/Madd_old_p1_18_addsub0000_Madd_cy<7> (div/Madd_old_p1_18_addsub0000_Madd_cy<7>)
+     XORCY:CI->O           1   0.904   0.996  div/Madd_old_p1_18_addsub0000_Madd_xor<8> (div/old_p1_18_addsub0000<8>)
+     LUT3:I1->O            1   0.551   0.000  div/Msub__old_p1_20_Madd_lut<9> (div/Msub__old_p1_20_Madd_lut<9>)
+     MUXCY:S->O            1   0.500   0.000  div/Msub__old_p1_20_Madd_cy<9> (div/Msub__old_p1_20_Madd_cy<9>)
+     XORCY:CI->O           2   0.904   1.216  div/Msub__old_p1_20_Madd_xor<10> (div/_old_p1_20<10>)
+     LUT1:I0->O            1   0.551   0.000  div/Madd_old_p1_21_addsub0000_Madd_cy<10>_rt (div/Madd_old_p1_21_addsub0000_Madd_cy<10>_rt)
+     MUXCY:S->O            1   0.500   0.000  div/Madd_old_p1_21_addsub0000_Madd_cy<10> (div/Madd_old_p1_21_addsub0000_Madd_cy<10>)
+     XORCY:CI->O           1   0.904   0.996  div/Madd_old_p1_21_addsub0000_Madd_xor<11> (div/old_p1_21_addsub0000<11>)
+     LUT3:I1->O            1   0.551   0.000  div/Msub__old_p1_23_Madd_lut<12> (div/Msub__old_p1_23_Madd_lut<12>)
+     MUXCY:S->O            1   0.500   0.000  div/Msub__old_p1_23_Madd_cy<12> (div/Msub__old_p1_23_Madd_cy<12>)
+     XORCY:CI->O           2   0.904   1.216  div/Msub__old_p1_23_Madd_xor<13> (div/_old_p1_23<13>)
+     LUT1:I0->O            1   0.551   0.000  div/Madd_old_p1_24_addsub0000_Madd_cy<13>_rt (div/Madd_old_p1_24_addsub0000_Madd_cy<13>_rt)
+     MUXCY:S->O            1   0.500   0.000  div/Madd_old_p1_24_addsub0000_Madd_cy<13> (div/Madd_old_p1_24_addsub0000_Madd_cy<13>)
+     XORCY:CI->O           1   0.904   0.996  div/Madd_old_p1_24_addsub0000_Madd_xor<14> (div/old_p1_24_addsub0000<14>)
+     LUT3:I1->O            1   0.551   0.000  div/Msub__old_p1_26_Madd_lut<15> (div/Msub__old_p1_26_Madd_lut<15>)
+     MUXCY:S->O            1   0.500   0.000  div/Msub__old_p1_26_Madd_cy<15> (div/Msub__old_p1_26_Madd_cy<15>)
+     XORCY:CI->O           2   0.904   1.216  div/Msub__old_p1_26_Madd_xor<16> (div/_old_p1_26<16>)
+     LUT1:I0->O            1   0.551   0.000  div/Madd_old_p1_27_addsub0000_Madd_cy<16>_rt (div/Madd_old_p1_27_addsub0000_Madd_cy<16>_rt)
+     MUXCY:S->O            1   0.500   0.000  div/Madd_old_p1_27_addsub0000_Madd_cy<16> (div/Madd_old_p1_27_addsub0000_Madd_cy<16>)
+     XORCY:CI->O           1   0.904   0.996  div/Madd_old_p1_27_addsub0000_Madd_xor<17> (div/old_p1_27_addsub0000<17>)
+     LUT3:I1->O            1   0.551   0.000  div/Msub__old_p1_29_Madd_lut<18> (div/Msub__old_p1_29_Madd_lut<18>)
+     MUXCY:S->O            1   0.500   0.000  div/Msub__old_p1_29_Madd_cy<18> (div/Msub__old_p1_29_Madd_cy<18>)
+     XORCY:CI->O           2   0.904   1.216  div/Msub__old_p1_29_Madd_xor<19> (div/_old_p1_29<19>)
+     LUT1:I0->O            1   0.551   0.000  div/Madd_old_p1_30_addsub0000_Madd_cy<19>_rt (div/Madd_old_p1_30_addsub0000_Madd_cy<19>_rt)
+     MUXCY:S->O            1   0.500   0.000  div/Madd_old_p1_30_addsub0000_Madd_cy<19> (div/Madd_old_p1_30_addsub0000_Madd_cy<19>)
+     XORCY:CI->O           1   0.904   0.996  div/Madd_old_p1_30_addsub0000_Madd_xor<20> (div/old_p1_30_addsub0000<20>)
+     LUT3:I1->O            1   0.551   0.000  div/Msub__old_p1_32_Madd_lut<21> (div/Msub__old_p1_32_Madd_lut<21>)
+     MUXCY:S->O            1   0.500   0.000  div/Msub__old_p1_32_Madd_cy<21> (div/Msub__old_p1_32_Madd_cy<21>)
+     XORCY:CI->O           2   0.904   1.216  div/Msub__old_p1_32_Madd_xor<22> (div/_old_p1_32<22>)
+     LUT1:I0->O            1   0.551   0.000  div/Madd_old_p1_33_addsub0000_Madd_cy<22>_rt (div/Madd_old_p1_33_addsub0000_Madd_cy<22>_rt)
+     MUXCY:S->O            1   0.500   0.000  div/Madd_old_p1_33_addsub0000_Madd_cy<22> (div/Madd_old_p1_33_addsub0000_Madd_cy<22>)
+     XORCY:CI->O           1   0.904   0.996  div/Madd_old_p1_33_addsub0000_Madd_xor<23> (div/old_p1_33_addsub0000<23>)
+     LUT3:I1->O            1   0.551   0.000  div/Msub__old_p1_35_Madd_lut<24> (div/Msub__old_p1_35_Madd_lut<24>)
+     MUXCY:S->O            1   0.500   0.000  div/Msub__old_p1_35_Madd_cy<24> (div/Msub__old_p1_35_Madd_cy<24>)
+     XORCY:CI->O           2   0.904   1.216  div/Msub__old_p1_35_Madd_xor<25> (div/_old_p1_35<25>)
+     LUT1:I0->O            1   0.551   0.000  div/Madd_old_p1_36_addsub0000_Madd_cy<25>_rt (div/Madd_old_p1_36_addsub0000_Madd_cy<25>_rt)
+     MUXCY:S->O            1   0.500   0.000  div/Madd_old_p1_36_addsub0000_Madd_cy<25> (div/Madd_old_p1_36_addsub0000_Madd_cy<25>)
+     XORCY:CI->O           1   0.904   0.996  div/Madd_old_p1_36_addsub0000_Madd_xor<26> (div/old_p1_36_addsub0000<26>)
+     LUT3:I1->O            1   0.551   0.000  div/Msub__old_p1_38_Madd_lut<27> (div/Msub__old_p1_38_Madd_lut<27>)
+     MUXCY:S->O            1   0.500   0.000  div/Msub__old_p1_38_Madd_cy<27> (div/Msub__old_p1_38_Madd_cy<27>)
+     XORCY:CI->O           2   0.904   1.216  div/Msub__old_p1_38_Madd_xor<28> (div/_old_p1_38<28>)
+     LUT1:I0->O            1   0.551   0.000  div/Madd_old_p1_39_addsub0000_Madd_cy<28>_rt (div/Madd_old_p1_39_addsub0000_Madd_cy<28>_rt)
+     MUXCY:S->O            1   0.500   0.000  div/Madd_old_p1_39_addsub0000_Madd_cy<28> (div/Madd_old_p1_39_addsub0000_Madd_cy<28>)
+     XORCY:CI->O           1   0.904   0.996  div/Madd_old_p1_39_addsub0000_Madd_xor<29> (div/old_p1_39_addsub0000<29>)
+     LUT3:I1->O            1   0.551   0.000  div/Msub__old_p1_41_Madd_lut<30> (div/Msub__old_p1_41_Madd_lut<30>)
+     MUXCY:S->O            0   0.500   0.000  div/Msub__old_p1_41_Madd_cy<30> (div/Msub__old_p1_41_Madd_cy<30>)
+     XORCY:CI->O          29   0.904   2.175  div/Msub__old_p1_41_Madd_xor<31> (div/_old_p1_41<31>)
+     LUT3:I0->O            1   0.551   0.000  div/Msub__old_p1_44_Madd_lut<6> (div/Msub__old_p1_44_Madd_lut<6>)
+     MUXCY:S->O            1   0.500   0.000  div/Msub__old_p1_44_Madd_cy<6> (div/Msub__old_p1_44_Madd_cy<6>)
+     XORCY:CI->O           2   0.904   1.216  div/Msub__old_p1_44_Madd_xor<7> (div/_old_p1_44<7>)
+     LUT1:I0->O            1   0.551   0.000  div/Madd_old_p1_45_addsub0000_Madd_cy<7>_rt (div/Madd_old_p1_45_addsub0000_Madd_cy<7>_rt)
+     MUXCY:S->O            1   0.500   0.000  div/Madd_old_p1_45_addsub0000_Madd_cy<7> (div/Madd_old_p1_45_addsub0000_Madd_cy<7>)
+     XORCY:CI->O           1   0.904   0.996  div/Madd_old_p1_45_addsub0000_Madd_xor<8> (div/old_p1_45_addsub0000<8>)
+     LUT3:I1->O            1   0.551   0.000  div/Msub__old_p1_47_Madd_lut<9> (div/Msub__old_p1_47_Madd_lut<9>)
+     MUXCY:S->O            1   0.500   0.000  div/Msub__old_p1_47_Madd_cy<9> (div/Msub__old_p1_47_Madd_cy<9>)
+     XORCY:CI->O           2   0.904   1.216  div/Msub__old_p1_47_Madd_xor<10> (div/_old_p1_47<10>)
+     LUT1:I0->O            1   0.551   0.000  div/Madd_old_p1_48_addsub0000_Madd_cy<10>_rt (div/Madd_old_p1_48_addsub0000_Madd_cy<10>_rt)
+     MUXCY:S->O            1   0.500   0.000  div/Madd_old_p1_48_addsub0000_Madd_cy<10> (div/Madd_old_p1_48_addsub0000_Madd_cy<10>)
+     XORCY:CI->O           1   0.904   0.996  div/Madd_old_p1_48_addsub0000_Madd_xor<11> (div/old_p1_48_addsub0000<11>)
+     LUT3:I1->O            1   0.551   0.000  div/Msub__old_p1_50_Madd_lut<12> (div/Msub__old_p1_50_Madd_lut<12>)
+     MUXCY:S->O            1   0.500   0.000  div/Msub__old_p1_50_Madd_cy<12> (div/Msub__old_p1_50_Madd_cy<12>)
+     XORCY:CI->O           2   0.904   1.216  div/Msub__old_p1_50_Madd_xor<13> (div/_old_p1_50<13>)
+     LUT1:I0->O            1   0.551   0.000  div/Madd_old_p1_51_addsub0000_Madd_cy<13>_rt (div/Madd_old_p1_51_addsub0000_Madd_cy<13>_rt)
+     MUXCY:S->O            1   0.500   0.000  div/Madd_old_p1_51_addsub0000_Madd_cy<13> (div/Madd_old_p1_51_addsub0000_Madd_cy<13>)
+     XORCY:CI->O           1   0.904   0.996  div/Madd_old_p1_51_addsub0000_Madd_xor<14> (div/old_p1_51_addsub0000<14>)
+     LUT3:I1->O            1   0.551   0.000  div/Msub__old_p1_53_Madd_lut<15> (div/Msub__old_p1_53_Madd_lut<15>)
+     MUXCY:S->O            1   0.500   0.000  div/Msub__old_p1_53_Madd_cy<15> (div/Msub__old_p1_53_Madd_cy<15>)
+     XORCY:CI->O           2   0.904   1.216  div/Msub__old_p1_53_Madd_xor<16> (div/_old_p1_53<16>)
+     LUT1:I0->O            1   0.551   0.000  div/Madd_old_p1_54_addsub0000_Madd_cy<16>_rt (div/Madd_old_p1_54_addsub0000_Madd_cy<16>_rt)
+     MUXCY:S->O            1   0.500   0.000  div/Madd_old_p1_54_addsub0000_Madd_cy<16> (div/Madd_old_p1_54_addsub0000_Madd_cy<16>)
+     XORCY:CI->O           1   0.904   0.996  div/Madd_old_p1_54_addsub0000_Madd_xor<17> (div/old_p1_54_addsub0000<17>)
+     LUT3:I1->O            1   0.551   0.000  div/Msub__old_p1_56_Madd_lut<18> (div/Msub__old_p1_56_Madd_lut<18>)
+     MUXCY:S->O            1   0.500   0.000  div/Msub__old_p1_56_Madd_cy<18> (div/Msub__old_p1_56_Madd_cy<18>)
+     XORCY:CI->O           2   0.904   1.216  div/Msub__old_p1_56_Madd_xor<19> (div/_old_p1_56<19>)
+     LUT1:I0->O            1   0.551   0.000  div/Madd_old_p1_57_addsub0000_Madd_cy<19>_rt (div/Madd_old_p1_57_addsub0000_Madd_cy<19>_rt)
+     MUXCY:S->O            1   0.500   0.000  div/Madd_old_p1_57_addsub0000_Madd_cy<19> (div/Madd_old_p1_57_addsub0000_Madd_cy<19>)
+     XORCY:CI->O           1   0.904   0.996  div/Madd_old_p1_57_addsub0000_Madd_xor<20> (div/old_p1_57_addsub0000<20>)
+     LUT3:I1->O            1   0.551   0.000  div/Msub__old_p1_59_Madd_lut<21> (div/Msub__old_p1_59_Madd_lut<21>)
+     MUXCY:S->O            1   0.500   0.000  div/Msub__old_p1_59_Madd_cy<21> (div/Msub__old_p1_59_Madd_cy<21>)
+     XORCY:CI->O           2   0.904   1.216  div/Msub__old_p1_59_Madd_xor<22> (div/_old_p1_59<22>)
+     LUT1:I0->O            1   0.551   0.000  div/Madd_old_p1_60_addsub0000_Madd_cy<22>_rt (div/Madd_old_p1_60_addsub0000_Madd_cy<22>_rt)
+     MUXCY:S->O            1   0.500   0.000  div/Madd_old_p1_60_addsub0000_Madd_cy<22> (div/Madd_old_p1_60_addsub0000_Madd_cy<22>)
+     XORCY:CI->O           1   0.904   0.996  div/Madd_old_p1_60_addsub0000_Madd_xor<23> (div/old_p1_60_addsub0000<23>)
+     LUT3:I1->O            1   0.551   0.000  div/Msub__old_p1_62_Madd_lut<24> (div/Msub__old_p1_62_Madd_lut<24>)
+     MUXCY:S->O            1   0.500   0.000  div/Msub__old_p1_62_Madd_cy<24> (div/Msub__old_p1_62_Madd_cy<24>)
+     XORCY:CI->O           2   0.904   1.216  div/Msub__old_p1_62_Madd_xor<25> (div/_old_p1_62<25>)
+     LUT1:I0->O            1   0.551   0.000  div/Madd_old_p1_63_addsub0000_Madd_cy<25>_rt (div/Madd_old_p1_63_addsub0000_Madd_cy<25>_rt)
+     MUXCY:S->O            1   0.500   0.000  div/Madd_old_p1_63_addsub0000_Madd_cy<25> (div/Madd_old_p1_63_addsub0000_Madd_cy<25>)
+     XORCY:CI->O           1   0.904   0.996  div/Madd_old_p1_63_addsub0000_Madd_xor<26> (div/old_p1_63_addsub0000<26>)
+     LUT3:I1->O            1   0.551   0.000  div/Msub__old_p1_65_Madd_lut<27> (div/Msub__old_p1_65_Madd_lut<27>)
+     MUXCY:S->O            1   0.500   0.000  div/Msub__old_p1_65_Madd_cy<27> (div/Msub__old_p1_65_Madd_cy<27>)
+     XORCY:CI->O           2   0.904   1.216  div/Msub__old_p1_65_Madd_xor<28> (div/_old_p1_65<28>)
+     LUT1:I0->O            1   0.551   0.000  div/Madd_old_p1_66_addsub0000_Madd_cy<28>_rt (div/Madd_old_p1_66_addsub0000_Madd_cy<28>_rt)
+     MUXCY:S->O            1   0.500   0.000  div/Madd_old_p1_66_addsub0000_Madd_cy<28> (div/Madd_old_p1_66_addsub0000_Madd_cy<28>)
+     XORCY:CI->O           1   0.904   0.996  div/Madd_old_p1_66_addsub0000_Madd_xor<29> (div/old_p1_66_addsub0000<29>)
+     LUT3:I1->O            1   0.551   0.000  div/Msub__old_p1_68_Madd_lut<30> (div/Msub__old_p1_68_Madd_lut<30>)
+     MUXCY:S->O            0   0.500   0.000  div/Msub__old_p1_68_Madd_cy<30> (div/Msub__old_p1_68_Madd_cy<30>)
+     XORCY:CI->O          28   0.904   2.169  div/Msub__old_p1_68_Madd_xor<31> (div/_old_p1_68<31>)
+     LUT3:I0->O            1   0.551   0.000  div/Msub__old_p1_71_Madd_lut<6> (div/Msub__old_p1_71_Madd_lut<6>)
+     MUXCY:S->O            1   0.500   0.000  div/Msub__old_p1_71_Madd_cy<6> (div/Msub__old_p1_71_Madd_cy<6>)
+     XORCY:CI->O           2   0.904   1.216  div/Msub__old_p1_71_Madd_xor<7> (div/_old_p1_71<7>)
+     LUT1:I0->O            1   0.551   0.000  div/Madd_old_p1_72_addsub0000_Madd_cy<7>_rt (div/Madd_old_p1_72_addsub0000_Madd_cy<7>_rt)
+     MUXCY:S->O            1   0.500   0.000  div/Madd_old_p1_72_addsub0000_Madd_cy<7> (div/Madd_old_p1_72_addsub0000_Madd_cy<7>)
+     XORCY:CI->O           1   0.904   0.996  div/Madd_old_p1_72_addsub0000_Madd_xor<8> (div/old_p1_72_addsub0000<8>)
+     LUT3:I1->O            1   0.551   0.000  div/Msub__old_p1_74_Madd_lut<9> (div/Msub__old_p1_74_Madd_lut<9>)
+     MUXCY:S->O            1   0.500   0.000  div/Msub__old_p1_74_Madd_cy<9> (div/Msub__old_p1_74_Madd_cy<9>)
+     XORCY:CI->O           2   0.904   1.216  div/Msub__old_p1_74_Madd_xor<10> (div/_old_p1_74<10>)
+     LUT1:I0->O            1   0.551   0.000  div/Madd_old_p1_75_addsub0000_Madd_cy<10>_rt (div/Madd_old_p1_75_addsub0000_Madd_cy<10>_rt)
+     MUXCY:S->O            1   0.500   0.000  div/Madd_old_p1_75_addsub0000_Madd_cy<10> (div/Madd_old_p1_75_addsub0000_Madd_cy<10>)
+     XORCY:CI->O           1   0.904   0.996  div/Madd_old_p1_75_addsub0000_Madd_xor<11> (div/old_p1_75_addsub0000<11>)
+     LUT3:I1->O            1   0.551   0.000  div/Msub__old_p1_77_Madd_lut<12> (div/Msub__old_p1_77_Madd_lut<12>)
+     MUXCY:S->O            1   0.500   0.000  div/Msub__old_p1_77_Madd_cy<12> (div/Msub__old_p1_77_Madd_cy<12>)
+     XORCY:CI->O           2   0.904   1.216  div/Msub__old_p1_77_Madd_xor<13> (div/_old_p1_77<13>)
+     LUT1:I0->O            1   0.551   0.000  div/Madd_old_p1_78_addsub0000_Madd_cy<13>_rt (div/Madd_old_p1_78_addsub0000_Madd_cy<13>_rt)
+     MUXCY:S->O            1   0.500   0.000  div/Madd_old_p1_78_addsub0000_Madd_cy<13> (div/Madd_old_p1_78_addsub0000_Madd_cy<13>)
+     XORCY:CI->O           1   0.904   0.996  div/Madd_old_p1_78_addsub0000_Madd_xor<14> (div/old_p1_78_addsub0000<14>)
+     LUT3:I1->O            1   0.551   0.000  div/Msub__old_p1_80_Madd_lut<15> (div/Msub__old_p1_80_Madd_lut<15>)
+     MUXCY:S->O            1   0.500   0.000  div/Msub__old_p1_80_Madd_cy<15> (div/Msub__old_p1_80_Madd_cy<15>)
+     XORCY:CI->O           2   0.904   1.216  div/Msub__old_p1_80_Madd_xor<16> (div/_old_p1_80<16>)
+     LUT1:I0->O            1   0.551   0.000  div/Madd_old_p1_81_addsub0000_Madd_cy<16>_rt (div/Madd_old_p1_81_addsub0000_Madd_cy<16>_rt)
+     MUXCY:S->O            1   0.500   0.000  div/Madd_old_p1_81_addsub0000_Madd_cy<16> (div/Madd_old_p1_81_addsub0000_Madd_cy<16>)
+     XORCY:CI->O           1   0.904   0.996  div/Madd_old_p1_81_addsub0000_Madd_xor<17> (div/old_p1_81_addsub0000<17>)
+     LUT3:I1->O            1   0.551   0.000  div/Msub__old_p1_83_Madd_lut<18> (div/Msub__old_p1_83_Madd_lut<18>)
+     MUXCY:S->O            1   0.500   0.000  div/Msub__old_p1_83_Madd_cy<18> (div/Msub__old_p1_83_Madd_cy<18>)
+     XORCY:CI->O           2   0.904   1.216  div/Msub__old_p1_83_Madd_xor<19> (div/_old_p1_83<19>)
+     LUT1:I0->O            1   0.551   0.000  div/Madd_old_p1_84_addsub0000_Madd_cy<19>_rt (div/Madd_old_p1_84_addsub0000_Madd_cy<19>_rt)
+     MUXCY:S->O            1   0.500   0.000  div/Madd_old_p1_84_addsub0000_Madd_cy<19> (div/Madd_old_p1_84_addsub0000_Madd_cy<19>)
+     XORCY:CI->O           1   0.904   0.996  div/Madd_old_p1_84_addsub0000_Madd_xor<20> (div/old_p1_84_addsub0000<20>)
+     LUT3:I1->O            1   0.551   0.000  div/Msub__old_p1_86_Madd_lut<21> (div/Msub__old_p1_86_Madd_lut<21>)
+     MUXCY:S->O            1   0.500   0.000  div/Msub__old_p1_86_Madd_cy<21> (div/Msub__old_p1_86_Madd_cy<21>)
+     XORCY:CI->O           2   0.904   1.216  div/Msub__old_p1_86_Madd_xor<22> (div/_old_p1_86<22>)
+     LUT1:I0->O            1   0.551   0.000  div/Madd_old_p1_87_addsub0000_Madd_cy<22>_rt (div/Madd_old_p1_87_addsub0000_Madd_cy<22>_rt)
+     MUXCY:S->O            1   0.500   0.000  div/Madd_old_p1_87_addsub0000_Madd_cy<22> (div/Madd_old_p1_87_addsub0000_Madd_cy<22>)
+     XORCY:CI->O           1   0.904   0.996  div/Madd_old_p1_87_addsub0000_Madd_xor<23> (div/old_p1_87_addsub0000<23>)
+     LUT3:I1->O            1   0.551   0.000  div/Msub__old_p1_89_Madd_lut<24> (div/Msub__old_p1_89_Madd_lut<24>)
+     MUXCY:S->O            1   0.500   0.000  div/Msub__old_p1_89_Madd_cy<24> (div/Msub__old_p1_89_Madd_cy<24>)
+     XORCY:CI->O           2   0.904   1.216  div/Msub__old_p1_89_Madd_xor<25> (div/_old_p1_89<25>)
+     LUT1:I0->O            1   0.551   0.000  div/Madd_old_p1_90_addsub0000_Madd_cy<25>_rt (div/Madd_old_p1_90_addsub0000_Madd_cy<25>_rt)
+     MUXCY:S->O            1   0.500   0.000  div/Madd_old_p1_90_addsub0000_Madd_cy<25> (div/Madd_old_p1_90_addsub0000_Madd_cy<25>)
+     XORCY:CI->O           1   0.904   0.996  div/Madd_old_p1_90_addsub0000_Madd_xor<26> (div/old_p1_90_addsub0000<26>)
+     LUT3:I1->O            1   0.551   0.000  div/Msub__old_p1_92_Madd_lut<27> (div/Msub__old_p1_92_Madd_lut<27>)
+     MUXCY:S->O            1   0.500   0.000  div/Msub__old_p1_92_Madd_cy<27> (div/Msub__old_p1_92_Madd_cy<27>)
+     XORCY:CI->O           2   0.904   1.216  div/Msub__old_p1_92_Madd_xor<28> (div/_old_p1_92<28>)
+     LUT1:I0->O            1   0.551   0.000  div/Madd_old_p1_93_addsub0000_Madd_cy<28>_rt (div/Madd_old_p1_93_addsub0000_Madd_cy<28>_rt)
+     MUXCY:S->O            1   0.500   0.000  div/Madd_old_p1_93_addsub0000_Madd_cy<28> (div/Madd_old_p1_93_addsub0000_Madd_cy<28>)
+     XORCY:CI->O           1   0.904   0.996  div/Madd_old_p1_93_addsub0000_Madd_xor<29> (div/old_p1_93_addsub0000<29>)
+     LUT3:I1->O            1   0.551   0.000  div/Msub__old_p1_95_Madd_lut<30> (div/Msub__old_p1_95_Madd_lut<30>)
+     MUXCY:S->O            0   0.500   0.000  div/Msub__old_p1_95_Madd_cy<30> (div/Msub__old_p1_95_Madd_cy<30>)
+     XORCY:CI->O           4   0.904   1.256  div/Msub__old_p1_95_Madd_xor<31> (div/_old_p1_95<31>)
+     LUT4:I0->O            1   0.551   0.000  adder32x32/loop[1].fa/Madd_AUX_96_addsub0001_cy<0>12 (adder32x32/loop[1].fa/Madd_AUX_96_addsub0001_cy<0>11)
+     MUXF5:I0->O           3   0.360   1.102  adder32x32/loop[1].fa/Madd_AUX_96_addsub0001_cy<0>1_f5 (adder32x32/loop[1].fa/Madd_AUX_96_addsub0001_cy<0>)
+     LUT4:I1->O            1   0.551   0.996  adder32x32/loop[3].fa/Madd_AUX_96_addsub0001_cy<0>1_SW2 (N53)
+     LUT4:I1->O            3   0.551   1.102  adder32x32/loop[3].fa/Madd_AUX_96_addsub0001_cy<0>1 (adder32x32/loop[3].fa/Madd_AUX_96_addsub0001_cy<0>)
+     LUT4:I1->O            1   0.551   0.996  adder32x32/loop[5].fa/Madd_AUX_96_addsub0001_cy<0>1_SW2 (N51)
+     LUT4:I1->O            3   0.551   1.102  adder32x32/loop[5].fa/Madd_AUX_96_addsub0001_cy<0>1 (adder32x32/loop[5].fa/Madd_AUX_96_addsub0001_cy<0>)
+     LUT4:I1->O            1   0.551   0.996  adder32x32/loop[7].fa/Madd_AUX_96_addsub0001_cy<0>1_SW2 (N49)
+     LUT4:I1->O            3   0.551   1.102  adder32x32/loop[7].fa/Madd_AUX_96_addsub0001_cy<0>1 (adder32x32/loop[7].fa/Madd_AUX_96_addsub0001_cy<0>)
+     LUT4:I1->O            1   0.551   0.996  adder32x32/loop[9].fa/Madd_AUX_96_addsub0001_cy<0>1_SW2 (N47)
+     LUT4:I1->O            3   0.551   1.102  adder32x32/loop[9].fa/Madd_AUX_96_addsub0001_cy<0>1 (adder32x32/loop[9].fa/Madd_AUX_96_addsub0001_cy<0>)
+     LUT4:I1->O            1   0.551   0.996  adder32x32/loop[11].fa/Madd_AUX_96_addsub0001_cy<0>1_SW2 (N71)
+     LUT4:I1->O            3   0.551   1.102  adder32x32/loop[11].fa/Madd_AUX_96_addsub0001_cy<0>1 (adder32x32/loop[11].fa/Madd_AUX_96_addsub0001_cy<0>)
+     LUT4:I1->O            1   0.551   0.996  adder32x32/loop[13].fa/Madd_AUX_96_addsub0001_cy<0>1_SW2 (N69)
+     LUT4:I1->O            3   0.551   1.102  adder32x32/loop[13].fa/Madd_AUX_96_addsub0001_cy<0>1 (adder32x32/loop[13].fa/Madd_AUX_96_addsub0001_cy<0>)
+     LUT4:I1->O            1   0.551   0.996  adder32x32/loop[15].fa/Madd_AUX_96_addsub0001_cy<0>1_SW2 (N67)
+     LUT4:I1->O            3   0.551   1.102  adder32x32/loop[15].fa/Madd_AUX_96_addsub0001_cy<0>1 (adder32x32/loop[15].fa/Madd_AUX_96_addsub0001_cy<0>)
+     LUT4:I1->O            1   0.551   0.996  adder32x32/loop[17].fa/Madd_AUX_96_addsub0001_cy<0>1_SW2 (N65)
+     LUT4:I1->O            3   0.551   1.102  adder32x32/loop[17].fa/Madd_AUX_96_addsub0001_cy<0>1 (adder32x32/loop[17].fa/Madd_AUX_96_addsub0001_cy<0>)
+     LUT4:I1->O            1   0.551   0.996  adder32x32/loop[19].fa/Madd_AUX_96_addsub0001_cy<0>1_SW2 (N63)
+     LUT4:I1->O            3   0.551   1.102  adder32x32/loop[19].fa/Madd_AUX_96_addsub0001_cy<0>1 (adder32x32/loop[19].fa/Madd_AUX_96_addsub0001_cy<0>)
+     LUT4:I1->O            1   0.551   0.996  adder32x32/loop[21].fa/Madd_AUX_96_addsub0001_cy<0>1_SW2 (N61)
+     LUT4:I1->O            3   0.551   1.102  adder32x32/loop[21].fa/Madd_AUX_96_addsub0001_cy<0>1 (adder32x32/loop[21].fa/Madd_AUX_96_addsub0001_cy<0>)
+     LUT4:I1->O            1   0.551   0.996  adder32x32/loop[23].fa/Madd_AUX_96_addsub0001_cy<0>1_SW2 (N59)
+     LUT4:I1->O            3   0.551   1.102  adder32x32/loop[23].fa/Madd_AUX_96_addsub0001_cy<0>1 (adder32x32/loop[23].fa/Madd_AUX_96_addsub0001_cy<0>)
+     LUT4:I1->O            1   0.551   0.996  adder32x32/loop[25].fa/Madd_AUX_96_addsub0001_cy<0>1_SW2 (N57)
+     LUT4:I1->O            3   0.551   1.102  adder32x32/loop[25].fa/Madd_AUX_96_addsub0001_cy<0>1 (adder32x32/loop[25].fa/Madd_AUX_96_addsub0001_cy<0>)
+     LUT4:I1->O            3   0.551   1.246  adder32x32/loop[27].fa/Madd_AUX_96_addsub0001_cy<0>1_SW2 (N55)
+     LUT3:I0->O            1   0.551   0.827  adder32x32/loop[27].fa/Madd_AUX_96_addsub0001_cy<0>1 (adder32x32/loop[27].fa/Madd_AUX_96_addsub0001_cy<0>)
+     LUT4:I3->O            1   0.551   0.000  Madd_tempc_not0000<29>1 (Madd_tempc_not0000<29>)
+     MUXCY:S->O            1   0.500   0.000  Madd_tempc_cy<29> (Madd_tempc_cy<29>)
+     MUXCY:CI->O           0   0.064   0.000  Madd_tempc_cy<30> (Madd_tempc_cy<30>)
+     XORCY:CI->O           1   0.904   0.801  Madd_tempc_xor<31> (tempc_31_OBUF)
+     OBUF:I->O                 5.644          tempc_31_OBUF (tempc<31>)
+    ----------------------------------------
+    Total                    226.534ns (133.418ns logic, 93.116ns route)
+                                       (58.9% logic, 41.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 10.65 secs
+ 
+--> 
+
+Total memory usage is 4555688 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    8 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -65,13 +65,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>View RTL Schematic</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000156000000010000000100000000000000000000000064ffffffff000000810000000000000001000001560000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>View RTL Schematic</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
@@ -106,13 +106,21 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
+<<<<<<< HEAD
+         <SelectedItem/>
+=======
          <SelectedItem>Simulate Behavioral Model</SelectedItem>
+>>>>>>> cf7cbb9ed0800a9de5a5f8ba23d39996c1d43e6a
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000156000000010000000100000000000000000000000064ffffffff000000810000000000000001000001560000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+<<<<<<< HEAD
+      <CurrentItem/>
+=======
       <CurrentItem>Simulate Behavioral Model</CurrentItem>
+>>>>>>> cf7cbb9ed0800a9de5a5f8ba23d39996c1d43e6a
    </ItemView>
    <SourceProcessView>000000ff0000000000000002000001590000015401000000050100000002</SourceProcessView>
    <CurrentView>Behavioral Simulation</CurrentView>
