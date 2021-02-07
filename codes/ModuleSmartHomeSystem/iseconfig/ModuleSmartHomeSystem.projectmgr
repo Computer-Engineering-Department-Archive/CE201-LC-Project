@@ -92,18 +92,17 @@
          <ClosedNode>/Test E:|git|LCF99|codes|ModuleSmartHomeSystem|Test.v/uut - SmartHomeSystem/Module1 - TemperatureCalculator</ClosedNode>
          <ClosedNode>/Test E:|git|LCF99|codes|ModuleSmartHomeSystem|Test.v/uut - SmartHomeSystem/Module2 - GasDetectorSensor</ClosedNode>
          <ClosedNode>/Test E:|git|LCF99|codes|ModuleSmartHomeSystem|Test.v/uut - SmartHomeSystem/Module3 - CoolHeatSystem</ClosedNode>
-         <ClosedNode>/Test E:|git|LCF99|codes|ModuleSmartHomeSystem|Test.v/uut - SmartHomeSystem/Module4 - LightingSystem</ClosedNode>
          <ClosedNode>/Test E:|git|LCF99|codes|ModuleSmartHomeSystem|Test.v/uut - SmartHomeSystem/Module5 - LightDance</ClosedNode>
          <ClosedNode>/Test E:|git|LCF99|codes|ModuleSmartHomeSystem|Test.v/uut - SmartHomeSystem/Module7 - ControlUnit</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Test (E:/git/LCF99/codes/ModuleSmartHomeSystem/Test.v)</SelectedItem>
+         <SelectedItem>uut - SmartHomeSystem (E:/git/LCF99/codes/ModuleSmartHomeSystem/SmartHomeSystem.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >1</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001aa000000020000000000000000000000000200000064ffffffff000000810000000300000002000001aa0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Test (E:/git/LCF99/codes/ModuleSmartHomeSystem/Test.v)</CurrentItem>
+      <CurrentItem>uut - SmartHomeSystem (E:/git/LCF99/codes/ModuleSmartHomeSystem/SmartHomeSystem.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>

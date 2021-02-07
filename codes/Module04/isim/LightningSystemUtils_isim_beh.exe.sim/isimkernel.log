@@ -2,14 +2,14 @@ Command line:
    LightningSystemUtils_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  56403
+     -socket  56501
 
-Sun Feb 07 12:01:26 2021
+Sun Feb 07 12:14:09 2021
 
 
  Elaboration Time: 0.0625 sec
 
- Current Memory Usage: 5164.49 Meg
+ Current Memory Usage: 5164.48 Meg
 
  Total Signals          : 30
  Total Nets             : 53
@@ -20,9 +20,9 @@ Sun Feb 07 12:01:26 2021
  Total Traceable Variables  : 23
  Total Scalar Nets and Variables : 153
 
- Total Simulation Time: 0.15625 sec
+ Total Simulation Time: 0.078125 sec
 
- Current Memory Usage: 5479.07 Meg
+ Current Memory Usage: 5007.2 Meg
 
-Sun Feb 07 12:02:23 2021
+Sun Feb 07 12:15:12 2021
 
