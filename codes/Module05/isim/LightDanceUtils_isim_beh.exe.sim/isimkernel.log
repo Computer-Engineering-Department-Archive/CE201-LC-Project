@@ -1,0 +1,28 @@
+Command line:
+   LightDanceUtils_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  54220
+
+Sun Feb 07 10:09:47 2021
+
+
+ Elaboration Time: 0.09375 sec
+
+ Current Memory Usage: 5164.47 Meg
+
+ Total Signals          : 60
+ Total Nets             : 38
+ Total Signal Drivers   : 23
+ Total Blocks           : 11
+ Total Primitive Blocks : 9
+ Total Processes        : 34
+ Total Traceable Variables  : 31
+ Total Scalar Nets and Variables : 138
+
+ Total Simulation Time: 0.15625 sec
+
+ Current Memory Usage: 5164.47 Meg
+
+Sun Feb 07 10:10:02 2021
+

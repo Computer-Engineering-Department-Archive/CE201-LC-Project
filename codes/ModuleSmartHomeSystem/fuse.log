@@ -1,0 +1,59 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o E:/git/LCF99/codes/ModuleSmartHomeSystem/Test_isim_beh.exe -prj E:/git/LCF99/codes/ModuleSmartHomeSystem/Test_beh.prj work.Test work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "E:/git/LCF99/codes/ModuleSmartHomeSystem/WindowShadeDegree.v" into library work
+Analyzing Verilog file "E:/git/LCF99/codes/ModuleSmartHomeSystem/PassCheckUnit.v" into library work
+Analyzing Verilog file "E:/git/LCF99/codes/ModuleSmartHomeSystem/Multiplier8x8.v" into library work
+Analyzing Verilog file "E:/git/LCF99/codes/ModuleSmartHomeSystem/Multiplier16x16.v" into library work
+Analyzing Verilog file "E:/git/LCF99/codes/ModuleSmartHomeSystem/ModePower.v" into library work
+Analyzing Verilog file "E:/git/LCF99/codes/ModuleSmartHomeSystem/LampState.v" into library work
+Analyzing Verilog file "E:/git/LCF99/codes/ModuleSmartHomeSystem/FanSpeed.v" into library work
+Analyzing Verilog file "E:/git/LCF99/codes/ModuleSmartHomeSystem/DFlop.v" into library work
+Analyzing Verilog file "E:/git/LCF99/codes/ModuleSmartHomeSystem/coDetector.v" into library work
+Analyzing Verilog file "E:/git/LCF99/codes/ModuleSmartHomeSystem/co2Detector.v" into library work
+Analyzing Verilog file "E:/git/LCF99/codes/ModuleSmartHomeSystem/ch4Detector.v" into library work
+Analyzing Verilog file "E:/git/LCF99/codes/ModuleSmartHomeSystem/AdderSubtractor32bit.v" into library work
+Analyzing Verilog file "E:/git/LCF99/codes/ModuleSmartHomeSystem/ActiveLamps.v" into library work
+Analyzing Verilog file "E:/git/LCF99/codes/ModuleSmartHomeSystem/TemperatureCalculator.v" into library work
+Analyzing Verilog file "E:/git/LCF99/codes/ModuleSmartHomeSystem/MemoryUnit.v" into library work
+Analyzing Verilog file "E:/git/LCF99/codes/ModuleSmartHomeSystem/LightingSystem.v" into library work
+Analyzing Verilog file "E:/git/LCF99/codes/ModuleSmartHomeSystem/LightDance.v" into library work
+Analyzing Verilog file "E:/git/LCF99/codes/ModuleSmartHomeSystem/GasDetectorSensor.v" into library work
+Analyzing Verilog file "E:/git/LCF99/codes/ModuleSmartHomeSystem/CoolHeatSystem.v" into library work
+Analyzing Verilog file "E:/git/LCF99/codes/ModuleSmartHomeSystem/ControlUnit.v" into library work
+Analyzing Verilog file "E:/git/LCF99/codes/ModuleSmartHomeSystem/SmartHomeSystem.v" into library work
+Analyzing Verilog file "E:/git/LCF99/codes/ModuleSmartHomeSystem/Test.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module Multiplier8x8
+Compiling module Multiplier16x16
+Compiling module AdderSubtractor32x32
+Compiling module TemperatureCalculator
+Compiling module ch4Detector
+Compiling module coDetector
+Compiling module co2Detector
+Compiling module GasDetectorSensor
+Compiling module ModePower
+Compiling module FanSpeed
+Compiling module CoolHeatSystem
+Compiling module ActiveLamps
+Compiling module LampState
+Compiling module WindowShadeDegree
+Compiling module LightingSystem
+Compiling module DFlop
+Compiling module LightDance
+Compiling module MemoryUnit
+Compiling module PassCheckUnit
+Compiling module ControlUnit
+Compiling module SmartHomeSystem
+Compiling module Test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 23 Verilog Units
+Built simulation executable E:/git/LCF99/codes/ModuleSmartHomeSystem/Test_isim_beh.exe
+Fuse Memory Usage: 30228 KB
+Fuse CPU Usage: 609 ms

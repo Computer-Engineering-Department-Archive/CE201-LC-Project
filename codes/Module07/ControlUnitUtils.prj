@@ -1,0 +1,3 @@
+verilog work "PassCheckUnit.v"
+verilog work "ControlUnit.v"
+verilog work "ControlUnitUtils.v"

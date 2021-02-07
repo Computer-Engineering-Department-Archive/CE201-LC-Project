@@ -34,7 +34,7 @@ module ModePower (
 		 for(i=0;i<8;i=i+1)   //for all the bits.
 			  chs_power = chs_power + chs_conf[i]; //Add the bit to the count.
 			  
-		 if(chs_power[0])
+		 if(chs_conf[0])
 			chs_mode = 1;
 		 else
 			chs_mode = 0;

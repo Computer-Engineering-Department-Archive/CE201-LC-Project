@@ -32,7 +32,7 @@ module CoolHeatSystemUtils(
 	 
 	 initial begin
 			chs_conf = 8'hFFFF;   #100;
-         chs_conf = 8'hF56F;   #100;
+         chs_conf = 8'b00000010;   #100;
          chs_conf = 8'h3FFF;   #100;
          chs_conf = 8'h0001;   #100;
          chs_conf = 8'hF10F;   #100;

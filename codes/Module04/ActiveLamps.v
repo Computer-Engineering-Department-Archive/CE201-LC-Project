@@ -30,7 +30,7 @@ module ActiveLamps (
 			4'b0000 : active_lights = 4'b0000;
 			4'b0001 : active_lights = 4'b0000;
 			4'b0010 : active_lights = 4'b0000;
-			4'b0100 : active_lights = lenght / 4;
+			4'b0100 : active_lights = lenght / 4; // L^2 / 4L = L/4
 			4'b1000 : active_lights = ulight;
 		endcase		
 	end
